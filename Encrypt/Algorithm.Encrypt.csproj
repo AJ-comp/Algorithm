@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Encrypt.Seed</PackageId>
+    <Authors>JJW</Authors>
+    <Company>Swinnus</Company>
+    <Product>SEED</Product>
+    <PackageTags>SEED, Encrypt</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/AJ-comp/Seed.git</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AJ-comp/Seed.git</RepositoryUrl>
+    <Description>SEED encryption algorithm source</Description>
+  </PropertyGroup>
+
+</Project>

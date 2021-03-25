@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encrypt", "Encrypt\Encrypt.csproj", "{0FDD2184-8985-4C32-8D23-0019AC2137F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Encrypt", "Encrypt\Algorithm.Encrypt.csproj", "{0FDD2184-8985-4C32-8D23-0019AC2137F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm.Check", "Check\Algorithm.Check.csproj", "{590FE59A-A709-4C48-80DE-51FD2EDF8A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{2E9FCD96-4C5B-4F94-8F6E-2FA96CC346C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0FDD2184-8985-4C32-8D23-0019AC2137F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FDD2184-8985-4C32-8D23-0019AC2137F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FDD2184-8985-4C32-8D23-0019AC2137F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590FE59A-A709-4C48-80DE-51FD2EDF8A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590FE59A-A709-4C48-80DE-51FD2EDF8A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590FE59A-A709-4C48-80DE-51FD2EDF8A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590FE59A-A709-4C48-80DE-51FD2EDF8A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9FCD96-4C5B-4F94-8F6E-2FA96CC346C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9FCD96-4C5B-4F94-8F6E-2FA96CC346C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9FCD96-4C5B-4F94-8F6E-2FA96CC346C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9FCD96-4C5B-4F94-8F6E-2FA96CC346C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
