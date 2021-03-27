@@ -1,7 +1,10 @@
 # Seed
 Please see https://seed.kisa.or.kr/kisa/algorithm/EgovSeedInfo.do
 
+The above site includes an English manual.
+
 The IV value is {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}.
+
 
 1. Encryption example
 ```c#
