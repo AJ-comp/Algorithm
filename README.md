@@ -1,4 +1,5 @@
 # Seed
+Please see https://seed.kisa.or.kr/kisa/algorithm/EgovSeedInfo.do
 The IV value is {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}.
 
 1. Encryption example
@@ -21,7 +22,7 @@ var dataDecrypted = SEED.Decrypt(dataEncrypted, SeedKey);
 # CRC
 This source includes CRC-16, CRC-CCITT (xModem). 
 
-See https://www.lammertbies.nl/comm/info/crc-calculation?crc=8005&method=hex
+Please see https://www.lammertbies.nl/comm/info/crc-calculation?crc=8005&method=hex
 
 
 1. CRC-16 example
