@@ -14,7 +14,7 @@ var dataEncrypted = SEED.Encrypt(dataToEncrypt, SeedKey);
 ```c#
 // The SeedKey must same as the SeedKey used when encryption.
 byte[] SeedKey = new byte[16] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5 };
-var dataToEncrypt = SEED.Decrypt(dataEncrypted, SeedKey);
+var dataDecrypted = SEED.Decrypt(dataEncrypted, SeedKey);
 ```
 
 
