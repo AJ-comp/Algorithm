@@ -42,3 +42,10 @@ using Algorithm.Check;
 
 var data = CRC.ComputeCCITTxModem(Encoding.ASCII.GetBytes("123456789"));
 ```
+
+2. CRC-DNP example
+```c#
+using Algorithm.Check;
+
+var data = CRC.ComputeDNP(Encoding.ASCII.GetBytes("123456789"));
+```
