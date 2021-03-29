@@ -17,9 +17,9 @@ namespace Algorithm.Check
             ushort result = 0;
             if (data.Count() <= 0) return result;
 
-            if (!crc_tab16_init) InitCRC16();
+            if (!crc_tab16_init) InitCRC16Table();
 
-            foreach(var d in data)
+            foreach (var d in data)
                 result = UpdateCRC16(result, d);
 
             return result;
@@ -38,13 +38,41 @@ namespace Algorithm.Check
             ushort result = 0;
             if (data.Count() <= 0) return result;
 
-            if (!crc_tabccitt_init) InitCRC_CCITT();
+            if (!crc_tabccitt_init) InitCCITTTable();
 
             foreach (var d in data)
                 result = UpdateCCITTxModem(result, d);
 
             return result;
         }
+
+
+        /*******************************************************************/
+        /// <summary>
+        /// This function returns the CRC DNP (xModem) value
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        /*******************************************************************/
+        public static ushort ComputeDNP(IEnumerable<byte> data)
+        {
+            ushort result = 0;
+            if (data.Count() <= 0) return result;
+
+            if (!crc_tabdnp_init) InitDNPTable();
+
+            for (int i = 0; i < data.Count(); i++)
+            {
+                byte index = (byte)(result ^ data.ElementAt(i));
+                result = (ushort)((result >> 8) ^ crc_tabdnp[index]);
+            }
+
+            result = (ushort)(result ^ 0xffff);
+            return (ushort)((ushort)((result & 0xff) << 8) | ((result >> 8) & 0xff));
+        }
+
+
+
 
 
         /*******************************************************************/
@@ -60,7 +88,7 @@ namespace Algorithm.Check
             long result = 0;
             if (data.Count() <= 0) return (uint)result;
 
-            if (!crc_tabccitt_init) InitCRC32();
+            if (!crc_tab32_init) InitCRC32Table();
 
             foreach (var d in data)
                 result = UpdateCRC32(result, d);
@@ -147,11 +175,11 @@ namespace Algorithm.Check
 
         /*******************************************************************/
         /// <summary>
-        /// *   The function InitCRC16() is used  to  fill  the  array     *
+        /// *   The function InitCRC16Table() is used  to  fill  the  array     *
         /// *   for calculation of the CRC-16 with values.                      *
         /// </summary>
         /*******************************************************************/
-        private static void InitCRC16()
+        private static void InitCRC16Table()
         {
             for (int i = 0; i < 256; i++)
             {
@@ -174,11 +202,11 @@ namespace Algorithm.Check
 
         /*******************************************************************/
         /// <summary>
-        /// *   The function InitCRC_CCITT() is used to fill the  array     *
+        /// *   The function InitCCITTTable() is used to fill the  array     *
         /// *   for calculation of the CRC-CCITT with values.                   *
         /// </summary>
         /*******************************************************************/
-        private static void InitCRC_CCITT()
+        private static void InitCCITTTable()
         {
             for (int i = 0; i < 256; i++)
             {
@@ -239,8 +267,6 @@ namespace Algorithm.Check
         {
             long long_c = (0x000000ffL & c);
 
-            if (!crc_tab32_init) InitCRC32();
-
             long tmp = (crc ^ long_c);
             crc = ((crc >> 8) ^ crc_tab32[tmp & 0xff]);
 
@@ -250,11 +276,65 @@ namespace Algorithm.Check
 
         /*******************************************************************/
         /// <summary>
-        /// *   The function InitCRC32() is used  to  fill  the  array     *
+        /// *   The function InitDNPTable() is used  to  fill  the  array    *
+        /// *   for calculation of the CRC-DNP with values.                     *
+        /// </summary>
+        /*******************************************************************/
+        private static void InitDNPTable()
+        {
+            for (int i = 0; i < 256; i++)
+            {
+                ushort crc = 0;
+                ushort c = (ushort)i;
+
+                for (int j = 0; j < 8; j++)
+                {
+
+                    if (((crc ^ c) & 0x0001) != 0) crc = (ushort)((crc >> 1) ^ P_DNP);
+                    else crc = (ushort)(crc >> 1);
+
+                    c = (ushort)(c >> 1);
+                }
+                crc_tabdnp[i] = crc;
+            }
+            crc_tabdnp_init = true;
+        }
+
+
+        /*******************************************************************/
+        /// <summary>
+        /// *   The function InitKermitTable() is used to fill the array     *
+        /// *   for calculation of the CRC Kermit with values.                  *
+        /// </summary>
+        /*******************************************************************/
+        private static void InitKermitTable()
+        {
+            for (int i = 0; i < 256; i++)
+            {
+                ushort crc = 0;
+                ushort c = (ushort)i;
+
+                for (int j = 0; j < 8; j++)
+                {
+                    if (((crc ^ c) & 0x0001) != 0) crc = (ushort)((crc >> 1) ^ P_KERMIT);
+                    else crc = (ushort)(crc >> 1);
+
+                    c = (ushort)(c >> 1);
+                }
+                crc_tabkermit[i] = crc;
+            }
+            crc_tabkermit_init = true;
+
+        }
+
+
+        /*******************************************************************/
+        /// <summary>
+        /// *   The function InitCRC32Table() is used  to  fill  the  array     *
         /// *   for calculation of the CRC-32 with values.                      *
         /// </summary>
         /*******************************************************************/
-        private static void InitCRC32()
+        private static void InitCRC32Table()
         {
             for (int i = 0; i < 256; i++)
             {

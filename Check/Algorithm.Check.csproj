@@ -1,7 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>CheckSum.CRC</PackageId>
+    <Authors>JJW</Authors>
+    <Company>Swinnus</Company>
+    <Product>CRC</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>CRC-16, CRC-CCITT (xModem), DNP</Description>
+    <PackageTags>CRC CRC16 CCITT xModem DNP</PackageTags>
+    <PackageProjectUrl>https://github.com/AJ-comp/Algorithm</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AJ-comp/Algorithm</RepositoryUrl>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
 </Project>
