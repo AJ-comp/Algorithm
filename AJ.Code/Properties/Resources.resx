@@ -127,4 +127,79 @@
   <data name="SOUTH_AMERICA" xml:space="preserve">
     <value>South America</value>
   </data>
+  <data name="DZ" xml:space="preserve">
+    <value>Algeria</value>
+  </data>
+  <data name="AS" xml:space="preserve">
+    <value>American Samoa</value>
+  </data>
+  <data name="AD" xml:space="preserve">
+    <value>Andorra</value>
+  </data>
+  <data name="AO" xml:space="preserve">
+    <value>Angola</value>
+  </data>
+  <data name="AI" xml:space="preserve">
+    <value>Anguilla</value>
+  </data>
+  <data name="AQ" xml:space="preserve">
+    <value>Antarctica</value>
+  </data>
+  <data name="AG" xml:space="preserve">
+    <value>Antigua and Barbuda</value>
+  </data>
+  <data name="AR" xml:space="preserve">
+    <value>Argentina</value>
+  </data>
+  <data name="AM" xml:space="preserve">
+    <value>Armenia</value>
+  </data>
+  <data name="AW" xml:space="preserve">
+    <value>Aruba</value>
+  </data>
+  <data name="AU" xml:space="preserve">
+    <value>Australia</value>
+  </data>
+  <data name="AT" xml:space="preserve">
+    <value>Austria</value>
+  </data>
+  <data name="AZ" xml:space="preserve">
+    <value>Azerbaijan</value>
+  </data>
+  <data name="BS" xml:space="preserve">
+    <value>Bahamas</value>
+  </data>
+  <data name="BH" xml:space="preserve">
+    <value>Bahrain</value>
+  </data>
+  <data name="BD" xml:space="preserve">
+    <value>Bangladesh</value>
+  </data>
+  <data name="BB" xml:space="preserve">
+    <value>Barbados</value>
+  </data>
+  <data name="BY" xml:space="preserve">
+    <value>Belarus</value>
+  </data>
+  <data name="BE" xml:space="preserve">
+    <value>Belgium</value>
+  </data>
+  <data name="BZ" xml:space="preserve">
+    <value>Belize</value>
+  </data>
+  <data name="BJ" xml:space="preserve">
+    <value>Benin</value>
+  </data>
+  <data name="BM" xml:space="preserve">
+    <value>Bermuda</value>
+  </data>
+  <data name="BT" xml:space="preserve">
+    <value>Bhutan</value>
+  </data>
+  <data name="BO" xml:space="preserve">
+    <value>Bolivia, Plurinational State of</value>
+  </data>
+  <data name="BQ" xml:space="preserve">
+    <value>Bonaire, Sint Eustatius and Saba</value>
+  </data>
 </root>
