@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AJ.Code\AJ.Code.csproj" />
     <ProjectReference Include="..\Check\Algorithm.Check.csproj" />
     <ProjectReference Include="..\Encrypt\Algorithm.Encrypt.csproj" />
   </ItemGroup>

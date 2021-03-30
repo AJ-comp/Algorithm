@@ -49,3 +49,27 @@ using Algorithm.Check;
 
 var data = CRC.ComputeDNP(Encoding.ASCII.GetBytes("123456789"));
 ```
+
+
+
+# ISO3166-Mobile
+
+1. Using
+```c#
+using AJ.Code;
+
+// Get all countries that registered
+var list = Country.AllCountries;
+
+// Get the country information for MCC value 410
+var country = Country.GetCountryInfoForMCC(410);
+
+// Get the country information for alpha2 code value "KR"
+country = Country.GetCountryInfoForAlpha2Code("KR");
+
+// Get the country information for alpha3 code value "KOR"
+country = Country.GetCountryInfoForAlpha3Code("KOR");
+
+// Get the country information list for the continent code value NA(North America)
+country = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
+```

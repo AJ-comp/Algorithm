@@ -1,4 +1,5 @@
-﻿using Algorithm.Check;
+﻿using AJ.Code;
+using Algorithm.Check;
 using System;
 using System.Collections.Generic;
 using System.Text;
