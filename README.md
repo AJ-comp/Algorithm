@@ -71,5 +71,5 @@ country = Country.GetCountryInfoForAlpha2Code("KR");
 country = Country.GetCountryInfoForAlpha3Code("KOR");
 
 // Get the country information list for the continent code value NA(North America)
-country = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
+var countries = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
 ```

@@ -4,14 +4,17 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Company>Swinnus</Company>
     <Authors>JJW</Authors>
-    <Copyright>https://github.com/schourode/iso3166</Copyright>
+    <Copyright></Copyright>
     <Description>The country information list including ISO 3166 &amp; MCC &amp; Continent code.
-For the directions for use please see https://github.com/AJ-comp/Algorithm.</Description>
+For the directions for use please see https://github.com/AJ-comp/Algorithm. (ISO3166-Mobile part)
+
+This project referred to https://github.com/schourode/iso3166 project.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/AJ-comp/Algorithm</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AJ-comp/Algorithm</RepositoryUrl>
-    <PackageTags>ISO-3166, MCC, country, continent</PackageTags>
+    <PackageTags>ISO3166, MCC, country, continent</PackageTags>
     <PackageId>ISO3166-Mobile</PackageId>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

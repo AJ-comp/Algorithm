@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
 
 namespace AJ.Code
@@ -20,11 +21,38 @@ namespace AJ.Code
         }
 
 
+        internal void AddMNCInfo(MNCInfo mnc) => _mnc.Add(mnc);
+
+
 
         private List<MNCInfo> _mnc = new List<MNCInfo>();
+
+        public override bool Equals(object obj)
+        {
+            return obj is MobileInfo info &&
+                   MCC == info.MCC;
+        }
+
+        public override int GetHashCode()
+        {
+            return -121810666 + MCC.GetHashCode();
+        }
+
+        public static bool operator ==(MobileInfo left, MobileInfo right)
+        {
+            return EqualityComparer<MobileInfo>.Default.Equals(left, right);
+        }
+
+        public static bool operator !=(MobileInfo left, MobileInfo right)
+        {
+            return !(left == right);
+        }
     }
 
 
+
+
+    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class MNCInfo
     {
         public enum OperStatus
@@ -44,7 +72,7 @@ namespace AJ.Code
             [Description("LTE 1800")] LTE1800,
         }
 
-        public int MNC { get; private set; }
+        public string MNC { get; private set; }
         public string Brand { get; private set; }
         public string Operator { get; private set; }
         public OperStatus Status { get; private set; }
@@ -53,7 +81,7 @@ namespace AJ.Code
 
         private List<BandType> _bands = new List<BandType>();
 
-        public MNCInfo(int mNC, string brand, string @operator, OperStatus status, params BandType[] bands)
+        public MNCInfo(string mNC, string brand, string @operator, OperStatus status, params BandType[] bands)
         {
             MNC = mNC;
             Brand = brand;
@@ -63,5 +91,29 @@ namespace AJ.Code
             if (bands == null) return;
             foreach (var band in bands) _bands.Add(band);
         }
+
+        public override bool Equals(object obj)
+        {
+            return obj is MNCInfo info &&
+                   MNC == info.MNC;
+        }
+
+        public override int GetHashCode()
+        {
+            return -175252757 + EqualityComparer<string>.Default.GetHashCode(MNC);
+        }
+
+        public static bool operator ==(MNCInfo left, MNCInfo right)
+        {
+            return EqualityComparer<MNCInfo>.Default.Equals(left, right);
+        }
+
+        public static bool operator !=(MNCInfo left, MNCInfo right)
+        {
+            return !(left == right);
+        }
+
+        private string GetDebuggerDisplay()
+            => string.Format($"{MNC},{Brand},{Operator}");
     }
 }

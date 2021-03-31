@@ -1,7 +1,6 @@
 ﻿using AJ.Code.Properties;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace AJ.Code
 {
