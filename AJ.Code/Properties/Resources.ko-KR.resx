@@ -222,4 +222,100 @@
   <data name="BQ" xml:space="preserve">
     <value>보네르</value>
   </data>
+  <data name="BA" xml:space="preserve">
+    <value>보르비아 헤르체고비나</value>
+  </data>
+  <data name="BW" xml:space="preserve">
+    <value>보츠와나</value>
+  </data>
+  <data name="BV" xml:space="preserve">
+    <value>부베 섬</value>
+  </data>
+  <data name="BR" xml:space="preserve">
+    <value>브라질</value>
+  </data>
+  <data name="IO" xml:space="preserve">
+    <value>영국령 인도양 지역</value>
+  </data>
+  <data name="BN" xml:space="preserve">
+    <value>브루나이 다루살람</value>
+  </data>
+  <data name="BG" xml:space="preserve">
+    <value>불가리아</value>
+  </data>
+  <data name="BF" xml:space="preserve">
+    <value>부르키나 파소</value>
+  </data>
+  <data name="BI" xml:space="preserve">
+    <value>부룬디</value>
+  </data>
+  <data name="CV" xml:space="preserve">
+    <value>카보 베르데</value>
+  </data>
+  <data name="KH" xml:space="preserve">
+    <value>캄보디아</value>
+  </data>
+  <data name="CM" xml:space="preserve">
+    <value>카메룬</value>
+  </data>
+  <data name="CA" xml:space="preserve">
+    <value>캐나다</value>
+  </data>
+  <data name="KY" xml:space="preserve">
+    <value>케이맨 제도</value>
+  </data>
+  <data name="CF" xml:space="preserve">
+    <value>중앙 아프리카 공화국</value>
+  </data>
+  <data name="TD" xml:space="preserve">
+    <value>차드</value>
+  </data>
+  <data name="CL" xml:space="preserve">
+    <value>칠리</value>
+  </data>
+  <data name="CN" xml:space="preserve">
+    <value>중국</value>
+  </data>
+  <data name="CX" xml:space="preserve">
+    <value>크리스마스 섬</value>
+  </data>
+  <data name="CC" xml:space="preserve">
+    <value>코코스(킬링) 제도</value>
+  </data>
+  <data name="CO" xml:space="preserve">
+    <value>콜롬비아</value>
+  </data>
+  <data name="KM" xml:space="preserve">
+    <value>코모로스</value>
+  </data>
+  <data name="CG" xml:space="preserve">
+    <value>콩고</value>
+  </data>
+  <data name="CD" xml:space="preserve">
+    <value>콩고 민주 공화국</value>
+  </data>
+  <data name="CK" xml:space="preserve">
+    <value>쿡 제도</value>
+  </data>
+  <data name="CR" xml:space="preserve">
+    <value>코스타 리카</value>
+  </data>
+  <data name="CI" xml:space="preserve">
+    <value>코르티부아르</value>
+  </data>
+  <data name="HR" xml:space="preserve">
+    <value>크로아티아</value>
+  </data>
+  <data name="CU" xml:space="preserve">
+    <value>쿠바</value>
+  </data>
+  <data name="CW" xml:space="preserve">
+    <value>쿠라시오</value>
+  </data>
+  <data name="CY" xml:space="preserve">
+    <value>키프로스</value>
+  </data>
+  <data name="CZ" xml:space="preserve">
+    <value>체코</value>
+  </data>
 </root>

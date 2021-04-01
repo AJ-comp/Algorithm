@@ -202,4 +202,100 @@
   <data name="BQ" xml:space="preserve">
     <value>Bonaire, Sint Eustatius and Saba</value>
   </data>
+  <data name="BA" xml:space="preserve">
+    <value>Bosnia and Herzegovina</value>
+  </data>
+  <data name="BW" xml:space="preserve">
+    <value>Botswana</value>
+  </data>
+  <data name="BV" xml:space="preserve">
+    <value>Bouvet Island</value>
+  </data>
+  <data name="BR" xml:space="preserve">
+    <value>Brazil</value>
+  </data>
+  <data name="IO" xml:space="preserve">
+    <value>British Indian Ocean Territory</value>
+  </data>
+  <data name="BN" xml:space="preserve">
+    <value>Brunei Darussalam</value>
+  </data>
+  <data name="BG" xml:space="preserve">
+    <value>Bulgaria</value>
+  </data>
+  <data name="BF" xml:space="preserve">
+    <value>Burkina Faso</value>
+  </data>
+  <data name="BI" xml:space="preserve">
+    <value>Burundi</value>
+  </data>
+  <data name="CV" xml:space="preserve">
+    <value>Cabo Verde</value>
+  </data>
+  <data name="KH" xml:space="preserve">
+    <value>Cambodia</value>
+  </data>
+  <data name="CM" xml:space="preserve">
+    <value>Cameroon</value>
+  </data>
+  <data name="CA" xml:space="preserve">
+    <value>Canada</value>
+  </data>
+  <data name="KY" xml:space="preserve">
+    <value>Cayman Islands</value>
+  </data>
+  <data name="CF" xml:space="preserve">
+    <value>Central African Republic</value>
+  </data>
+  <data name="TD" xml:space="preserve">
+    <value>Chad</value>
+  </data>
+  <data name="CL" xml:space="preserve">
+    <value>Chile</value>
+  </data>
+  <data name="CN" xml:space="preserve">
+    <value>China</value>
+  </data>
+  <data name="CX" xml:space="preserve">
+    <value>Christmas Island</value>
+  </data>
+  <data name="CC" xml:space="preserve">
+    <value>Cocos (Keeling) Islands</value>
+  </data>
+  <data name="CO" xml:space="preserve">
+    <value>Colombia</value>
+  </data>
+  <data name="KM" xml:space="preserve">
+    <value>Comoros</value>
+  </data>
+  <data name="CG" xml:space="preserve">
+    <value>Congo</value>
+  </data>
+  <data name="CD" xml:space="preserve">
+    <value>Congo, the Democratic Republic of the</value>
+  </data>
+  <data name="CK" xml:space="preserve">
+    <value>Cook Islands</value>
+  </data>
+  <data name="CR" xml:space="preserve">
+    <value>Costa Rica</value>
+  </data>
+  <data name="CI" xml:space="preserve">
+    <value>Côte d'Ivoire</value>
+  </data>
+  <data name="HR" xml:space="preserve">
+    <value>Croatia</value>
+  </data>
+  <data name="CU" xml:space="preserve">
+    <value>Cuba</value>
+  </data>
+  <data name="CW" xml:space="preserve">
+    <value>Curaçao</value>
+  </data>
+  <data name="CY" xml:space="preserve">
+    <value>Cyprus</value>
+  </data>
+  <data name="CZ" xml:space="preserve">
+    <value>Czechia</value>
+  </data>
 </root>
