@@ -72,9 +72,6 @@ namespace Algorithm.Check
         }
 
 
-
-
-
         /*******************************************************************/
         /// <summary>
         /// This function returns the CRC32 value
@@ -82,7 +79,6 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
-        /*
         public static uint ComputeCRC32(IEnumerable<byte> data)
         {
             long result = 0;
@@ -90,12 +86,15 @@ namespace Algorithm.Check
 
             if (!crc_tab32_init) InitCRC32Table();
 
-            foreach (var d in data)
-                result = UpdateCRC32(result, d);
+            uint crc = 0xffffffff;
+            for (int i = 0; i < data.Count(); i++)
+            {
+                var c = data.ElementAt(i);
+                crc = (crc >> 8) ^ crc_tab32[(crc ^ c) & 0xFF];
+            }
 
-            return (uint)result;
+            return ~crc; //(crc ^ (-1)) >> 0;
         }
-        */
 
 
 
@@ -122,7 +121,7 @@ namespace Algorithm.Check
         *                                                                   *
         \*******************************************************************/
         private static ushort[] crc_tab16 = new ushort[256];
-        private static long[] crc_tab32 = new long[256]; // ulong?
+        private static uint[] crc_tab32 = new uint[256]; // ulong?
         private static ushort[] crc_tabccitt = new ushort[256];
         private static ushort[] crc_tabdnp = new ushort[256];
         private static ushort[] crc_tabkermit = new ushort[256];
@@ -170,6 +169,53 @@ namespace Algorithm.Check
 
             var tmp = (ushort)(crc >> 8) ^ short_c;
             return (ushort)((crc << 8) ^ crc_tabccitt[tmp]);
+        }
+
+
+        /*******************************************************************/
+        /// <summary>
+        /// *   The function  UpdateCRC16Sick  calculates  a  new  CRC16 (Sick)     *
+        /// *   value  based  on the previous value of the CRC and the next     *
+        /// *   byte of the data to be checked.                                 *
+        /// </summary>
+        /// <param name="crc"></param>
+        /// <param name="c"></param>
+        /// <param name="prev_byte"></param>
+        /// <returns></returns>
+        /*******************************************************************/
+        private static ushort UpdateCRC16Sick(ushort crc, byte c, byte prev_byte)
+        {
+            var short_c = (ushort)(0x00ff & c);
+            var short_p = (ushort)(0x00ff & prev_byte) << 8;
+
+            if ((crc & 0x8000) != 0) crc = (ushort)((crc << 1) ^ P_SICK);
+            else crc = (ushort)(crc << 1);
+
+            crc &= 0xffff;
+            crc ^= (ushort)(short_c | short_p);
+
+            return crc;
+        }
+
+
+        /*******************************************************************/
+        /// <summary>
+        /// *   The function UpdateCRC32 calculates a  new  CRC-32  value     *
+        /// *   based  on  the  previous value of the CRC and the next byte     *
+        /// *   of the data to be checked.                                      *
+        /// </summary>
+        /// <param name="crc"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
+        /*******************************************************************/
+        private static long UpdateCRC32(long crc, byte c)
+        {
+            long long_c = (0x000000ffL & c);
+
+            long tmp = (crc ^ long_c);
+            crc = ((crc >> 8) ^ crc_tab32[tmp & 0xff]);
+
+            return crc;
         }
 
 
@@ -223,54 +269,6 @@ namespace Algorithm.Check
                 crc_tabccitt[i] = crc;
             }
             crc_tabccitt_init = true;
-        }
-
-
-
-        /*******************************************************************/
-        /// <summary>
-        /// *   The function  UpdateCRC16Sick  calculates  a  new  CRC16 (Sick)     *
-        /// *   value  based  on the previous value of the CRC and the next     *
-        /// *   byte of the data to be checked.                                 *
-        /// </summary>
-        /// <param name="crc"></param>
-        /// <param name="c"></param>
-        /// <param name="prev_byte"></param>
-        /// <returns></returns>
-        /*******************************************************************/
-        private static ushort UpdateCRC16Sick(ushort crc, byte c, byte prev_byte)
-        {
-            var short_c = (ushort)(0x00ff & c);
-            var short_p = (ushort)(0x00ff & prev_byte) << 8;
-
-            if ((crc & 0x8000) != 0) crc = (ushort)((crc << 1) ^ P_SICK);
-            else crc = (ushort)(crc << 1);
-
-            crc &= 0xffff;
-            crc ^= (ushort)(short_c | short_p);
-
-            return crc;
-        }
-
-
-        /*******************************************************************/
-        /// <summary>
-        /// *   The function UpdateCRC32 calculates a  new  CRC-32  value     *
-        /// *   based  on  the  previous value of the CRC and the next byte     *
-        /// *   of the data to be checked.                                      *
-        /// </summary>
-        /// <param name="crc"></param>
-        /// <param name="c"></param>
-        /// <returns></returns>
-        /*******************************************************************/
-        private static long UpdateCRC32(long crc, byte c)
-        {
-            long long_c = (0x000000ffL & c);
-
-            long tmp = (crc ^ long_c);
-            crc = ((crc >> 8) ^ crc_tab32[tmp & 0xff]);
-
-            return crc;
         }
 
 
@@ -336,18 +334,17 @@ namespace Algorithm.Check
         /*******************************************************************/
         private static void InitCRC32Table()
         {
-            for (int i = 0; i < 256; i++)
+            for (uint n = 0; n < 256; n++)
             {
-                long crc = i;
-
-                for (int j = 0; j < 8; j++)
+                uint c = n;
+                for (int k = 0; k < 8; k++)
                 {
-                    if ((crc & 0x00000001L) != 0) crc = ((crc >> 1) ^ P_32);
-                    else crc = crc >> 1;
+                    var res = c & 1;
+                    c = (res == 1) ? (P_32 ^ (c >> 1)) : (c >> 1);
                 }
-
-                crc_tab32[i] = crc;
+                crc_tab32[n] = c;
             }
+
             crc_tab32_init = true;
         }
     }

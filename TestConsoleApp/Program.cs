@@ -22,11 +22,30 @@ namespace TestConsoleApp
 
             TestModule("CRC-DNP test", CRC.ComputeDNP, testValue1, testValue2, testValue3);
             Console.WriteLine();
+
+            TestModule("CRC-32 test", CRC.ComputeCRC32, testValue1, testValue2, testValue3);
+            Console.WriteLine();
         }
 
+
+
         private static void TestModule(string title,
-                                                    Func<IEnumerable<byte>, ushort> func,
+                                                    Func<IEnumerable<byte>, ushort> func, 
                                                     params IEnumerable<byte>[] testValues)
+        {
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine(title);
+            foreach (var item in testValues)
+            {
+                Console.WriteLine(string.Format("test result {0}", func(item).ToString("x")));
+            }
+            Console.WriteLine("------------------------------------------------------------------");
+        }
+
+
+        private static void TestModule(string title,
+                                            Func<IEnumerable<byte>, uint> func,
+                                            params IEnumerable<byte>[] testValues)
         {
             Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine(title);
