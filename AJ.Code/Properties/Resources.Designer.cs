@@ -556,6 +556,42 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Djibouti과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DJ {
+            get {
+                return ResourceManager.GetString("DJ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Denmark과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DK {
+            get {
+                return ResourceManager.GetString("DK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Dominica과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DM {
+            get {
+                return ResourceManager.GetString("DM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Dominican Republic과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DO {
+            get {
+                return ResourceManager.GetString("DO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Algeria과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string DZ {
@@ -565,11 +601,47 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Ecuador과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string EC {
+            get {
+                return ResourceManager.GetString("EC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Egypt과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string EG {
+            get {
+                return ResourceManager.GetString("EG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Eritrea과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ER {
+            get {
+                return ResourceManager.GetString("ER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Europe과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string EUROPE {
             get {
                 return ResourceManager.GetString("EUROPE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Equatorial Guinea과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GQ {
+            get {
+                return ResourceManager.GetString("GQ", resourceCulture);
             }
         }
         
@@ -642,6 +714,15 @@ namespace AJ.Code.Properties {
         internal static string SOUTH_AMERICA {
             get {
                 return ResourceManager.GetString("SOUTH_AMERICA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   El Salvador과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SV {
+            get {
+                return ResourceManager.GetString("SV", resourceCulture);
             }
         }
         

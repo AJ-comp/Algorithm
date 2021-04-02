@@ -318,4 +318,31 @@
   <data name="CZ" xml:space="preserve">
     <value>체코</value>
   </data>
+  <data name="DJ" xml:space="preserve">
+    <value>지부티</value>
+  </data>
+  <data name="DK" xml:space="preserve">
+    <value>덴마크</value>
+  </data>
+  <data name="DM" xml:space="preserve">
+    <value>도미니카</value>
+  </data>
+  <data name="DO" xml:space="preserve">
+    <value>도미니카 공화국</value>
+  </data>
+  <data name="EC" xml:space="preserve">
+    <value>에콰도르</value>
+  </data>
+  <data name="EG" xml:space="preserve">
+    <value>이집트</value>
+  </data>
+  <data name="SV" xml:space="preserve">
+    <value>엘 살바도르</value>
+  </data>
+  <data name="GQ" xml:space="preserve">
+    <value>적도 기니</value>
+  </data>
+  <data name="ER" xml:space="preserve">
+    <value>에리트레아</value>
+  </data>
 </root>

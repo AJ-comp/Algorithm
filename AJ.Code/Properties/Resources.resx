@@ -298,4 +298,31 @@
   <data name="CZ" xml:space="preserve">
     <value>Czechia</value>
   </data>
+  <data name="DK" xml:space="preserve">
+    <value>Denmark</value>
+  </data>
+  <data name="DJ" xml:space="preserve">
+    <value>Djibouti</value>
+  </data>
+  <data name="DM" xml:space="preserve">
+    <value>Dominica</value>
+  </data>
+  <data name="DO" xml:space="preserve">
+    <value>Dominican Republic</value>
+  </data>
+  <data name="EC" xml:space="preserve">
+    <value>Ecuador</value>
+  </data>
+  <data name="EG" xml:space="preserve">
+    <value>Egypt</value>
+  </data>
+  <data name="SV" xml:space="preserve">
+    <value>El Salvador</value>
+  </data>
+  <data name="GQ" xml:space="preserve">
+    <value>Equatorial Guinea</value>
+  </data>
+  <data name="ER" xml:space="preserve">
+    <value>Eritrea</value>
+  </data>
 </root>
