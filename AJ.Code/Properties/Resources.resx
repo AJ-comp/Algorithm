@@ -325,4 +325,52 @@
   <data name="ER" xml:space="preserve">
     <value>Eritrea</value>
   </data>
+  <data name="EE" xml:space="preserve">
+    <value>Estonia</value>
+  </data>
+  <data name="SZ" xml:space="preserve">
+    <value>Eswatini</value>
+  </data>
+  <data name="ET" xml:space="preserve">
+    <value>Ethiopia</value>
+  </data>
+  <data name="FK" xml:space="preserve">
+    <value>Falkland Islands (Malvinas)</value>
+  </data>
+  <data name="FO" xml:space="preserve">
+    <value>Faroe Islands</value>
+  </data>
+  <data name="FJ" xml:space="preserve">
+    <value>Fiji</value>
+  </data>
+  <data name="FI" xml:space="preserve">
+    <value>Finland</value>
+  </data>
+  <data name="FR" xml:space="preserve">
+    <value>France</value>
+  </data>
+  <data name="GF" xml:space="preserve">
+    <value>French Guiana</value>
+  </data>
+  <data name="PF" xml:space="preserve">
+    <value>French Polynesia</value>
+  </data>
+  <data name="TF" xml:space="preserve">
+    <value>French Southern Territories</value>
+  </data>
+  <data name="GA" xml:space="preserve">
+    <value>Gabon</value>
+  </data>
+  <data name="GM" xml:space="preserve">
+    <value>Gambia</value>
+  </data>
+  <data name="GE" xml:space="preserve">
+    <value>Georgia</value>
+  </data>
+  <data name="DE" xml:space="preserve">
+    <value>Germany</value>
+  </data>
+  <data name="GH" xml:space="preserve">
+    <value>Ghana</value>
+  </data>
 </root>

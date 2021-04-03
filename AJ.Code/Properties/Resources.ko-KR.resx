@@ -345,4 +345,52 @@
   <data name="ER" xml:space="preserve">
     <value>에리트레아</value>
   </data>
+  <data name="EE" xml:space="preserve">
+    <value>에스토니아</value>
+  </data>
+  <data name="SZ" xml:space="preserve">
+    <value>에스와티니</value>
+  </data>
+  <data name="ET" xml:space="preserve">
+    <value>에티오피아</value>
+  </data>
+  <data name="FK" xml:space="preserve">
+    <value>포클랜드 제도</value>
+  </data>
+  <data name="FO" xml:space="preserve">
+    <value>페로 제도</value>
+  </data>
+  <data name="FJ" xml:space="preserve">
+    <value>피지</value>
+  </data>
+  <data name="FI" xml:space="preserve">
+    <value>핀란드</value>
+  </data>
+  <data name="FR" xml:space="preserve">
+    <value>프랑스</value>
+  </data>
+  <data name="GF" xml:space="preserve">
+    <value>프랑스령 기아나</value>
+  </data>
+  <data name="PF" xml:space="preserve">
+    <value>프랑스령 폴리네시아</value>
+  </data>
+  <data name="TF" xml:space="preserve">
+    <value>프랑스령 남방영토</value>
+  </data>
+  <data name="GA" xml:space="preserve">
+    <value>가봉</value>
+  </data>
+  <data name="GM" xml:space="preserve">
+    <value>가봉</value>
+  </data>
+  <data name="GE" xml:space="preserve">
+    <value>조지아주</value>
+  </data>
+  <data name="DE" xml:space="preserve">
+    <value>독일</value>
+  </data>
+  <data name="GH" xml:space="preserve">
+    <value>가나</value>
+  </data>
 </root>
