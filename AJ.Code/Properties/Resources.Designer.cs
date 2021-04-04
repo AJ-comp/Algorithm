@@ -718,7 +718,16 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
-        ///   Georgia과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///   Grenada과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GD {
+            get {
+                return ResourceManager.GetString("GD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Guam과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string GE {
             get {
@@ -736,11 +745,38 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Guernsey과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GG {
+            get {
+                return ResourceManager.GetString("GG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ghana과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string GH {
             get {
                 return ResourceManager.GetString("GH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Gibraltar과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GI {
+            get {
+                return ResourceManager.GetString("GI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Greenland과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GL {
+            get {
+                return ResourceManager.GetString("GL", resourceCulture);
             }
         }
         
@@ -754,6 +790,24 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Guinea과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GN {
+            get {
+                return ResourceManager.GetString("GN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Guadeloupe과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GP {
+            get {
+                return ResourceManager.GetString("GP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Equatorial Guinea과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string GQ {
@@ -763,11 +817,74 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Greece과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GR {
+            get {
+                return ResourceManager.GetString("GR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Guatemala과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GT {
+            get {
+                return ResourceManager.GetString("GT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Guam과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GU {
+            get {
+                return ResourceManager.GetString("GU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Guinea-Bissau과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GW {
+            get {
+                return ResourceManager.GetString("GW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Guyana과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string GY {
+            get {
+                return ResourceManager.GetString("GY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Heard Island and McDonald Islands과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string HM {
+            get {
+                return ResourceManager.GetString("HM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Croatia과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string HR {
             get {
                 return ResourceManager.GetString("HR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Haiti과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string HT {
+            get {
+                return ResourceManager.GetString("HT", resourceCulture);
             }
         }
         
@@ -885,6 +1002,15 @@ namespace AJ.Code.Properties {
         internal static string Unknown {
             get {
                 return ResourceManager.GetString("Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Holy See과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string VA {
+            get {
+                return ResourceManager.GetString("VA", resourceCulture);
             }
         }
     }

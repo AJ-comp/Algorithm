@@ -393,4 +393,46 @@
   <data name="GH" xml:space="preserve">
     <value>가나</value>
   </data>
+  <data name="GI" xml:space="preserve">
+    <value>지브롤터</value>
+  </data>
+  <data name="GR" xml:space="preserve">
+    <value>그리스</value>
+  </data>
+  <data name="GL" xml:space="preserve">
+    <value>그린란드</value>
+  </data>
+  <data name="GD" xml:space="preserve">
+    <value>그레나다</value>
+  </data>
+  <data name="GP" xml:space="preserve">
+    <value>과델루프</value>
+  </data>
+  <data name="GU" xml:space="preserve">
+    <value>괌</value>
+  </data>
+  <data name="GT" xml:space="preserve">
+    <value>과테말라</value>
+  </data>
+  <data name="GG" xml:space="preserve">
+    <value>게른시</value>
+  </data>
+  <data name="GN" xml:space="preserve">
+    <value>기니</value>
+  </data>
+  <data name="GY" xml:space="preserve">
+    <value>가이아나</value>
+  </data>
+  <data name="HT" xml:space="preserve">
+    <value>아이티</value>
+  </data>
+  <data name="HM" xml:space="preserve">
+    <value>허드 섬과 맥도날드 제도</value>
+  </data>
+  <data name="GW" xml:space="preserve">
+    <value>기니 비아수</value>
+  </data>
+  <data name="VA" xml:space="preserve">
+    <value>바티칸</value>
+  </data>
 </root>

@@ -365,12 +365,54 @@
     <value>Gambia</value>
   </data>
   <data name="GE" xml:space="preserve">
-    <value>Georgia</value>
+    <value>Guam</value>
   </data>
   <data name="DE" xml:space="preserve">
     <value>Germany</value>
   </data>
   <data name="GH" xml:space="preserve">
     <value>Ghana</value>
+  </data>
+  <data name="GI" xml:space="preserve">
+    <value>Gibraltar</value>
+  </data>
+  <data name="GR" xml:space="preserve">
+    <value>Greece</value>
+  </data>
+  <data name="GL" xml:space="preserve">
+    <value>Greenland</value>
+  </data>
+  <data name="GD" xml:space="preserve">
+    <value>Grenada</value>
+  </data>
+  <data name="GP" xml:space="preserve">
+    <value>Guadeloupe</value>
+  </data>
+  <data name="GU" xml:space="preserve">
+    <value>Guam</value>
+  </data>
+  <data name="GT" xml:space="preserve">
+    <value>Guatemala</value>
+  </data>
+  <data name="GG" xml:space="preserve">
+    <value>Guernsey</value>
+  </data>
+  <data name="GN" xml:space="preserve">
+    <value>Guinea</value>
+  </data>
+  <data name="GW" xml:space="preserve">
+    <value>Guinea-Bissau</value>
+  </data>
+  <data name="GY" xml:space="preserve">
+    <value>Guyana</value>
+  </data>
+  <data name="HT" xml:space="preserve">
+    <value>Haiti</value>
+  </data>
+  <data name="HM" xml:space="preserve">
+    <value>Heard Island and McDonald Islands</value>
+  </data>
+  <data name="VA" xml:space="preserve">
+    <value>Holy See</value>
   </data>
 </root>
