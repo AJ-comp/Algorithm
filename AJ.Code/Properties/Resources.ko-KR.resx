@@ -406,7 +406,7 @@
     <value>그레나다</value>
   </data>
   <data name="GP" xml:space="preserve">
-    <value>과델루프</value>
+    <value>아</value>
   </data>
   <data name="GU" xml:space="preserve">
     <value>괌</value>
@@ -434,5 +434,95 @@
   </data>
   <data name="VA" xml:space="preserve">
     <value>바티칸</value>
+  </data>
+  <data name="HN" xml:space="preserve">
+    <value>온두라스</value>
+  </data>
+  <data name="HK" xml:space="preserve">
+    <value>홍콩</value>
+  </data>
+  <data name="HU" xml:space="preserve">
+    <value>헝가리</value>
+  </data>
+  <data name="IS" xml:space="preserve">
+    <value>아이슬란드</value>
+  </data>
+  <data name="IN" xml:space="preserve">
+    <value>인도</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>인도네시아</value>
+  </data>
+  <data name="IR" xml:space="preserve">
+    <value>이란</value>
+  </data>
+  <data name="IQ" xml:space="preserve">
+    <value>이라크</value>
+  </data>
+  <data name="IE" xml:space="preserve">
+    <value>아일랜드</value>
+  </data>
+  <data name="IM" xml:space="preserve">
+    <value>맨 섬</value>
+  </data>
+  <data name="IL" xml:space="preserve">
+    <value>이스라엘</value>
+  </data>
+  <data name="IT" xml:space="preserve">
+    <value>이탈리아</value>
+  </data>
+  <data name="JM" xml:space="preserve">
+    <value>자메이카</value>
+  </data>
+  <data name="JP" xml:space="preserve">
+    <value>일본</value>
+  </data>
+  <data name="JE" xml:space="preserve">
+    <value>저지</value>
+  </data>
+  <data name="JO" xml:space="preserve">
+    <value>요르단</value>
+  </data>
+  <data name="KZ" xml:space="preserve">
+    <value>카자하스탄</value>
+  </data>
+  <data name="KE" xml:space="preserve">
+    <value>케냐</value>
+  </data>
+  <data name="KI" xml:space="preserve">
+    <value>키리바시</value>
+  </data>
+  <data name="KP" xml:space="preserve">
+    <value>조선민주주의인민공화국</value>
+  </data>
+  <data name="KR" xml:space="preserve">
+    <value>대한민국</value>
+  </data>
+  <data name="KW" xml:space="preserve">
+    <value>쿠웨이트</value>
+  </data>
+  <data name="KG" xml:space="preserve">
+    <value>키르기스스탄</value>
+  </data>
+  <data name="LA" xml:space="preserve">
+    <value>라오스</value>
+  </data>
+  <data name="LV" xml:space="preserve">
+    <value>라트비아</value>
+  </data>
+  <data name="LB" xml:space="preserve">
+    <value>레바논</value>
+  </data>
+  <data name="LS" xml:space="preserve">
+    <value>레소토</value>
+  </data>
+  <data name="LR" xml:space="preserve">
+    <value>라이베리아</value>
+  </data>
+  <data name="LY" xml:space="preserve">
+    <value>리비아</value>
+  </data>
+  <data name="LI" xml:space="preserve">
+    <value>리히텐슈타인</value>
   </data>
 </root>

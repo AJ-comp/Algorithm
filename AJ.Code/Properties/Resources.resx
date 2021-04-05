@@ -415,4 +415,94 @@
   <data name="VA" xml:space="preserve">
     <value>Holy See</value>
   </data>
+  <data name="HN" xml:space="preserve">
+    <value>Honduras</value>
+  </data>
+  <data name="HK" xml:space="preserve">
+    <value>Hong Kong</value>
+  </data>
+  <data name="HU" xml:space="preserve">
+    <value>Hungary</value>
+  </data>
+  <data name="IS" xml:space="preserve">
+    <value>Iceland</value>
+  </data>
+  <data name="IN" xml:space="preserve">
+    <value>India</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Indonesia</value>
+  </data>
+  <data name="IR" xml:space="preserve">
+    <value>Iran, Islamic Republic of</value>
+  </data>
+  <data name="IQ" xml:space="preserve">
+    <value>Iraq</value>
+  </data>
+  <data name="IE" xml:space="preserve">
+    <value>Ireland</value>
+  </data>
+  <data name="IM" xml:space="preserve">
+    <value>Isle of Ma</value>
+  </data>
+  <data name="IL" xml:space="preserve">
+    <value>Israel</value>
+  </data>
+  <data name="IT" xml:space="preserve">
+    <value>Italy</value>
+  </data>
+  <data name="JM" xml:space="preserve">
+    <value>Jamaica</value>
+  </data>
+  <data name="JP" xml:space="preserve">
+    <value>Japan</value>
+  </data>
+  <data name="JE" xml:space="preserve">
+    <value>Jersey</value>
+  </data>
+  <data name="JO" xml:space="preserve">
+    <value>Jordan</value>
+  </data>
+  <data name="KZ" xml:space="preserve">
+    <value>Kazakhstan</value>
+  </data>
+  <data name="KE" xml:space="preserve">
+    <value>Kenya</value>
+  </data>
+  <data name="KI" xml:space="preserve">
+    <value>Kiribati</value>
+  </data>
+  <data name="KP" xml:space="preserve">
+    <value>Korea, Democratic People's Republic of</value>
+  </data>
+  <data name="KR" xml:space="preserve">
+    <value>Korea, Republic of</value>
+  </data>
+  <data name="KW" xml:space="preserve">
+    <value>Kuwait</value>
+  </data>
+  <data name="KG" xml:space="preserve">
+    <value>Kyrgyzstan</value>
+  </data>
+  <data name="LA" xml:space="preserve">
+    <value>Lao People's Democratic Republic</value>
+  </data>
+  <data name="LV" xml:space="preserve">
+    <value>Latvia</value>
+  </data>
+  <data name="LB" xml:space="preserve">
+    <value>Lebanon</value>
+  </data>
+  <data name="LS" xml:space="preserve">
+    <value>Lesotho</value>
+  </data>
+  <data name="LR" xml:space="preserve">
+    <value>Liberia</value>
+  </data>
+  <data name="LY" xml:space="preserve">
+    <value>Libya</value>
+  </data>
+  <data name="LI" xml:space="preserve">
+    <value>Liechtenstein</value>
+  </data>
 </root>
