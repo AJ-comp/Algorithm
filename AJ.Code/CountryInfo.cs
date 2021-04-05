@@ -1,4 +1,5 @@
 ﻿using AJ.Code.Properties;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace AJ.Code
@@ -23,6 +24,7 @@ namespace AJ.Code
         public string Alpha3Code { get; private set; }
         public string CountryName { get; private set; }
         public ContinentCode ContinentCode { get; internal set; } = ContinentCode.Unknown;
+        public IEnumerable<MobileInfo> MobileCodes => _mobileCodes;
         public string ContinentName
         {
             get
@@ -39,7 +41,6 @@ namespace AJ.Code
                 return result;
             }
         }
-        public MobileInfo MobileCode { get; internal set; }
 
 
         internal CountryInfo(string countryName, 
@@ -47,15 +48,24 @@ namespace AJ.Code
                                    string alpha3Code,
                                    string numericCode,
                                    ContinentCode continentCode = ContinentCode.Unknown,
-                                   MobileInfo mobileCode = null)
+                                   params MobileInfo[] mobileCodes)
         {
             NumericCode = numericCode;
             Alpha2Code = alpha2Code;
             Alpha3Code = alpha3Code;
             CountryName = countryName;
             ContinentCode = continentCode;
-            MobileCode = mobileCode;
+
+            if (mobileCodes == null) return;
+            foreach(var mobileCode in mobileCodes)
+            {
+                _mobileCodes.Add(mobileCode);
+            }
         }
+
+
+        internal List<MobileInfo> _mobileCodes = new List<MobileInfo>();
+
 
         private string GetDebuggerDisplay()
             => string.Format($"[{NumericCode},{Alpha2Code},{Alpha3Code},{CountryName},{ContinentName}]");

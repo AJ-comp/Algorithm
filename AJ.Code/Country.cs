@@ -1,6 +1,7 @@
 ﻿using AJ.Code.Properties;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AJ.Code
 {
@@ -24,7 +25,7 @@ namespace AJ.Code
         /// <returns></returns>
         /*******************************************************************/
         public static CountryInfo GetCountryInfoForMCC(int mcc)
-            => GetCountryInfoCore((country) => country.MobileCode.MCC == mcc);
+            => GetCountryInfoCore((country) => country.MobileCodes.Contains(new MobileInfo(mcc)));
 
 
         /*******************************************************************/
@@ -154,8 +155,7 @@ namespace AJ.Code
             _countries.Add(new CountryInfo(Resources.GL, "GL", "GRL", "304", ContinentCode.NA, new MobileInfo(290)));
             _countries.Add(new CountryInfo(Resources.GD, "GD", "GRD", "308", ContinentCode.NA, new MobileInfo(352)));
             _countries.Add(new CountryInfo(Resources.GP, "GP", "GLP", "312", ContinentCode.NA, new MobileInfo(340)));
-            _countries.Add(new CountryInfo(Resources.GU, "GU", "GUM", "316", ContinentCode.OC, new MobileInfo(310)));
-            /// GU has the other MCC which is 311. MCC : 310, 311.
+            _countries.Add(new CountryInfo(Resources.GU, "GU", "GUM", "316", ContinentCode.OC, new MobileInfo(310), new MobileInfo(311)));
             _countries.Add(new CountryInfo(Resources.GT, "GT", "GTM", "320", ContinentCode.NA, new MobileInfo(704)));
             _countries.Add(new CountryInfo(Resources.GG, "GG", "GGY", "831", ContinentCode.EU, new MobileInfo(234)));
             _countries.Add(new CountryInfo(Resources.GN, "GN", "GIN", "324", ContinentCode.AF, new MobileInfo(611)));

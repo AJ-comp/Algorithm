@@ -11,10 +11,10 @@ var list = Country.AllCountries;
 var country = Country.GetCountryInfoForMCC(410);
 
 // Get the country information for alpha2 code value "KR"
-country = Country.GetCountryInfoForAlpha2Code("KR");
+var country = Country.GetCountryInfoForAlpha2Code("KR");
 
 // Get the country information for alpha3 code value "KOR"
-country = Country.GetCountryInfoForAlpha3Code("KOR");
+var country = Country.GetCountryInfoForAlpha3Code("KOR");
 
 // Get the country information list for the continent code value NA(North America)
 var countries = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
@@ -23,36 +23,22 @@ var countries = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
 
 
 # CRC
-This source includes CRC-16, CRC-CCITT (xModem). 
-
 Please see https://www.lammertbies.nl/comm/info/crc-calculation?crc=8005&method=hex
 
 
-1. CRC-16 example
 ```c#
 using Algorithm.Check;
 
+// Get CRC-16
 var data = CRC.ComputeCRC16(Encoding.ASCII.GetBytes("123456789"));
-```
 
-2. CRC-CCITT (xModem) example
-```c#
-using Algorithm.Check;
-
+// Get CRC-CCITT (xModem)
 var data = CRC.ComputeCCITTxModem(Encoding.ASCII.GetBytes("123456789"));
-```
 
-3. CRC-DNP example
-```c#
-using Algorithm.Check;
-
+// Get CRC-DNP
 var data = CRC.ComputeDNP(Encoding.ASCII.GetBytes("123456789"));
-```
 
-4. CRC-32 example
-```c#
-using Algorithm.Check;
-
+// Get CRC-32
 var data = CRC.ComputeCRC32(Encoding.ASCII.GetBytes("123456789"));
 ```
 

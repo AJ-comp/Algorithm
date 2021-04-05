@@ -29,29 +29,15 @@ namespace TestConsoleApp
 
 
 
-        private static void TestModule(string title,
-                                                    Func<IEnumerable<byte>, ushort> func, 
+        private static void TestModule<T>(string title,
+                                                    Func<IEnumerable<byte>, T> func, 
                                                     params IEnumerable<byte>[] testValues)
         {
             Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine(title);
             foreach (var item in testValues)
             {
-                Console.WriteLine(string.Format("test result {0}", func(item).ToString("x")));
-            }
-            Console.WriteLine("------------------------------------------------------------------");
-        }
-
-
-        private static void TestModule(string title,
-                                            Func<IEnumerable<byte>, uint> func,
-                                            params IEnumerable<byte>[] testValues)
-        {
-            Console.WriteLine("------------------------------------------------------------------");
-            Console.WriteLine(title);
-            foreach (var item in testValues)
-            {
-                Console.WriteLine(string.Format("test result {0}", func(item).ToString("x")));
+                Console.WriteLine(string.Format("test result 0x{0}", string.Format("{0:x2}", func(item))));
             }
             Console.WriteLine("------------------------------------------------------------------");
         }
