@@ -505,4 +505,121 @@
   <data name="LI" xml:space="preserve">
     <value>Liechtenstein</value>
   </data>
+  <data name="LT" xml:space="preserve">
+    <value>Lithuania</value>
+  </data>
+  <data name="LU" xml:space="preserve">
+    <value>Luxembourg</value>
+  </data>
+  <data name="MO" xml:space="preserve">
+    <value>Macao</value>
+  </data>
+  <data name="MG" xml:space="preserve">
+    <value>Madagascar</value>
+  </data>
+  <data name="MW" xml:space="preserve">
+    <value>Malawi</value>
+  </data>
+  <data name="MY" xml:space="preserve">
+    <value>Malaysia</value>
+  </data>
+  <data name="MV" xml:space="preserve">
+    <value>Maldives</value>
+  </data>
+  <data name="ML" xml:space="preserve">
+    <value>Mali</value>
+  </data>
+  <data name="MT" xml:space="preserve">
+    <value>Malta</value>
+  </data>
+  <data name="MH" xml:space="preserve">
+    <value>Marshall Islands</value>
+  </data>
+  <data name="MQ" xml:space="preserve">
+    <value>Martinique</value>
+  </data>
+  <data name="MR" xml:space="preserve">
+    <value>Mauritania</value>
+  </data>
+  <data name="MU" xml:space="preserve">
+    <value>Mauritius</value>
+  </data>
+  <data name="YT" xml:space="preserve">
+    <value>Mayotte</value>
+  </data>
+  <data name="MX" xml:space="preserve">
+    <value>Mexico</value>
+  </data>
+  <data name="FM" xml:space="preserve">
+    <value>Micronesia, Federated States of</value>
+  </data>
+  <data name="MD" xml:space="preserve">
+    <value>Moldova, Republic of</value>
+  </data>
+  <data name="MC" xml:space="preserve">
+    <value>Monaco</value>
+  </data>
+  <data name="MN" xml:space="preserve">
+    <value>Mongolia</value>
+  </data>
+  <data name="ME" xml:space="preserve">
+    <value>Montenegro</value>
+  </data>
+  <data name="MS" xml:space="preserve">
+    <value>Montserrat</value>
+  </data>
+  <data name="MA" xml:space="preserve">
+    <value>Morocco</value>
+  </data>
+  <data name="MZ" xml:space="preserve">
+    <value>Mozambique</value>
+  </data>
+  <data name="MM" xml:space="preserve">
+    <value>Myanmar</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>Namibia</value>
+  </data>
+  <data name="NR" xml:space="preserve">
+    <value>Nauru</value>
+  </data>
+  <data name="NP" xml:space="preserve">
+    <value>Nepal</value>
+  </data>
+  <data name="NL" xml:space="preserve">
+    <value>Netherlands</value>
+  </data>
+  <data name="NC" xml:space="preserve">
+    <value>New Caledonia</value>
+  </data>
+  <data name="NZ" xml:space="preserve">
+    <value>New Zealand</value>
+  </data>
+  <data name="NI" xml:space="preserve">
+    <value>Nicaragua</value>
+  </data>
+  <data name="NE" xml:space="preserve">
+    <value>Niger</value>
+  </data>
+  <data name="NG" xml:space="preserve">
+    <value>Nigeria</value>
+  </data>
+  <data name="NU" xml:space="preserve">
+    <value>Niue</value>
+  </data>
+  <data name="NF" xml:space="preserve">
+    <value>Norfolk Island</value>
+  </data>
+  <data name="MP" xml:space="preserve">
+    <value>Northern Mariana Islands</value>
+  </data>
+  <data name="MK" xml:space="preserve">
+    <value>North Macedonia</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>Norway</value>
+  </data>
+  <data name="OM" xml:space="preserve">
+    <value>Oman</value>
+  </data>
 </root>

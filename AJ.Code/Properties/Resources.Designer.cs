@@ -691,6 +691,15 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Micronesia, Federated States of과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string FM {
+            get {
+                return ResourceManager.GetString("FM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Faroe Islands과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string FO {
@@ -1177,6 +1186,24 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Lithuania과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string LT {
+            get {
+                return ResourceManager.GetString("LT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Luxembourg과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string LU {
+            get {
+                return ResourceManager.GetString("LU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Latvia과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string LV {
@@ -1195,6 +1222,276 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Morocco과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MA {
+            get {
+                return ResourceManager.GetString("MA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Monaco과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MC {
+            get {
+                return ResourceManager.GetString("MC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Moldova, Republic of과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MD {
+            get {
+                return ResourceManager.GetString("MD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Montenegro과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ME {
+            get {
+                return ResourceManager.GetString("ME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Madagascar과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MG {
+            get {
+                return ResourceManager.GetString("MG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Marshall Islands과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MH {
+            get {
+                return ResourceManager.GetString("MH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   North Macedonia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MK {
+            get {
+                return ResourceManager.GetString("MK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mali과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ML {
+            get {
+                return ResourceManager.GetString("ML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Myanmar과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MM {
+            get {
+                return ResourceManager.GetString("MM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mongolia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MN {
+            get {
+                return ResourceManager.GetString("MN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Macao과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MO {
+            get {
+                return ResourceManager.GetString("MO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Northern Mariana Islands과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MP {
+            get {
+                return ResourceManager.GetString("MP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Martinique과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MQ {
+            get {
+                return ResourceManager.GetString("MQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mauritania과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MR {
+            get {
+                return ResourceManager.GetString("MR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Montserrat과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MS {
+            get {
+                return ResourceManager.GetString("MS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Malta과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MT {
+            get {
+                return ResourceManager.GetString("MT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mauritius과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MU {
+            get {
+                return ResourceManager.GetString("MU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Maldives과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MV {
+            get {
+                return ResourceManager.GetString("MV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Malawi과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MW {
+            get {
+                return ResourceManager.GetString("MW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mexico과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MX {
+            get {
+                return ResourceManager.GetString("MX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Malaysia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MY {
+            get {
+                return ResourceManager.GetString("MY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mozambique과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MZ {
+            get {
+                return ResourceManager.GetString("MZ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Namibia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NA {
+            get {
+                return ResourceManager.GetString("NA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   New Caledonia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NC {
+            get {
+                return ResourceManager.GetString("NC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Niger과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NE {
+            get {
+                return ResourceManager.GetString("NE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Norfolk Island과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NF {
+            get {
+                return ResourceManager.GetString("NF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Nigeria과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NG {
+            get {
+                return ResourceManager.GetString("NG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Nicaragua과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NI {
+            get {
+                return ResourceManager.GetString("NI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Netherlands과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NL {
+            get {
+                return ResourceManager.GetString("NL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Norway과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NO {
+            get {
+                return ResourceManager.GetString("NO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   North Americal과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string NORTH_AMERICA {
@@ -1204,11 +1501,56 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Nepal과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NP {
+            get {
+                return ResourceManager.GetString("NP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Nauru과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NR {
+            get {
+                return ResourceManager.GetString("NR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Niue과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NU {
+            get {
+                return ResourceManager.GetString("NU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   New Zealand과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string NZ {
+            get {
+                return ResourceManager.GetString("NZ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Oceania과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string OCEANIA {
             get {
                 return ResourceManager.GetString("OCEANIA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Oman과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OM {
+            get {
+                return ResourceManager.GetString("OM", resourceCulture);
             }
         }
         
@@ -1281,6 +1623,15 @@ namespace AJ.Code.Properties {
         internal static string VA {
             get {
                 return ResourceManager.GetString("VA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Mayotte과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string YT {
+            get {
+                return ResourceManager.GetString("YT", resourceCulture);
             }
         }
     }

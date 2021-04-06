@@ -525,4 +525,121 @@
   <data name="LI" xml:space="preserve">
     <value>리히텐슈타인</value>
   </data>
+  <data name="LT" xml:space="preserve">
+    <value>리투아니아</value>
+  </data>
+  <data name="LU" xml:space="preserve">
+    <value>룩셈부르크</value>
+  </data>
+  <data name="MO" xml:space="preserve">
+    <value>마카오</value>
+  </data>
+  <data name="MG" xml:space="preserve">
+    <value>마다가스카르</value>
+  </data>
+  <data name="MW" xml:space="preserve">
+    <value>말라위</value>
+  </data>
+  <data name="MY" xml:space="preserve">
+    <value>말레이시아</value>
+  </data>
+  <data name="MV" xml:space="preserve">
+    <value>몰디브</value>
+  </data>
+  <data name="ML" xml:space="preserve">
+    <value>말리</value>
+  </data>
+  <data name="MT" xml:space="preserve">
+    <value>몰타</value>
+  </data>
+  <data name="MH" xml:space="preserve">
+    <value>마샬 군도</value>
+  </data>
+  <data name="MQ" xml:space="preserve">
+    <value>마르티니크</value>
+  </data>
+  <data name="MR" xml:space="preserve">
+    <value>모리타니아</value>
+  </data>
+  <data name="MU" xml:space="preserve">
+    <value>모리셔스</value>
+  </data>
+  <data name="YT" xml:space="preserve">
+    <value>마요트</value>
+  </data>
+  <data name="MX" xml:space="preserve">
+    <value>맥시코</value>
+  </data>
+  <data name="FM" xml:space="preserve">
+    <value>미크로네시아 연방</value>
+  </data>
+  <data name="MD" xml:space="preserve">
+    <value>몰도바</value>
+  </data>
+  <data name="MC" xml:space="preserve">
+    <value>모나코</value>
+  </data>
+  <data name="MN" xml:space="preserve">
+    <value>몽골</value>
+  </data>
+  <data name="ME" xml:space="preserve">
+    <value>몬테네그로</value>
+  </data>
+  <data name="MS" xml:space="preserve">
+    <value>몬트세라트</value>
+  </data>
+  <data name="MA" xml:space="preserve">
+    <value>모로코</value>
+  </data>
+  <data name="MZ" xml:space="preserve">
+    <value>모잠비크</value>
+  </data>
+  <data name="MM" xml:space="preserve">
+    <value>미얀마</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>나미비아</value>
+  </data>
+  <data name="NR" xml:space="preserve">
+    <value>나우루</value>
+  </data>
+  <data name="NP" xml:space="preserve">
+    <value>네팔</value>
+  </data>
+  <data name="NL" xml:space="preserve">
+    <value>네덜란드</value>
+  </data>
+  <data name="NC" xml:space="preserve">
+    <value>뉴 칼레도니아</value>
+  </data>
+  <data name="NZ" xml:space="preserve">
+    <value>뉴질랜드</value>
+  </data>
+  <data name="NI" xml:space="preserve">
+    <value>니카라과</value>
+  </data>
+  <data name="NE" xml:space="preserve">
+    <value>니제르</value>
+  </data>
+  <data name="NG" xml:space="preserve">
+    <value>나이지리아</value>
+  </data>
+  <data name="NU" xml:space="preserve">
+    <value>니우에</value>
+  </data>
+  <data name="NF" xml:space="preserve">
+    <value>노퍽 섬</value>
+  </data>
+  <data name="MP" xml:space="preserve">
+    <value>북 마리아나 제도</value>
+  </data>
+  <data name="MK" xml:space="preserve">
+    <value>북 마케도니아</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>노르웨이</value>
+  </data>
+  <data name="OM" xml:space="preserve">
+    <value>오만</value>
+  </data>
 </root>
