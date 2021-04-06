@@ -7,8 +7,8 @@ using AJ.Code;
 // Get all countries that registered
 var list = Country.AllCountries;
 
-// Get the country information for MCC value 410
-var country = Country.GetCountryInfoForMCC(410);
+// Get the country information list for MCC value 234
+var countries = Country.GetCountryInfoForMCC(234);
 
 // Get the country information for alpha2 code value "KR"
 var country = Country.GetCountryInfoForAlpha2Code("KR");

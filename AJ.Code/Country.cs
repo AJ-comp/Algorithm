@@ -18,14 +18,14 @@ namespace AJ.Code
 
         /*******************************************************************/
         /// <summary>
-        /// Get the country information for MCC.
-        /// MCC에 대한 국가정보를 가져옵니다.
+        /// Get the country information list for MCC.
+        /// MCC에 대한 국가정보목록을 가져옵니다.
         /// </summary>
         /// <param name="mcc"></param>
         /// <returns></returns>
         /*******************************************************************/
-        public static CountryInfo GetCountryInfoForMCC(int mcc)
-            => GetCountryInfoCore((country) => country.MobileCodes.Contains(new MobileInfo(mcc)));
+        public static IEnumerable<CountryInfo> GetCountryInfoForMCC(int mcc)
+            => GetCountryInfoListCore((country) => country.MobileCodes.Contains(new MobileInfo(mcc)));
 
 
         /*******************************************************************/
@@ -55,7 +55,7 @@ namespace AJ.Code
         /*******************************************************************/
         /// <summary>
         /// Get the country information list for the continent code.
-        /// 대륙코드에 대한 국가 정보목록을 가져옵니다.
+        /// 대륙코드에 대한 국가정보목록을 가져옵니다.
         /// </summary>
         /// <param name="continentCode"></param>
         /// <returns></returns>
