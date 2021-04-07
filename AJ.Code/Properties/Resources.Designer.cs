@@ -1555,11 +1555,164 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Panama과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PA {
+            get {
+                return ResourceManager.GetString("PA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Peru과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PE {
+            get {
+                return ResourceManager.GetString("PE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   French Polynesia과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string PF {
             get {
                 return ResourceManager.GetString("PF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Papua New Guinea과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PG {
+            get {
+                return ResourceManager.GetString("PG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Philippines과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PH {
+            get {
+                return ResourceManager.GetString("PH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Pakistan과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PK {
+            get {
+                return ResourceManager.GetString("PK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Poland과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PL {
+            get {
+                return ResourceManager.GetString("PL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Pitcairn과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PN {
+            get {
+                return ResourceManager.GetString("PN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Puerto Rico과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PR {
+            get {
+                return ResourceManager.GetString("PR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Palestine, State of과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PS {
+            get {
+                return ResourceManager.GetString("PS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Portugal과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PT {
+            get {
+                return ResourceManager.GetString("PT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Palau과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PW {
+            get {
+                return ResourceManager.GetString("PW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Paraguay과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PY {
+            get {
+                return ResourceManager.GetString("PY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Qatar과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string QA {
+            get {
+                return ResourceManager.GetString("QA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Réunion과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string RE {
+            get {
+                return ResourceManager.GetString("RE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Romania과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string RO {
+            get {
+                return ResourceManager.GetString("RO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Russian Federation과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string RU {
+            get {
+                return ResourceManager.GetString("RU", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Rwanda과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string RW {
+            get {
+                return ResourceManager.GetString("RW", resourceCulture);
             }
         }
         

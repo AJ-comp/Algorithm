@@ -622,4 +622,55 @@
   <data name="OM" xml:space="preserve">
     <value>Oman</value>
   </data>
+  <data name="PK" xml:space="preserve">
+    <value>Pakistan</value>
+  </data>
+  <data name="PW" xml:space="preserve">
+    <value>Palau</value>
+  </data>
+  <data name="PS" xml:space="preserve">
+    <value>Palestine, State of</value>
+  </data>
+  <data name="PA" xml:space="preserve">
+    <value>Panama</value>
+  </data>
+  <data name="PG" xml:space="preserve">
+    <value>Papua New Guinea</value>
+  </data>
+  <data name="PY" xml:space="preserve">
+    <value>Paraguay</value>
+  </data>
+  <data name="PE" xml:space="preserve">
+    <value>Peru</value>
+  </data>
+  <data name="PH" xml:space="preserve">
+    <value>Philippines</value>
+  </data>
+  <data name="PN" xml:space="preserve">
+    <value>Pitcairn</value>
+  </data>
+  <data name="PL" xml:space="preserve">
+    <value>Poland</value>
+  </data>
+  <data name="PT" xml:space="preserve">
+    <value>Portugal</value>
+  </data>
+  <data name="PR" xml:space="preserve">
+    <value>Puerto Rico</value>
+  </data>
+  <data name="QA" xml:space="preserve">
+    <value>Qatar</value>
+  </data>
+  <data name="RE" xml:space="preserve">
+    <value>Réunion</value>
+  </data>
+  <data name="RO" xml:space="preserve">
+    <value>Romania</value>
+  </data>
+  <data name="RU" xml:space="preserve">
+    <value>Russian Federation</value>
+  </data>
+  <data name="RW" xml:space="preserve">
+    <value>Rwanda</value>
+  </data>
 </root>

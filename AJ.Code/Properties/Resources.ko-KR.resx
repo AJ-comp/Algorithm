@@ -642,4 +642,55 @@
   <data name="OM" xml:space="preserve">
     <value>오만</value>
   </data>
+  <data name="PK" xml:space="preserve">
+    <value>파키스탄</value>
+  </data>
+  <data name="PW" xml:space="preserve">
+    <value>팔라우</value>
+  </data>
+  <data name="PS" xml:space="preserve">
+    <value>팔레스타인</value>
+  </data>
+  <data name="PA" xml:space="preserve">
+    <value>파나마</value>
+  </data>
+  <data name="PG" xml:space="preserve">
+    <value>파푸아뉴기니</value>
+  </data>
+  <data name="PY" xml:space="preserve">
+    <value>파라과이</value>
+  </data>
+  <data name="PE" xml:space="preserve">
+    <value>페루</value>
+  </data>
+  <data name="PH" xml:space="preserve">
+    <value>필리핀</value>
+  </data>
+  <data name="PN" xml:space="preserve">
+    <value>핏캐언</value>
+  </data>
+  <data name="PL" xml:space="preserve">
+    <value>폴란드</value>
+  </data>
+  <data name="PT" xml:space="preserve">
+    <value>포르투갈</value>
+  </data>
+  <data name="PR" xml:space="preserve">
+    <value>푸에르토리코</value>
+  </data>
+  <data name="QA" xml:space="preserve">
+    <value>카타르</value>
+  </data>
+  <data name="RE" xml:space="preserve">
+    <value>리유니온</value>
+  </data>
+  <data name="RO" xml:space="preserve">
+    <value>루마니아</value>
+  </data>
+  <data name="RU" xml:space="preserve">
+    <value>러시아 연방</value>
+  </data>
+  <data name="RW" xml:space="preserve">
+    <value>르완다</value>
+  </data>
 </root>
