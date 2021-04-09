@@ -643,7 +643,7 @@
   <data name="PE" xml:space="preserve">
     <value>Peru</value>
   </data>
-  <data name="PH" xml:space="preserve">
+  <data name="@Sint Maarten (Dutch part)" xml:space="preserve">
     <value>Philippines</value>
   </data>
   <data name="PN" xml:space="preserve">
@@ -672,5 +672,68 @@
   </data>
   <data name="RW" xml:space="preserve">
     <value>Rwanda</value>
+  </data>
+  <data name="BL" xml:space="preserve">
+    <value>Saint Barthélemy</value>
+  </data>
+  <data name="SH" xml:space="preserve">
+    <value>Saint Helena, Ascension and Tristan da Cunha</value>
+  </data>
+  <data name="KN" xml:space="preserve">
+    <value>Saint Kitts and Nevis</value>
+  </data>
+  <data name="LC" xml:space="preserve">
+    <value>Saint Lucia</value>
+  </data>
+  <data name="MF" xml:space="preserve">
+    <value>Saint Martin (French part)</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>Saint Pierre and Miquelon</value>
+  </data>
+  <data name="VC" xml:space="preserve">
+    <value>Saint Vincent and the Grenadines</value>
+  </data>
+  <data name="WS" xml:space="preserve">
+    <value>Samoa</value>
+  </data>
+  <data name="SM" xml:space="preserve">
+    <value>San Marino</value>
+  </data>
+  <data name="ST" xml:space="preserve">
+    <value>Sao Tome and Principe</value>
+  </data>
+  <data name="SA" xml:space="preserve">
+    <value>Saudi Arabia</value>
+  </data>
+  <data name="SN" xml:space="preserve">
+    <value>Senegal</value>
+  </data>
+  <data name="RS" xml:space="preserve">
+    <value>Serbia</value>
+  </data>
+  <data name="SC" xml:space="preserve">
+    <value>Seychelles</value>
+  </data>
+  <data name="SL" xml:space="preserve">
+    <value>Sierra Leone</value>
+  </data>
+  <data name="SG" xml:space="preserve">
+    <value>Singapore</value>
+  </data>
+  <data name="SX" xml:space="preserve">
+    <value>Sint Maarten (Dutch part)</value>
+  </data>
+  <data name="SK" xml:space="preserve">
+    <value>Slovakia</value>
+  </data>
+  <data name="SI" xml:space="preserve">
+    <value>Slovenia</value>
+  </data>
+  <data name="SB" xml:space="preserve">
+    <value>Solomon Islands</value>
+  </data>
+  <data name="PH" xml:space="preserve">
+    <value>Philippines</value>
   </data>
 </root>

@@ -663,7 +663,7 @@
   <data name="PE" xml:space="preserve">
     <value>페루</value>
   </data>
-  <data name="PH" xml:space="preserve">
+  <data name="@Sint Maarten (Dutch part)" xml:space="preserve">
     <value>필리핀</value>
   </data>
   <data name="PN" xml:space="preserve">
@@ -692,5 +692,68 @@
   </data>
   <data name="RW" xml:space="preserve">
     <value>르완다</value>
+  </data>
+  <data name="BL" xml:space="preserve">
+    <value>생바르텔레미</value>
+  </data>
+  <data name="SH" xml:space="preserve">
+    <value>세인트 헬레나</value>
+  </data>
+  <data name="KN" xml:space="preserve">
+    <value>세인트 키츠 네비스</value>
+  </data>
+  <data name="LC" xml:space="preserve">
+    <value>세인트 루시아</value>
+  </data>
+  <data name="MF" xml:space="preserve">
+    <value>세인트 마틴(프랑스)</value>
+  </data>
+  <data name="PM" xml:space="preserve">
+    <value>성 피에르 미켈론</value>
+  </data>
+  <data name="VC" xml:space="preserve">
+    <value>세인트빈센트 그레나딘</value>
+  </data>
+  <data name="WS" xml:space="preserve">
+    <value>사모아</value>
+  </data>
+  <data name="SM" xml:space="preserve">
+    <value>샌마리노</value>
+  </data>
+  <data name="ST" xml:space="preserve">
+    <value>상투메 프린시페</value>
+  </data>
+  <data name="SA" xml:space="preserve">
+    <value>사우디아라비아</value>
+  </data>
+  <data name="SN" xml:space="preserve">
+    <value>세네갈</value>
+  </data>
+  <data name="RS" xml:space="preserve">
+    <value>세르비아</value>
+  </data>
+  <data name="SC" xml:space="preserve">
+    <value>세이셸</value>
+  </data>
+  <data name="SL" xml:space="preserve">
+    <value>시에라리온</value>
+  </data>
+  <data name="SG" xml:space="preserve">
+    <value>싱가포르</value>
+  </data>
+  <data name="SX" xml:space="preserve">
+    <value>세인트 마틴(독일)</value>
+  </data>
+  <data name="SK" xml:space="preserve">
+    <value>슬로바키아</value>
+  </data>
+  <data name="SI" xml:space="preserve">
+    <value>슬로베니아</value>
+  </data>
+  <data name="SB" xml:space="preserve">
+    <value>솔로몬제도</value>
+  </data>
+  <data name="PH" xml:space="preserve">
+    <value>필리핀</value>
   </data>
 </root>

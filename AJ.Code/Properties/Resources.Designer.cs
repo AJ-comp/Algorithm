@@ -61,6 +61,15 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Philippines과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string _Sint_Maarten__Dutch_part_ {
+            get {
+                return ResourceManager.GetString("@Sint Maarten (Dutch part)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Andorra과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string AD {
@@ -291,6 +300,15 @@ namespace AJ.Code.Properties {
         internal static string BJ {
             get {
                 return ResourceManager.GetString("BJ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Saint Barthélemy과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string BL {
+            get {
+                return ResourceManager.GetString("BL", resourceCulture);
             }
         }
         
@@ -1096,6 +1114,15 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Saint Kitts and Nevis과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string KN {
+            get {
+                return ResourceManager.GetString("KN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Korea, Democratic People&apos;s Republic of과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string KP {
@@ -1155,6 +1182,15 @@ namespace AJ.Code.Properties {
         internal static string LB {
             get {
                 return ResourceManager.GetString("LB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Saint Lucia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string LC {
+            get {
+                return ResourceManager.GetString("LC", resourceCulture);
             }
         }
         
@@ -1254,6 +1290,15 @@ namespace AJ.Code.Properties {
         internal static string ME {
             get {
                 return ResourceManager.GetString("ME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Saint Martin (French part)과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string MF {
+            get {
+                return ResourceManager.GetString("MF", resourceCulture);
             }
         }
         
@@ -1618,6 +1663,15 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Saint Pierre and Miquelon과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PM {
+            get {
+                return ResourceManager.GetString("PM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Pitcairn과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string PN {
@@ -1699,6 +1753,15 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Serbia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string RS {
+            get {
+                return ResourceManager.GetString("RS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Russian Federation과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string RU {
@@ -1717,6 +1780,96 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Saudi Arabia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SA {
+            get {
+                return ResourceManager.GetString("SA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Solomon Islands과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SB {
+            get {
+                return ResourceManager.GetString("SB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Seychelles과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SC {
+            get {
+                return ResourceManager.GetString("SC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Singapore과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SG {
+            get {
+                return ResourceManager.GetString("SG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Saint Helena, Ascension and Tristan da Cunha과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SH {
+            get {
+                return ResourceManager.GetString("SH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Slovenia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SI {
+            get {
+                return ResourceManager.GetString("SI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Slovakia과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SK {
+            get {
+                return ResourceManager.GetString("SK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sierra Leone과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SL {
+            get {
+                return ResourceManager.GetString("SL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   San Marino과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SM {
+            get {
+                return ResourceManager.GetString("SM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Senegal과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SN {
+            get {
+                return ResourceManager.GetString("SN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   South America과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string SOUTH_AMERICA {
@@ -1726,11 +1879,29 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Sao Tome and Principe과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ST {
+            get {
+                return ResourceManager.GetString("ST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   El Salvador과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string SV {
             get {
                 return ResourceManager.GetString("SV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sint Maarten (Dutch part)과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string SX {
+            get {
+                return ResourceManager.GetString("SX", resourceCulture);
             }
         }
         
@@ -1776,6 +1947,24 @@ namespace AJ.Code.Properties {
         internal static string VA {
             get {
                 return ResourceManager.GetString("VA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Saint Vincent and the Grenadines과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string VC {
+            get {
+                return ResourceManager.GetString("VC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Samoa과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string WS {
+            get {
+                return ResourceManager.GetString("WS", resourceCulture);
             }
         }
         
