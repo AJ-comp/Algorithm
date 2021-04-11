@@ -756,4 +756,139 @@
   <data name="PH" xml:space="preserve">
     <value>필리핀</value>
   </data>
+  <data name="SO" xml:space="preserve">
+    <value>소말리아</value>
+  </data>
+  <data name="ZA" xml:space="preserve">
+    <value>남아프리카</value>
+  </data>
+  <data name="GS" xml:space="preserve">
+    <value>사우스조지아 사우스샌드위치 제도</value>
+  </data>
+  <data name="SS" xml:space="preserve">
+    <value>남수단</value>
+  </data>
+  <data name="ES" xml:space="preserve">
+    <value>스페인</value>
+  </data>
+  <data name="LK" xml:space="preserve">
+    <value>스리랑카</value>
+  </data>
+  <data name="SD" xml:space="preserve">
+    <value>수단</value>
+  </data>
+  <data name="SR" xml:space="preserve">
+    <value>수리남</value>
+  </data>
+  <data name="SJ" xml:space="preserve">
+    <value>스발바르와 얀 메옌</value>
+  </data>
+  <data name="SE" xml:space="preserve">
+    <value>스웨덴</value>
+  </data>
+  <data name="CH" xml:space="preserve">
+    <value>스위스</value>
+  </data>
+  <data name="SY" xml:space="preserve">
+    <value>시리아 아랍 공화국</value>
+  </data>
+  <data name="TW" xml:space="preserve">
+    <value>타이완</value>
+  </data>
+  <data name="TJ" xml:space="preserve">
+    <value>타지키스탄</value>
+  </data>
+  <data name="TZ" xml:space="preserve">
+    <value>탄자니아</value>
+  </data>
+  <data name="TH" xml:space="preserve">
+    <value>태국</value>
+  </data>
+  <data name="TL" xml:space="preserve">
+    <value>동티모르</value>
+  </data>
+  <data name="TG" xml:space="preserve">
+    <value>토고</value>
+  </data>
+  <data name="TK" xml:space="preserve">
+    <value>토켈라우</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>통가</value>
+  </data>
+  <data name="TT" xml:space="preserve">
+    <value>트리니다드 토바고</value>
+  </data>
+  <data name="TN" xml:space="preserve">
+    <value>튀니지</value>
+  </data>
+  <data name="TR" xml:space="preserve">
+    <value>터키</value>
+  </data>
+  <data name="TM" xml:space="preserve">
+    <value>투르크메니스탄</value>
+  </data>
+  <data name="TC" xml:space="preserve">
+    <value>투르크스 카이코스 제도</value>
+  </data>
+  <data name="TV" xml:space="preserve">
+    <value>투발루</value>
+  </data>
+  <data name="UG" xml:space="preserve">
+    <value>우간다</value>
+  </data>
+  <data name="UA" xml:space="preserve">
+    <value>우크라이나</value>
+  </data>
+  <data name="AE" xml:space="preserve">
+    <value>아랍 에미레트</value>
+  </data>
+  <data name="GB" xml:space="preserve">
+    <value>영국과 북아일랜드 연합 왕국</value>
+  </data>
+  <data name="US" xml:space="preserve">
+    <value>미국</value>
+  </data>
+  <data name="UM" xml:space="preserve">
+    <value>미국소외계열도</value>
+  </data>
+  <data name="UY" xml:space="preserve">
+    <value>우루과이</value>
+  </data>
+  <data name="UZ" xml:space="preserve">
+    <value>우즈베키스탄</value>
+  </data>
+  <data name="VU" xml:space="preserve">
+    <value>바누아투</value>
+  </data>
+  <data name="VE" xml:space="preserve">
+    <value>볼리비아 공화국</value>
+  </data>
+  <data name="VN" xml:space="preserve">
+    <value>베트남</value>
+  </data>
+  <data name="VG" xml:space="preserve">
+    <value>버진아일랜드, 영국</value>
+  </data>
+  <data name="VI" xml:space="preserve">
+    <value>버진아일랜드, 미국</value>
+  </data>
+  <data name="WF" xml:space="preserve">
+    <value>왈리스 푸투나</value>
+  </data>
+  <data name="EH" xml:space="preserve">
+    <value>서사하라</value>
+  </data>
+  <data name="YE" xml:space="preserve">
+    <value>예멘</value>
+  </data>
+  <data name="ZM" xml:space="preserve">
+    <value>잠비아</value>
+  </data>
+  <data name="ZW" xml:space="preserve">
+    <value>짐바브웨</value>
+  </data>
+  <data name="AX" xml:space="preserve">
+    <value>올란드 제도</value>
+  </data>
 </root>

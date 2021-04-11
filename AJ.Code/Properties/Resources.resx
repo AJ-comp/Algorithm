@@ -736,4 +736,139 @@
   <data name="PH" xml:space="preserve">
     <value>Philippines</value>
   </data>
+  <data name="SO" xml:space="preserve">
+    <value>Somalia</value>
+  </data>
+  <data name="ZA" xml:space="preserve">
+    <value>South Africa</value>
+  </data>
+  <data name="GS" xml:space="preserve">
+    <value>South Georgia and the South Sandwich Islands</value>
+  </data>
+  <data name="SS" xml:space="preserve">
+    <value>South Sudan</value>
+  </data>
+  <data name="ES" xml:space="preserve">
+    <value>Spain</value>
+  </data>
+  <data name="LK" xml:space="preserve">
+    <value>Sri Lanka</value>
+  </data>
+  <data name="SD" xml:space="preserve">
+    <value>Sudan</value>
+  </data>
+  <data name="SR" xml:space="preserve">
+    <value>Suriname</value>
+  </data>
+  <data name="SJ" xml:space="preserve">
+    <value>Svalbard and Jan Mayen</value>
+  </data>
+  <data name="SE" xml:space="preserve">
+    <value>Sweden</value>
+  </data>
+  <data name="CH" xml:space="preserve">
+    <value>Switzerland</value>
+  </data>
+  <data name="SY" xml:space="preserve">
+    <value>Syrian Arab Republic</value>
+  </data>
+  <data name="TW" xml:space="preserve">
+    <value>Taiwan, Province of China</value>
+  </data>
+  <data name="TJ" xml:space="preserve">
+    <value>Tajikistan</value>
+  </data>
+  <data name="TZ" xml:space="preserve">
+    <value>Tanzania, United Republic of</value>
+  </data>
+  <data name="TH" xml:space="preserve">
+    <value>Thailand</value>
+  </data>
+  <data name="TL" xml:space="preserve">
+    <value>Timor-Leste</value>
+  </data>
+  <data name="TG" xml:space="preserve">
+    <value>Togo</value>
+  </data>
+  <data name="TK" xml:space="preserve">
+    <value>Tokelau</value>
+  </data>
+  <data name="TO" xml:space="preserve">
+    <value>Tonga</value>
+  </data>
+  <data name="TT" xml:space="preserve">
+    <value>Trinidad and Tobago</value>
+  </data>
+  <data name="TN" xml:space="preserve">
+    <value>Tunisia</value>
+  </data>
+  <data name="TR" xml:space="preserve">
+    <value>Turkey</value>
+  </data>
+  <data name="TM" xml:space="preserve">
+    <value>Turkmenistan</value>
+  </data>
+  <data name="TC" xml:space="preserve">
+    <value>Turks and Caicos Islands</value>
+  </data>
+  <data name="TV" xml:space="preserve">
+    <value>Tuvalu</value>
+  </data>
+  <data name="UG" xml:space="preserve">
+    <value>Uganda</value>
+  </data>
+  <data name="UA" xml:space="preserve">
+    <value>Ukraine</value>
+  </data>
+  <data name="AE" xml:space="preserve">
+    <value>United Arab Emirates</value>
+  </data>
+  <data name="GB" xml:space="preserve">
+    <value>United Kingdom of Great Britain and Northern Ireland</value>
+  </data>
+  <data name="US" xml:space="preserve">
+    <value>United States of America</value>
+  </data>
+  <data name="UM" xml:space="preserve">
+    <value>United States Minor Outlying Islands</value>
+  </data>
+  <data name="UY" xml:space="preserve">
+    <value>Uruguay</value>
+  </data>
+  <data name="UZ" xml:space="preserve">
+    <value>Uzbekistan</value>
+  </data>
+  <data name="VU" xml:space="preserve">
+    <value>Vanuatu</value>
+  </data>
+  <data name="VE" xml:space="preserve">
+    <value>Venezuela, Bolivarian Republic of</value>
+  </data>
+  <data name="VN" xml:space="preserve">
+    <value>Viet Nam</value>
+  </data>
+  <data name="VG" xml:space="preserve">
+    <value>Virgin Islands, British</value>
+  </data>
+  <data name="VI" xml:space="preserve">
+    <value>Virgin Islands, U.S.</value>
+  </data>
+  <data name="WF" xml:space="preserve">
+    <value>Wallis and Futuna</value>
+  </data>
+  <data name="EH" xml:space="preserve">
+    <value>Western Sahara</value>
+  </data>
+  <data name="YE" xml:space="preserve">
+    <value>Yemen</value>
+  </data>
+  <data name="ZM" xml:space="preserve">
+    <value>Zambia</value>
+  </data>
+  <data name="ZW" xml:space="preserve">
+    <value>Zimbabwe</value>
+  </data>
+  <data name="AX" xml:space="preserve">
+    <value>Åland Islands</value>
+  </data>
 </root>
