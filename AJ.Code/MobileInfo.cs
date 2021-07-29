@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 
 namespace AJ.Code
@@ -12,13 +13,19 @@ namespace AJ.Code
         public IEnumerable<MNCInfo> MNC => _mnc;
 
 
-        public MobileInfo(int mCC, params MNCInfo[] mncInfos)
+        public MobileInfo(int mcc, params MNCInfo[] mncInfos)
         {
-            MCC = mCC;
+            MCC = mcc;
 
             if (mncInfos == null) return;
             foreach (var mncInfo in mncInfos) _mnc.Add(mncInfo);
         }
+
+
+        public MobileInfo(int mcc, IEnumerable<MNCInfo> mncList)
+            : this(mcc, mncList?.ToArray())
+            {
+            }
 
 
         internal void AddMNCInfo(MNCInfo mnc) => _mnc.Add(mnc);
@@ -67,9 +74,13 @@ namespace AJ.Code
             [Description("GSM-R")] GSMR,
             [Description("GSM 900")] GSM900,
             [Description("GSM 1800")] GSM1800,
+            [Description("UMTS 900")] UMTS900,
             [Description("UMTS 2100")] UMTS2100,
             [Description("LTE")] LTE,
+            [Description("LTE 800")] LTE800,
             [Description("LTE 1800")] LTE1800,
+            [Description("LTE 2100")] LTE2100,
+            [Description("LTE 2600")] LTE2600,
         }
 
         public string MNC { get; private set; }

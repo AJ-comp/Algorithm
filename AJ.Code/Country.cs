@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using static AJ.Code.MNCInfo;
 
 namespace AJ.Code
 {
@@ -9,7 +10,7 @@ namespace AJ.Code
     {
         /*******************************************************************/
         /// <summary>
-        /// Get all country information that registered.
+        /// Get all country information that registered. <br/>
         /// 등록된 모든 국가정보를 가져옵니다.
         /// </summary>
         /*******************************************************************/
@@ -18,7 +19,7 @@ namespace AJ.Code
 
         /*******************************************************************/
         /// <summary>
-        /// Get the country information list for MCC.
+        /// Get the country information list for MCC. <br/>
         /// MCC에 대한 국가정보목록을 가져옵니다.
         /// </summary>
         /// <param name="mcc"></param>
@@ -30,7 +31,7 @@ namespace AJ.Code
 
         /*******************************************************************/
         /// <summary>
-        /// Get the country information for alpha2 code.
+        /// Get the country information for alpha2 code. <br/>
         /// 알파2 코드에 대한 국가정보를 가져옵니다.
         /// </summary>
         /// <param name="alpha2Code"></param>
@@ -42,7 +43,7 @@ namespace AJ.Code
 
         /*******************************************************************/
         /// <summary>
-        /// Get the country information for alpha3 code.
+        /// Get the country information for alpha3 code. <br/>
         /// 알파3 코드에 대한 국가정보를 가져옵니다.
         /// </summary>
         /// <param name="alpha3Code"></param>
@@ -54,7 +55,7 @@ namespace AJ.Code
 
         /*******************************************************************/
         /// <summary>
-        /// Get the country information list for the continent code.
+        /// Get the country information list for the continent code. <br/>
         /// 대륙코드에 대한 국가정보목록을 가져옵니다.
         /// </summary>
         /// <param name="continentCode"></param>
@@ -194,7 +195,7 @@ namespace AJ.Code
             _countries.Add(new CountryInfo(Resources.LR, "LR", "LBR", "430", ContinentCode.AF, new MobileInfo(618)));
             _countries.Add(new CountryInfo(Resources.LY, "LY", "LBY", "434", ContinentCode.AF, new MobileInfo(606)));
             _countries.Add(new CountryInfo(Resources.LI, "LI", "LIE", "438", ContinentCode.EU, new MobileInfo(295)));
-            _countries.Add(new CountryInfo(Resources.LT, "LT", "LTU", "440", ContinentCode.EU, new MobileInfo(246)));
+            AddInfoForLT();
             _countries.Add(new CountryInfo(Resources.LU, "LU", "LUX", "442", ContinentCode.EU, new MobileInfo(270)));
             _countries.Add(new CountryInfo(Resources.MO, "MO", "MAC", "446", ContinentCode.AS, new MobileInfo(455)));
             _countries.Add(new CountryInfo(Resources.MG, "MG", "MDG", "450", ContinentCode.AF, new MobileInfo(646)));
@@ -300,7 +301,14 @@ namespace AJ.Code
             _countries.Add(new CountryInfo(Resources.UA, "UA", "UKR", "804", ContinentCode.EU, new MobileInfo(255)));
             _countries.Add(new CountryInfo(Resources.AE, "AE", "ARE", "784", ContinentCode.AS, new MobileInfo(424)));
             _countries.Add(new CountryInfo(Resources.GB, "GB", "GBR", "826", ContinentCode.EU, new MobileInfo(234), new MobileInfo(235)));
-            _countries.Add(new CountryInfo(Resources.US, "US", "USA", "840", ContinentCode.NA, new MobileInfo(310), new MobileInfo(311), new MobileInfo(312), new MobileInfo(313), new MobileInfo(314), new MobileInfo(315), new MobileInfo(316)));
+            _countries.Add(new CountryInfo(Resources.US, "US", "USA", "840", ContinentCode.NA, new MobileInfo(310), 
+                                                                                                                                         new MobileInfo(311), 
+                                                                                                                                         new MobileInfo(312), 
+                                                                                                                                         new MobileInfo(313), 
+                                                                                                                                         new MobileInfo(314), 
+                                                                                                                                         new MobileInfo(315), 
+                                                                                                                                         new MobileInfo(316)));
+
             _countries.Add(new CountryInfo(Resources.UM, "UM", "UMI", "581", ContinentCode.OC));
             _countries.Add(new CountryInfo(Resources.UY, "UY", "URY", "858", ContinentCode.SA, new MobileInfo(748)));
             _countries.Add(new CountryInfo(Resources.UZ, "UZ", "UZB", "860", ContinentCode.AS, new MobileInfo(434)));
@@ -315,6 +323,37 @@ namespace AJ.Code
             _countries.Add(new CountryInfo(Resources.ZM, "ZM", "ZMB", "894", ContinentCode.AF, new MobileInfo(645)));
             _countries.Add(new CountryInfo(Resources.ZW, "ZW", "ZWE", "716", ContinentCode.AF, new MobileInfo(648)));
             _countries.Add(new CountryInfo(Resources.AX, "AX", "ALA", "248", ContinentCode.OC));
+        }
+
+
+        /*************************************************/
+        /// <summary>
+        /// It is add the information for the alpha2 code "LT". <br/>
+        /// Alpha2Cod2 LT 에 대한 정보를 추가합니다.
+        /// </summary>
+        /*************************************************/
+        static void AddInfoForLT()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Telia", "Telia Lietuva", OperStatus.Operational,
+                                                                                                BandType.GSM900,
+                                                                                                BandType.GSM1800,
+                                                                                                BandType.UMTS900,
+                                                                                                BandType.LTE800,
+                                                                                                BandType.LTE1800,
+                                                                                                BandType.LTE2100,
+                                                                                                BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("02", "BITĖ", "UAB Bitė Lietuva", OperStatus.Operational,
+                                                                                                    BandType.GSM900,
+                                                                                                    BandType.GSM1800,
+                                                                                                    BandType.UMTS900,
+                                                                                                    BandType.UMTS2100,
+                                                                                                    BandType.LTE800,
+                                                                                                    BandType.LTE1800,
+                                                                                                    BandType.LTE2600));
+
+            _countries.Add(new CountryInfo(Resources.LT, "LT", "LTU", "440", ContinentCode.EU, new MobileInfo(246, mncList)));
         }
 
 
