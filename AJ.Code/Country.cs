@@ -196,14 +196,14 @@ namespace AJ.Code
             _countries.Add(new CountryInfo(Resources.LY, "LY", "LBY", "434", ContinentCode.AF, new MobileInfo(606)));
             _countries.Add(new CountryInfo(Resources.LI, "LI", "LIE", "438", ContinentCode.EU, new MobileInfo(295)));
             AddInfoForLT();
-            _countries.Add(new CountryInfo(Resources.LU, "LU", "LUX", "442", ContinentCode.EU, new MobileInfo(270)));
+            AddInfoForLU();
             _countries.Add(new CountryInfo(Resources.MO, "MO", "MAC", "446", ContinentCode.AS, new MobileInfo(455)));
             _countries.Add(new CountryInfo(Resources.MG, "MG", "MDG", "450", ContinentCode.AF, new MobileInfo(646)));
             _countries.Add(new CountryInfo(Resources.MW, "MW", "MWI", "454", ContinentCode.AF, new MobileInfo(650)));
             _countries.Add(new CountryInfo(Resources.MY, "MY", "MYS", "458", ContinentCode.AS, new MobileInfo(502)));
             _countries.Add(new CountryInfo(Resources.MV, "MV", "MDV", "462", ContinentCode.AS, new MobileInfo(472)));
             _countries.Add(new CountryInfo(Resources.ML, "ML", "MLI", "466", ContinentCode.AF, new MobileInfo(610)));
-            _countries.Add(new CountryInfo(Resources.MT, "MT", "MLT", "470", ContinentCode.EU, new MobileInfo(278)));
+            AddInfoForMT();
             _countries.Add(new CountryInfo(Resources.MH, "MH", "MHL", "584", ContinentCode.OC, new MobileInfo(551)));
             _countries.Add(new CountryInfo(Resources.MQ, "MQ", "MTQ", "474", ContinentCode.NA, new MobileInfo(340)));
             _countries.Add(new CountryInfo(Resources.MR, "MR", "MRT", "478", ContinentCode.AF, new MobileInfo(609)));
@@ -353,12 +353,140 @@ namespace AJ.Code
                                                                                                     BandType.LTE1800,
                                                                                                     BandType.LTE2600));
 
+            mncList.Add(new MNCInfo("03", "Tele2", "UAB Tele2 (Tele2 AB, Sweden)", OperStatus.Operational,
+                                                                                                    BandType.GSM900,
+                                                                                                    BandType.GSM1800,
+                                                                                                    BandType.UMTS900,
+                                                                                                    BandType.UMTS2100,
+                                                                                                    BandType.LTE800,
+                                                                                                    BandType.LTE1800,
+                                                                                                    BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("04", "", "LR vidaus reikalų ministerija (Ministry of the Interior)", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("05", "LitRail", "Lietuvos geležinkeliai (Lithuanian Railways)", OperStatus.Operational,
+                                                                                                    BandType.GSMR900));
+
+            mncList.Add(new MNCInfo("06", "Mediafon", "UAB Mediafon", OperStatus.Operational,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("07", "", "	Compatel Ltd.", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("08", "MEZON", "Lietuvos radijo ir televizijos centras", OperStatus.Operational,
+                                                                                                    BandType.WiMAX3500,
+                                                                                                    BandType.TDLTE2300));
+
+            mncList.Add(new MNCInfo("09", "", "Interactive Digital Media GmbH", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("11", "", "DATASIM OU", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("12", "", "Nord connect OU", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("13", "", "Travel Communication SIA", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("14", "", "Tismi BV", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
+            mncList.Add(new MNCInfo("15", "", "	Esim telecom, UAB", OperStatus.Unknown,
+                                                                                                    BandType.Unknown));
+
             _countries.Add(new CountryInfo(Resources.LT, "LT", "LTU", "440", ContinentCode.EU, new MobileInfo(246, mncList)));
         }
 
+        static void AddInfoForLU()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "POST", "POST Luxembourg", OperStatus.Operational,
+                                                                                             BandType.GSM900,
+                                                                                             BandType.GSM1800,
+                                                                                             BandType.UMTS2100,
+                                                                                             BandType.LTE1800,
+                                                                                             BandType.FiveG700,
+                                                                                             BandType.FiveG3500));                                  
 
+            mncList.Add(new MNCInfo("02", "", "MTX Connect S.a.r.l.", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
 
-        private static List<CountryInfo> _countries = new List<CountryInfo>();
+            mncList.Add(new MNCInfo("05", "", "Luxembourg Online S.A.", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("07", "", "Bouygues Telecom S.A.", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("10", "", "Blue Communications", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("71", "CFL", "Société Nationale des Chemins de Fer Luxembourgeois", OperStatus.Operational,
+                                                                                             BandType.GSMR900));
+
+            mncList.Add(new MNCInfo("77", "Tango", "Tango SA", OperStatus.Operational,
+                                                                                             BandType.GSM900,
+                                                                                             BandType.GSM1800,
+                                                                                             BandType.UMTS2100,
+                                                                                             BandType.LTE1800,
+                                                                                             BandType.FiveG700,
+                                                                                             BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("78", "", "Interactive digital media GmbH", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("79", "", "Mitto AG", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("80", "", "Syniverse Technologies S.à r.l.", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("81", "", "E-Lux Mobile Telecommunication S.A.", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("99", "Orange", "Orange S.A.", OperStatus.Operational,
+                                                                                             BandType.GSM900,
+                                                                                             BandType.GSM1800,
+                                                                                             BandType.UMTS2100,
+                                                                                             BandType.LTE1800,
+                                                                                             BandType.FiveG700,
+                                                                                             BandType.FiveG3500));
+
+            _countries.Add(new CountryInfo(Resources.LU, "LU", "LUX", "442", ContinentCode.EU, new MobileInfo(270, mncList)));
+        }
+
+        static void AddInfoForMT()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Epic", "Epic", OperStatus.Operational,
+                                                                                             BandType.GSM900,
+                                                                                             BandType.UMTS2100,
+                                                                                             BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("11", "", "YOM Ltd.", OperStatus.Operational,
+                                                                                             BandType.MVNO));
+
+            mncList.Add(new MNCInfo("21", "GO", "Mobile Communications Limited", OperStatus.Operational,
+                                                                                             BandType.GSM900,
+                                                                                             BandType.UMTS2100,
+                                                                                             BandType.LTE800,
+                                                                                             BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("30", "GO", "Mobile Communications Limited", OperStatus.Unknown,
+                                                                                             BandType.Unknown));
+
+            mncList.Add(new MNCInfo("77", "Melita", "Melita", OperStatus.Operational,
+                                                                                             BandType.GSM900,
+                                                                                             BandType.UMTS2100,
+                                                                                             BandType.LTE800,
+                                                                                             BandType.LTE1800,
+                                                                                             BandType.FiveG));
+
+            _countries.Add(new CountryInfo(Resources.MT, "MT", "MLT", "470", ContinentCode.EU, new MobileInfo(278, mncList)));
+        }
+
+        private static List<CountryInfo> _countries = new List<CountryInfo>(); 
 
         private static CountryInfo GetCountryInfoCore(Func<CountryInfo, bool> condition)
         {

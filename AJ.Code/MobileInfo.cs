@@ -73,6 +73,7 @@ namespace AJ.Code
         {
             [Description("GSM-R")] GSMR,
             [Description("GSM 900")] GSM900,
+            [Description("GSM-R 900")] GSMR900,
             [Description("GSM 1800")] GSM1800,
             [Description("UMTS 900")] UMTS900,
             [Description("UMTS 2100")] UMTS2100,
@@ -81,6 +82,13 @@ namespace AJ.Code
             [Description("LTE 1800")] LTE1800,
             [Description("LTE 2100")] LTE2100,
             [Description("LTE 2600")] LTE2600,
+            [Description("TD-LTE 2300")] TDLTE2300,
+            [Description("WiMAX 3500")] WiMAX3500,
+            [Description("5G")] FiveG,
+            [Description("5G 700")] FiveG700,
+            [Description("5G 3500")] FiveG3500,
+            [Description("MVNO")] MVNO,
+            [Description("Unknown")] Unknown,
         }
 
         public string MNC { get; private set; }
