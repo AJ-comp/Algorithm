@@ -72,13 +72,19 @@ namespace AJ.Code
         public enum BandType
         {
             [Description("GSM-R")] GSMR,
+            [Description("GSM 850")] GSM850,
             [Description("GSM 900")] GSM900,
             [Description("GSM-R 900")] GSMR900,
             [Description("GSM 1800")] GSM1800,
+            [Description("GSM 1900")] GSM1900,
+            [Description("UMTS 850")] UMTS850,
             [Description("UMTS 900")] UMTS900,
+            [Description("UMTS 1900")] UMTS1900,
             [Description("UMTS 2100")] UMTS2100,
             [Description("LTE")] LTE,
+            [Description("LTE 700")] LTE700,
             [Description("LTE 800")] LTE800,
+            [Description("LTE 1700")] LTE1700,
             [Description("LTE 1800")] LTE1800,
             [Description("LTE 2100")] LTE2100,
             [Description("LTE 2600")] LTE2600,
@@ -88,6 +94,7 @@ namespace AJ.Code
             [Description("5G 700")] FiveG700,
             [Description("5G 3500")] FiveG3500,
             [Description("MVNO")] MVNO,
+            [Description("TDMA 800")] TDMA800,
             [Description("Unknown")] Unknown,
         }
 

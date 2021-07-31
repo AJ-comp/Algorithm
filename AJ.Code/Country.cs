@@ -67,21 +67,21 @@ namespace AJ.Code
 
         static Country()
         {
-            _countries.Add(new CountryInfo(Resources.AF, "AF", "AFG", "004", ContinentCode.AS, new MobileInfo(412)));
-            _countries.Add(new CountryInfo(Resources.AL, "AL", "ALB", "008", ContinentCode.EU, new MobileInfo(276)));
-            _countries.Add(new CountryInfo(Resources.DZ, "DZ", "DZA", "012", ContinentCode.AF, new MobileInfo(603)));
-            _countries.Add(new CountryInfo(Resources.AS, "AS", "ASM", "016", ContinentCode.OC, new MobileInfo(544)));
-            _countries.Add(new CountryInfo(Resources.AD, "AD", "AND", "020", ContinentCode.EU, new MobileInfo(213)));
-            _countries.Add(new CountryInfo(Resources.AO, "AO", "AGO", "024", ContinentCode.AF, new MobileInfo(631)));
-            _countries.Add(new CountryInfo(Resources.AI, "AI", "AIA", "660", ContinentCode.NA, new MobileInfo(365)));
-            _countries.Add(new CountryInfo(Resources.AQ, "AQ", "ATA", "010", ContinentCode.AN, new MobileInfo(672)));
-            _countries.Add(new CountryInfo(Resources.AG, "AG", "ATG", "028", ContinentCode.NA, new MobileInfo(344)));
-            _countries.Add(new CountryInfo(Resources.AR, "AR", "ARG", "032", ContinentCode.SA, new MobileInfo(722)));
-            _countries.Add(new CountryInfo(Resources.AM, "AM", "ARM", "051", ContinentCode.AS, new MobileInfo(283)));
-            _countries.Add(new CountryInfo(Resources.AW, "AW", "ABW", "533", ContinentCode.NA, new MobileInfo(363)));
-            _countries.Add(new CountryInfo(Resources.AU, "AU", "AUS", "036", ContinentCode.OC, new MobileInfo(505)));
-            _countries.Add(new CountryInfo(Resources.AT, "AT", "AUT", "040", ContinentCode.EU, new MobileInfo(232)));
-            _countries.Add(new CountryInfo(Resources.AZ, "AZ", "AZE", "031", ContinentCode.AS, new MobileInfo(400)));
+            AddInfoForAF();
+            AddInfoForAL();
+            AddInfoForDZ();
+            AddInfoForAS();
+            AddInfoForAD();
+            AddInfoForAO();
+            AddInfoForAI();
+            AddInfoForAQ();
+            AddInfoForAG();
+            AddInfoForAR();
+            AddInfoForAM();
+            AddInfoForAW();
+            AddInfoForAU();
+            AddInfoForAT();
+            AddInfoForAZ();
             _countries.Add(new CountryInfo(Resources.BS, "BS", "BHS", "044", ContinentCode.NA, new MobileInfo(364)));
             _countries.Add(new CountryInfo(Resources.BH, "BH", "BHR", "048", ContinentCode.AS, new MobileInfo(426)));
             _countries.Add(new CountryInfo(Resources.BD, "BD", "BGD", "050", ContinentCode.AS, new MobileInfo(470)));
@@ -332,6 +332,153 @@ namespace AJ.Code
         /// Alpha2Cod2 LT 에 대한 정보를 추가합니다.
         /// </summary>
         /*************************************************/
+        static void AddInfoForAF()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AF, "AF", "AFG", "004", ContinentCode.AS, new MobileInfo(412, mncList)));
+        }
+
+        static void AddInfoForAL()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AL, "AL", "ALB", "008", ContinentCode.EU, new MobileInfo(276, mncList)));
+        }
+
+        static void AddInfoForDZ()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.DZ, "DZ", "DZA", "012", ContinentCode.AF, new MobileInfo(603, mncList)));
+        }
+
+        static void AddInfoForAS()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AS, "AS", "ASM", "016", ContinentCode.OC, new MobileInfo(544, mncList)));
+        }
+
+        static void AddInfoForAD()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AD, "AD", "AND", "020", ContinentCode.EU, new MobileInfo(213, mncList)));
+        }
+
+        static void AddInfoForAO()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AO, "AO", "AGO", "024", ContinentCode.AF, new MobileInfo(631, mncList)));
+        }
+
+        static void AddInfoForAI()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("010", "", "Digicel", OperStatus.Operational,
+                                                                                                BandType.GSM850,
+                                                                                                BandType.UMTS850,
+                                                                                                BandType.UMTS1900,
+                                                                                                BandType.LTE700));
+
+            mncList.Add(new MNCInfo("840", "FLOW", "Cable & Wireless", OperStatus.Operational,
+                                                                                                BandType.GSM850,
+                                                                                                BandType.UMTS850,
+                                                                                                BandType.UMTS1900,
+                                                                                                BandType.LTE700));
+
+            _countries.Add(new CountryInfo(Resources.AI, "AI", "AIA", "660", ContinentCode.NA, new MobileInfo(365, mncList)));
+        }
+
+        static void AddInfoForAQ()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AQ, "AQ", "ATA", "010", ContinentCode.AN, new MobileInfo(672, mncList)));
+        }
+
+        static void AddInfoForAG()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("030", "APUA", "Antigua Public Utilities Authority", OperStatus.Operational,
+                                                                                               BandType.GSM1900));
+
+            mncList.Add(new MNCInfo("050", "Digicel", "Antigua Wireless Ventures Limited", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE700));
+
+            mncList.Add(new MNCInfo("920", "FLOW", "Cable & Wireless Caribbean Cellular (Antigua) Limited", OperStatus.Operational,
+                                                                                               BandType.GSM850,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE1700));
+
+            mncList.Add(new MNCInfo("930", "", "AT&T Wireless", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            _countries.Add(new CountryInfo(Resources.AG, "AG", "ATG", "028", ContinentCode.NA, new MobileInfo(344, mncList)));
+        }
+
+        static void AddInfoForAR()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AR, "AR", "ARG", "032", ContinentCode.SA, new MobileInfo(722, mncList)));
+        }
+
+        static void AddInfoForAM()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AM, "AM", "ARM", "051", ContinentCode.AS, new MobileInfo(283, mncList)));
+        }
+
+        static void AddInfoForAW()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "SETAR", "Servicio di Telecomunicacion di Aruba", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.TDMA800));
+
+            mncList.Add(new MNCInfo("02", "	Digicel", "Digicel Aruba", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            _countries.Add(new CountryInfo(Resources.AW, "AW", "ABW", "533", ContinentCode.NA, new MobileInfo(363, mncList)));
+        }
+
+        static void AddInfoForAU()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AU, "AU", "AUS", "036", ContinentCode.OC, new MobileInfo(505, mncList)));
+        }
+
+        static void AddInfoForAT()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AT, "AT", "AUT", "040", ContinentCode.EU, new MobileInfo(232, mncList)));
+        }
+
+        static void AddInfoForAZ()
+        {
+            List<MNCInfo> mncList = new List<MNCInfo>();
+
+            _countries.Add(new CountryInfo(Resources.AZ, "AZ", "AZE", "031", ContinentCode.AS, new MobileInfo(400, mncList)));
+        }
+
         static void AddInfoForLT()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
