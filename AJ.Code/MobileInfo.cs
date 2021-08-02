@@ -65,12 +65,15 @@ namespace AJ.Code
         public enum OperStatus
         {
             Unknown,
+            Reserved,
+            Planned,
             Operational,
             Not_Operational,
         }
 
         public enum BandType
         {
+            [Description("CDMA450")] CDMA450,
             [Description("GSM-R")] GSMR,
             [Description("GSM 850")] GSM850,
             [Description("GSM 900")] GSM900,
@@ -82,16 +85,23 @@ namespace AJ.Code
             [Description("UMTS 1900")] UMTS1900,
             [Description("UMTS 2100")] UMTS2100,
             [Description("LTE")] LTE,
+            [Description("LTE 450")] LTE450,
             [Description("LTE 700")] LTE700,
             [Description("LTE 800")] LTE800,
+            [Description("LTE 900")] LTE900,
             [Description("LTE 1700")] LTE1700,
             [Description("LTE 1800")] LTE1800,
             [Description("LTE 2100")] LTE2100,
             [Description("LTE 2600")] LTE2600,
+            [Description("LTE 3500")] LTE3500,
             [Description("TD-LTE 2300")] TDLTE2300,
+            [Description("TD-LTE 2600")] TDLTE2600,
             [Description("WiMAX 3500")] WiMAX3500,
             [Description("5G")] FiveG,
             [Description("5G 700")] FiveG700,
+            [Description("5G 1800")] FiveG1800,
+            [Description("5G 2100")] FiveG2100,
+            [Description("5G 2600")] FiveG2600,
             [Description("5G 3500")] FiveG3500,
             [Description("MVNO")] MVNO,
             [Description("TDMA 800")] TDMA800,
