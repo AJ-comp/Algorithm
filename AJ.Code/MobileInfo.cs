@@ -69,6 +69,7 @@ namespace AJ.Code
             Testing,
             Unknown,
             Operational,
+            Temporaryoperational,
             Not_Operational,
         }
 
@@ -96,6 +97,7 @@ namespace AJ.Code
             [Description("LTE 700")] LTE700,
             [Description("LTE 800")] LTE800,
             [Description("LTE 900")] LTE900,
+            [Description("LTE 1500")] LTE1500,
             [Description("LTE 1700")] LTE1700,
             [Description("LTE 1800")] LTE1800,
             [Description("LTE 2100")] LTE2100,
@@ -108,6 +110,7 @@ namespace AJ.Code
             [Description("TD-LTE 2300")] TDLTE2300,
             [Description("TD-LTE 2500")] TDLTE2500,
             [Description("TD-LTE 2600")] TDLTE2600,
+            [Description("TD-LTE 3500")] TDLTE3500,
             [Description("TD-LTE 3700")] TDLTE3700,
             [Description("TD-SCDMA")] TDSCDMA,
             [Description("TD-5G 2500")] TD5G2500,
@@ -119,6 +122,7 @@ namespace AJ.Code
             [Description("5G 2100")] FiveG2100,
             [Description("5G 2600")] FiveG2600,
             [Description("5G 3500")] FiveG3500,
+            [Description("5G 26000")] FiveG26000,
             [Description("5G mmWave")] FiveGmmWave,
             [Description("NB-IoT 700")] NBIoT700,
             [Description("MVNE")] MVNE,

@@ -1808,7 +1808,289 @@ namespace AJ.Code
         static void AddInfoForFR()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
-            mncList.Add(new MNCInfo("01", "", "", OperStatus.Operational,
+            mncList.Add(new MNCInfo("01", "Orange", "Orange S.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("02", "Orange", "Orange S.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("03", "MobiquiThings", "MobiquiThings", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("04", "Sisteer", "Societe d'ingenierie systeme telecom et reseaux", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("05", "", "Globalstar Europe", OperStatus.Operational,
+                                                                                              BandType.Satellite));
+
+            mncList.Add(new MNCInfo("06", "", "Globalstar Europe", OperStatus.Operational,
+                                                                                              BandType.Satellite));
+
+            mncList.Add(new MNCInfo("07", "", "Globalstar Europe", OperStatus.Operational,
+                                                                                              BandType.Satellite));
+
+            mncList.Add(new MNCInfo("08", "SFR", "Altice", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("09", "SFR", "Altice", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("10", "SFR", "Altice", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("11", "SFR", "Altice", OperStatus.Operational,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("12", "Truphone", "Truphone France", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("13", "SFR", "Altice", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("14", "SNCF Réseau", "SNCF Réseau", OperStatus.Operational,
+                                                                                              BandType.GSMR));
+
+            mncList.Add(new MNCInfo("15", "Free", "Free Mobile", OperStatus.Operational,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG700,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("16", "Free", "Free Mobile", OperStatus.Operational,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("17", "LEGOS", "Local Exchange Global Operation Services", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("18", "Voxbone", "Voxbone mobile", OperStatus.Not_Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("19", "", "Haute-Garonne numérique", OperStatus.Operational,
+                                                                                              BandType.LTE));
+
+            mncList.Add(new MNCInfo("20", "Bouygues", "Bouygues Telecom", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("21", "Bouygues", "Bouygues Telecom", OperStatus.Unknown,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("22", "Transatel Mobile", "Transatel", OperStatus.Unknown,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("23", "", "Syndicat mixte ouvert Charente Numérique", OperStatus.Operational,
+                                                                                              BandType.TDLTE));
+
+            mncList.Add(new MNCInfo("24", "MobiquiThings", "MobiquiThings", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("25", "LycaMobile", "LycaMobile", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("26", "NRJ Mobile", "Euro-Information Telecom SAS", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("27", "", "Coriolis Telecom", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("28", "", "Airmob Infra Full", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("29", "", "Cubic télécom France", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("30", "", "Syma Mobile", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("31", "Vectone Mobile", "Mundio Mobile", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("32", "Orange", "Orange S.A.", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("33", "Fibre64", "Département des Pyrénées-Atlantiques", OperStatus.Unknown,
+                                                                                              BandType.WiMAX));
+
+            mncList.Add(new MNCInfo("34", "", "Cellhire France", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("35", "Free", "Free Mobile", OperStatus.Operational,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("36", "Free", "Free Mobile", OperStatus.Operational,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("37", "", "IP Directions", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("38", "", "Lebara France Ltd", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("50168", "", "Butachimie", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("50244", "", "General Electric Digital Services Europe SAS", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("700", "", "Weaccess group", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("701", "", "GIP Vendée numérique", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("702", "", "17-Numerique", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("703", "", "Nivertel", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("704", "", "Axione Limousin", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("705", "", "Hautes-Pyrénées Numérique", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("706", "", "Tours Métropole Numérique", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("707", "", "Sartel THD", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("708", "", "Melis@ territoires ruraux", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("709", "", "Quimper communauté télécom", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("710", "", "Losange", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("711", "", "Nomotech", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("712", "", "Syndicat Audois d'énergies et du Numérique", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("713", "", "SD NUM SAS", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("714", "", "Département de l'Isère", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("86", "", "SEM@FOR77", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("87", "RATP", "Régie autonome des transports parisiens", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("88", "Bouygues", "Bouygues Telecom", OperStatus.Unknown,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("89", "", "Hub One", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("90", "", "Images & Réseaux", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("91", "", "Orange S.A.", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("92", "Com4Innov", "Association Plate-forme Télécom", OperStatus.Not_Operational,
+                                                                                              BandType.TDLTE2300,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("93", "", "Thales Communications & Security SAS", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("94", "", "Halys", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("95", "", "Orange S.A.", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("96", "", "Région Bourgogne-Franche-Comté", OperStatus.Operational,
+                                                                                              BandType.LTE));
+
+            mncList.Add(new MNCInfo("97", "", "Thales Communications & Security SAS", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("98", "", "Société Air France", OperStatus.Not_Operational,
                                                                                               BandType.Unknown));
 
             _countries.Add(new CountryInfo(Resources.FR, "FR", "FRA", "250", ContinentCode.EU, new MobileInfo(208, mncList)));
@@ -1860,6 +2142,175 @@ namespace AJ.Code
         static void AddInfoForDE()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Telekom", "Telekom Deutschland GmbH", OperStatus.Operational,
+                                                                                              BandType.GSM900,   
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE900,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("02", "Vodafone", "Vodafone D2 GmbH", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE900,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG700,
+                                                                                              BandType.FiveG1800,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("03", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE700,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE900,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("04", "Vodafone", "Vodafone D2 GmbH", OperStatus.Reserved,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("05", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Reserved,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("06", "Telekom", "Telekom Deutschland GmbH", OperStatus.Reserved,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE900,
+                                                                                              BandType.LTE1500,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("07", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Not_Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("08", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Reserved,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("09", "Vodafone", "Vodafone D2 GmbH", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("10", "", "DB Netz AG", OperStatus.Operational,
+                                                                                              BandType.GSMR));
+
+            mncList.Add(new MNCInfo("11", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Reserved,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("12", "Simquadrat", "sipgate GmbH", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("13", "", "Mobilcom Multimedia", OperStatus.Not_Operational,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("14", "", "Group 3G UMTS", OperStatus.Not_Operational,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("15", "Airdata", "", OperStatus.Operational,
+                                                                                              BandType.TDSCDMA));
+
+            mncList.Add(new MNCInfo("16", "", "Telogic Germany GmbH", OperStatus.Not_Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("17", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("18", "", "NetCologne", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("19", "450connect", "Alliander AG [ nl ]", OperStatus.Operational,
+                                                                                              BandType.LTE450));
+
+            mncList.Add(new MNCInfo("20", "Voiceworks", "Voiceworks GmbH", OperStatus.Operational,
+                                                                                              BandType.MVNE));
+
+            mncList.Add(new MNCInfo("21", "", "Multiconnect GmbH", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("22", "", "sipgate Wireless GmbH", OperStatus.Unknown,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("23", "", "Drillisch Online AG", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("24", "", "TelcoVillage GmbH", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("33", "simquadrat", "sipgate GmbH", OperStatus.Not_Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("41", "", "First Telecom GmbH", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("42", "CCC Event", "Chaos Computer Club", OperStatus.Temporaryoperational,
+                                                                                              BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("43", "Lycamobile", "Lycamobile", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("60", "", "DB Telematik", OperStatus.Operational,
+                                                                                              BandType.GSMR900));
+
+            mncList.Add(new MNCInfo("70", "", "BDBOS", OperStatus.Operational,
+                                                                                              BandType.TETRA));
+
+            mncList.Add(new MNCInfo("71", "", "GSMK", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("72", "", "Ericsson GmbH", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("73", "", "Nokia", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("74", "", "Qualcomm CDMA Technologies GmbH", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("75", "", "Core Network Dynamics GmbH", OperStatus.Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("76", "", "Siemens AG", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("77", "O₂", "Telefónica Germany GmbH & Co. oHG", OperStatus.Unknown,
+                                                                                              BandType.GSM900));
+
+            mncList.Add(new MNCInfo("78", "Telekom", "Telekom Deutschland GmbH", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("79", "", "ng4T GmbH", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("92", "", "Nash Technologies", OperStatus.Not_Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
 
             _countries.Add(new CountryInfo(Resources.DE, "DE", "DEU", "276", ContinentCode.EU, new MobileInfo(262, mncList)));
         }
@@ -1874,6 +2325,22 @@ namespace AJ.Code
         static void AddInfoForGI()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "GibTel", "Gibtelecom", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("03", "Gibfibrespeed", "GibFibre Ltd", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("06", "CTS Mobile", "CTS Gibraltar", OperStatus.Not_Operational,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("09", "Shine", "Eazitelecom", OperStatus.Not_Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
 
             _countries.Add(new CountryInfo(Resources.GI, "GI", "GIB", "292", ContinentCode.EU, new MobileInfo(266, mncList)));
         }
@@ -1881,6 +2348,83 @@ namespace AJ.Code
         static void AddInfoForGR()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Cosmote", "COSMOTE - Mobile Telecommunications S.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("02", "Cosmote", "COSMOTE - Mobile Telecommunications S.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("03", "", "OTE", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("04", "", "OSE", OperStatus.Unknown,
+                                                                                              BandType.GSMR));
+
+            mncList.Add(new MNCInfo("05", "Vodafone", "Vodafone Greece", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("06", "", "Cosmoline", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("07", "", "AMD Telecom", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("09", "Wind", "Wind Hellas Telecommunications S.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("10", "Wind", "Wind Hellas Telecommunications S.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("11", "", "interConnect", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("12", "", "Yuboto", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("13", "", "Compatel Limited", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("14", "Cyta Hellas", "CYTA", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("15", "", "BWS", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("16", "", "	Inter Telecom", OperStatus.Operational,
+                                                                                              BandType.MVNO));
 
             _countries.Add(new CountryInfo(Resources.GR, "GR", "GRC", "300", ContinentCode.EU, new MobileInfo(202, mncList)));
         }
@@ -1888,6 +2432,13 @@ namespace AJ.Code
         static void AddInfoForGL()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "", "TELE Greenland A/S", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.LTE800));
+
+            mncList.Add(new MNCInfo("02", "Nanoq Media", "inu:it a/s", OperStatus.Operational,
+                                                                                              BandType.TDLTE2500));
 
             _countries.Add(new CountryInfo(Resources.GL, "GL", "GRL", "304", ContinentCode.NA, new MobileInfo(290, mncList)));
         }
@@ -1923,6 +2474,28 @@ namespace AJ.Code
         static void AddInfoForGG()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("03", "Airtel-Vodafone", "Guernsey Airtel Ltd", OperStatus.Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("50", "JT", "JT Group Limited", OperStatus.Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("55", "Sure Mobile", "Sure (Guernsey) Limited", OperStatus.Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
 
             _countries.Add(new CountryInfo(Resources.GG, "GG", "GGY", "831", ContinentCode.EU, new MobileInfo(234, mncList)));
         }
@@ -1986,6 +2559,48 @@ namespace AJ.Code
         static void AddInfoForHU()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Telenor Hungary", "Telenor Magyarország Zrt.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("02", "", "MVM Net Ltd.", OperStatus.Operational,
+                                                                                              BandType.LTE450));
+
+            mncList.Add(new MNCInfo("03", "DIGI", "DIGI Telecommunication Ltd.", OperStatus.Operational,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.TDLTE3700));
+
+            mncList.Add(new MNCInfo("04", "", "Invitech ICT Services Ltd.", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("30", "Telekom", "Magyar Telekom Plc", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("70", "Vodafone", "Vodafone Magyarország Zrt.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("71", "upc", "Vodafone Magyarország Zrt.", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("99", "MAV GSM-R", "Magyar Államvasutak", OperStatus.Operational,
+                                                                                              BandType.GSMR900));
 
             _countries.Add(new CountryInfo(Resources.HU, "HU", "HUN", "348", ContinentCode.EU, new MobileInfo(216, mncList)));
         }
@@ -1993,6 +2608,60 @@ namespace AJ.Code
         static void AddInfoForIS()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Síminn", "Iceland Telecom", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("02", "Vodafone", "Sýn", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("03", "Vodafone", "Sýn", OperStatus.Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("04", "Viking", "IMC Island ehf", OperStatus.Operational,
+                                                                                              BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("05", "", "Halló Frjáls fjarskipti hf.", OperStatus.Not_Operational,
+                                                                                              BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("06", "", "Núll níu ehf", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("07", "IceCell", "IceCell ehf", OperStatus.Not_Operational,
+                                                                                              BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("08", "On-waves", "Iceland Telecom", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("11", "Nova", "Nova ehf", OperStatus.Operational,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("12", "Tal", "IP fjarskipti", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("16", "", "Tismi BV", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("22", "", "Landhelgisgæslan (Icelandic Coast Guard)", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("31", "Síminn", "Iceland Telecom", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("91", "", "Neyðarlínan", OperStatus.Operational,
+                                                                                              BandType.TETRA));
 
             _countries.Add(new CountryInfo(Resources.IS, "IS", "ISL", "352", ContinentCode.EU, new MobileInfo(274, mncList)));
         }
@@ -2028,6 +2697,68 @@ namespace AJ.Code
         static void AddInfoForIE()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Vodafone", "Vodafone Ireland", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("02", "3", "Hutchison 3G Ireland limited", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("03", "Eir", "Eir Group plc", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("04", "", "Access Telecom", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("05", "3", "Hutchison 3G Ireland limited", OperStatus.Operational,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("07", "Eir", "Eir Group plc", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("08", "Eir", "Eir Group plc", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("09", "", "Clever Communications Ltd.", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("11", "Tesco Mobile", "Liffey Telecom", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("13", "Lycamobile", "Lycamobile", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("15", "Virgin Mobile", "UPC", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("16", "Carphone Warehouse", "Carphone Warehouse", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("17", "3", "Hutchison 3G Ireland limited", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("18", "", "Carphone Warehouse", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("21", "", "Net Feasa Limited", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
 
             _countries.Add(new CountryInfo(Resources.IE, "IE", "IRL", "372", ContinentCode.EU, new MobileInfo(272, mncList)));
         }
@@ -2035,6 +2766,26 @@ namespace AJ.Code
         static void AddInfoForIM()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("18", "Cloud 9 Mobile", "Cloud 9 Mobile Communications PLC	", OperStatus.Not_Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("36", "Sure Mobile", "Sure Isle of Man Ltd.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("58", "Pronto GSM", "Manx Telecom", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("73", "", "Bluewave Communications Ltd.", OperStatus.Operational,
+                                                                                              BandType.TDLTE3500));
 
             _countries.Add(new CountryInfo(Resources.IM, "IM", "IMN", "833", ContinentCode.EU, new MobileInfo(234, mncList)));
         }
@@ -2063,6 +2814,31 @@ namespace AJ.Code
         static void AddInfoForJE()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("03", "Airtel-Vodafone", "Jersey Airtel Limited", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("28", "", "Marathon Telecom Limited", OperStatus.Not_Operational,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("50", "JT", "JT Group Limited", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("55", "Sure Mobile", "Sure (Jersey) Limited", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800));
 
             _countries.Add(new CountryInfo(Resources.JE, "JE", "JEY", "832", ContinentCode.EU, new MobileInfo(234, mncList)));
         }
@@ -2133,6 +2909,8 @@ namespace AJ.Code
         static void AddInfoForLV()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "", "", OperStatus.Operational,
+                                                                                              BandType.MVNO));
 
             _countries.Add(new CountryInfo(Resources.LV, "LV", "LVA", "428", ContinentCode.EU, new MobileInfo(247, mncList)));
         }
@@ -2175,6 +2953,123 @@ namespace AJ.Code
         static void AddInfoForIT()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "TIM", "Telecom Italia S.p.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1500,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("02", "Elsacom", "", OperStatus.Not_Operational,
+                                                                                              BandType.Satellite));
+
+            mncList.Add(new MNCInfo("04", "Intermatica", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("05", "Telespazio", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("06", "Vodafone", "Vodafone Italia S.p.A.", OperStatus.Operational,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("07", "Kena Mobile", "Noverca", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("08", "Fastweb", "Fastweb S.p.A.", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("10", "Vodafone", "Vodafone Italia S.p.A.", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1500,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("30", "RFI", "Rete Ferroviaria Italiana", OperStatus.Operational,
+                                                                                              BandType.GSMR900));
+
+            mncList.Add(new MNCInfo("33", "Poste Mobile", "Poste Mobile S.p.A.", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("34", "BT Italia", "BT Italia", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("35", "Lycamobile", "Lycamobile", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("36", "Digi Mobil", "Digi Italy S.r.l.", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("37", "WINDTRE", "Wind Tre", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("38", "LINKEM", "Linkem S.p.A.", OperStatus.Operational,
+                                                                                              BandType.TDLTE3500,
+                                                                                              BandType.FiveG3500,
+                                                                                              BandType.FiveG26000));
+
+            mncList.Add(new MNCInfo("39", "SMS Italia", "SMS Italia S.r.l.", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("43", "TIM", "Telecom Italia S.p.A.", OperStatus.Operational,
+                                                                                              BandType.FiveG3500,
+                                                                                              BandType.FiveG26000));
+
+            mncList.Add(new MNCInfo("47", "Fastweb", "Fastweb S.p.A.", OperStatus.Operational,
+                                                                                              BandType.TDLTE3500,
+                                                                                              BandType.FiveG3500,
+                                                                                              BandType.FiveG26000));
+
+            mncList.Add(new MNCInfo("48", "TIM", "Telecom Italia S.p.A.", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("49", "Vianova", "Welcome Italia S.p.A.", OperStatus.Unknown,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("50", "Iliad", "Iliad Italia", OperStatus.Operational,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("53", "COOP Voce", "COOP Voce", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("54", "Plintron", "", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("56", "Spusu", "Mass Response GmbH", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("77", "IPSE 2000", "", OperStatus.Not_Operational,
+                                                                                              BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("88", "WINDTRE", "Wind Tre", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG1800,
+                                                                                              BandType.FiveG2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("98", "BLU", "BLU S.p.A.", OperStatus.Not_Operational,
+                                                                                              BandType.GSM900));
+
+            mncList.Add(new MNCInfo("99", "WINDTRE", "Wind Tre", OperStatus.Operational,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2100,
+                                                                                              BandType.LTE2600));
 
             _countries.Add(new CountryInfo(Resources.IT, "IT", "ITA", "380", ContinentCode.EU, new MobileInfo(222, mncList)));
         }
