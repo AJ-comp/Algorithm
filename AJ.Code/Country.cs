@@ -2909,7 +2909,48 @@ namespace AJ.Code
         static void AddInfoForLV()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
-            mncList.Add(new MNCInfo("01", "", "", OperStatus.Operational,
+            mncList.Add(new MNCInfo("01", "LMT", "Latvian Mobile Telephone", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("02", "Tele2", "Tele2", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("03", "TRIATEL", "Telekom Baltija", OperStatus.Operational,
+                                                                                              BandType.CDMA450));
+
+            mncList.Add(new MNCInfo("04", "", "Beta Telecom", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("05", "Bite", "Bite Latvija", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("06", "", "Rigatta", OperStatus.Not_Operational,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("07", "", "SIA MEGATEL", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("08", "IZZI", "IZZI", OperStatus.Not_Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("09", "Xomobile", "Camel Mobile", OperStatus.Operational,
                                                                                               BandType.MVNO));
 
             _countries.Add(new CountryInfo(Resources.LV, "LV", "LVA", "428", ContinentCode.EU, new MobileInfo(247, mncList)));
@@ -2946,6 +2987,40 @@ namespace AJ.Code
         static void AddInfoForLI()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Swisscom", "Swisscom Schweiz AG", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("02", "7acht", "Salt Liechtenstein AG", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("05", "FL1", "Telecom Liechtenstein AG", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800));
+
+            mncList.Add(new MNCInfo("06", "Cubic Telecom", "Cubic Telecom AG", OperStatus.Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("07", "", "First Mobile AG", OperStatus.Not_Operational,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("09", "", "EMnify GmbH", OperStatus.Unknown,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("10", "", "Soracom LI Ltd.", OperStatus.Unknown,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("11", "", "DIMOCO Messaging AG", OperStatus.Unknown,
+                                                                                              BandType.MVNO));
+
+            mncList.Add(new MNCInfo("77", "Alpmobil", "Alpcom AG", OperStatus.Not_Operational,
+                                                                                              BandType.MVNO));
 
             _countries.Add(new CountryInfo(Resources.LI, "LI", "LIE", "438", ContinentCode.EU, new MobileInfo(295, mncList)));
         }
@@ -3322,6 +3397,41 @@ namespace AJ.Code
         static void AddInfoForMD()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("00", "IDC", "Interdnestrcom", OperStatus.Operational,
+                                                                                              BandType.CDMA800));
+
+            mncList.Add(new MNCInfo("01", "Orange", "Orange Moldova", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("02", "Moldcell", "", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("03", "Unité", "Moldtelecom", OperStatus.Operational,
+                                                                                              BandType.CDMA450));
+
+            mncList.Add(new MNCInfo("04", "Eventis", "Eventis Telecom", OperStatus.Not_Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("05", "Unité", "Moldtelecom", OperStatus.Operational,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("15", "IDC", "Interdnestrcom", OperStatus.Operational,
+                                                                                              BandType.LTE800));
+
+            mncList.Add(new MNCInfo("99", "Unité", "Moldtelecom", OperStatus.Operational,
+                                                                                              BandType.UMTS2100));
 
             _countries.Add(new CountryInfo(Resources.MD, "MD", "MDA", "498", ContinentCode.EU, new MobileInfo(259, mncList)));
         }
@@ -3329,6 +3439,14 @@ namespace AJ.Code
         static void AddInfoForMC()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("10", "Office des Telephones", "Monaco Telecom", OperStatus.Operational,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS900,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG3500));
 
             _countries.Add(new CountryInfo(Resources.MC, "MC", "MCO", "492", ContinentCode.EU, new MobileInfo(212, mncList)));
         }
@@ -3343,6 +3461,26 @@ namespace AJ.Code
         static void AddInfoForME()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Telenor", "Telenor Montenegro", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("02", "T-Mobile", "Crnogorski Telekom", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE800,
+                                                                                              BandType.LTE1800,
+                                                                                              BandType.LTE2600,
+                                                                                              BandType.FiveG2100));
+
+            mncList.Add(new MNCInfo("03", "m:tel CG", "Mtel Montenegro", OperStatus.Operational,
+                                                                                              BandType.GSM900,
+                                                                                              BandType.GSM1800,
+                                                                                              BandType.UMTS2100,
+                                                                                              BandType.LTE));
 
             _countries.Add(new CountryInfo(Resources.ME, "ME", "MNE", "499", ContinentCode.EU, new MobileInfo(297, mncList)));
         }
@@ -3399,6 +3537,188 @@ namespace AJ.Code
         static void AddInfoForNL()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
+
+            mncList.Add(new MNCInfo("00", "", "", OperStatus.Unknown,
+                                                                                              BandType.Unknown));
 
             _countries.Add(new CountryInfo(Resources.NL, "NL", "NLD", "528", ContinentCode.EU, new MobileInfo(204, mncList)));
         }
