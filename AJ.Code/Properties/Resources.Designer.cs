@@ -2338,6 +2338,15 @@ namespace AJ.Code.Properties {
         }
         
         /// <summary>
+        ///   Kosovo과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string XK {
+            get {
+                return ResourceManager.GetString("XK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Yemen과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string YE {

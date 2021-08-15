@@ -64,9 +64,11 @@ namespace AJ.Code
     {
         public enum OperStatus
         {
+            FourGandFiveGpilotnetworks,
             Planned,
             Reserved,
             Testing,
+            TestNetwork,
             Unknown,
             Operational,
             Temporaryoperational,
@@ -75,18 +77,22 @@ namespace AJ.Code
 
         public enum BandType
         {
+            [Description("AMPS")] AMPS,
             [Description("CDMA420")] CDMA420,
             [Description("CDMA450")] CDMA450,
             [Description("CDMA800")] CDMA800,
             [Description("CDMA2000")] CDMA2000,
             [Description("CDMA2000 450")] CDMA2000450,
+            [Description("DAMPS")] DAMPS,
+            [Description("GSM")] GSM,
             [Description("GSM-R")] GSMR,
+            [Description("GSM-R 900")] GSMR900,
             [Description("GSM 850")] GSM850,
             [Description("GSM 900")] GSM900,
-            [Description("GSM-R 900")] GSMR900,
             [Description("GSM 1800")] GSM1800,
             [Description("GSM 1900")] GSM1900,
             [Description("PrivateGSM 1800")] PrivateGSM1800,
+            [Description("iDEN 800")] iDEN800,
             [Description("UMTS 850")] UMTS850,
             [Description("UMTS 900")] UMTS900,
             [Description("UMTS 1900")] UMTS1900,
@@ -114,6 +120,7 @@ namespace AJ.Code
             [Description("TD-LTE 3700")] TDLTE3700,
             [Description("TD-SCDMA")] TDSCDMA,
             [Description("TD-5G 2500")] TD5G2500,
+            [Description("TD-5G 2600")] TD5G2600,
             [Description("WiMAX")] WiMAX,
             [Description("WiMAX 3500")] WiMAX3500,
             [Description("5G")] FiveG,
@@ -122,13 +129,17 @@ namespace AJ.Code
             [Description("5G 2100")] FiveG2100,
             [Description("5G 2600")] FiveG2600,
             [Description("5G 3500")] FiveG3500,
+            [Description("5G 3600")] FiveG3600,
+            [Description("5G 4700")] FiveG4700,
             [Description("5G 26000")] FiveG26000,
             [Description("5G mmWave")] FiveGmmWave,
             [Description("NB-IoT 700")] NBIoT700,
             [Description("MVNE")] MVNE,
             [Description("MVNO")] MVNO,
             [Description("Satellite")] Satellite,
+            [Description("Satellite MVNO")] SatelliteMVNO,
             [Description("TDMA 800")] TDMA800,
+            [Description("various")] Various,
             [Description("Unknown")] Unknown,
         }
 
