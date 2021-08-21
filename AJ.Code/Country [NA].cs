@@ -69,7 +69,6 @@ namespace AJ.Code
         /// Alpha2Cod2 AW 에 대한 정보를 추가합니다.
         /// </summary>
         /*************************************************/
-
         static void AddInfoForAW()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
@@ -81,7 +80,7 @@ namespace AJ.Code
                                                                                                BandType.LTE1800,
                                                                                                BandType.TDMA800));
 
-            mncList.Add(new MNCInfo("02", "	Digicel", "Digicel Aruba", OperStatus.Operational,
+            mncList.Add(new MNCInfo("02", "Digicel", "Digicel Aruba", OperStatus.Operational,
                                                                                                BandType.GSM900,
                                                                                                BandType.GSM1800,
                                                                                                BandType.UMTS2100,
