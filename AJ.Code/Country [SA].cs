@@ -104,11 +104,70 @@ namespace AJ.Code
         /// <summary>
         /// Add information for the alpha2 code "BQ". <br/>
         /// Alpha2Cod2 BQ 에 대한 정보를 추가합니다.
+        /// BQ is included in SX.
         /// </summary>
         /*************************************************/
         static void AddInfoForBQ()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("31", "", "Eutel N.V.", OperStatus.Unknown,
+                                                                                               BandType.GSM));
+
+            mncList.Add(new MNCInfo("33", "", "WICC N.V.", OperStatus.Unknown,
+                                                                                               BandType.GSM));
+
+            mncList.Add(new MNCInfo("51", "Telcell", "Telcell N.V.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("54", "ECC", "East Caribbean Cellular", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("59", "FLOW", "Liberty Latin America", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("60", "FLOW", "Liberty Latin America", OperStatus.Operational,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("63", "", "CSC N.V.", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("68", "Digicel", "Curaçao Telecom N.V.", OperStatus.Operational,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("69", "Digicel", "Curaçao Telecom N.V.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("74", "", "PCS N.V.", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("76", "Digicel", "Antiliano Por N.V.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("78", "Telbo", "Telefonia Bonairiano N.V.", OperStatus.Operational,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("91", "FLOW", "Liberty Latin America", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("94", "Bayòs", "Bòbò Frus N.V.", OperStatus.Operational,
+                                                                                               BandType.TDMAPCS));
+
+            mncList.Add(new MNCInfo("95", "MIO", "E.O.C.G. Wireless", OperStatus.Not_Operational,
+                                                                                               BandType.CDMA2000850));
 
             _countries.Add(new CountryInfo(Resources.BQ, "BQ", "BES", "535", ContinentCode.SA, new MobileInfo(362, mncList)));
         }
@@ -156,11 +215,70 @@ namespace AJ.Code
         /// <summary>
         /// Add information for the alpha2 code "CW". <br/>
         /// Alpha2Cod2 CW 에 대한 정보를 추가합니다.
+        /// CW is included in SX.
         /// </summary>
         /*************************************************/
         static void AddInfoForCW()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("31", "", "Eutel N.V.", OperStatus.Unknown,
+                                                                                               BandType.GSM));
+
+            mncList.Add(new MNCInfo("33", "", "WICC N.V.", OperStatus.Unknown,
+                                                                                               BandType.GSM));
+
+            mncList.Add(new MNCInfo("51", "Telcell", "Telcell N.V.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("54", "ECC", "East Caribbean Cellular", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("59", "FLOW", "Liberty Latin America", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("60", "FLOW", "Liberty Latin America", OperStatus.Operational,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("63", "", "CSC N.V.", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("68", "Digicel", "Curaçao Telecom N.V.", OperStatus.Operational,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("69", "Digicel", "Curaçao Telecom N.V.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
+
+            mncList.Add(new MNCInfo("74", "", "PCS N.V.", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("76", "Digicel", "Antiliano Por N.V.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("78", "Telbo", "Telefonia Bonairiano N.V.", OperStatus.Operational,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("91", "FLOW", "Liberty Latin America", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("94", "Bayòs", "Bòbò Frus N.V.", OperStatus.Operational,
+                                                                                               BandType.TDMAPCS));
+
+            mncList.Add(new MNCInfo("95", "MIO", "E.O.C.G. Wireless", OperStatus.Not_Operational,
+                                                                                               BandType.CDMA2000850));
 
             _countries.Add(new CountryInfo(Resources.CW, "CW", "CUW", "531", ContinentCode.SA, new MobileInfo(362, mncList)));
         }
@@ -195,13 +313,72 @@ namespace AJ.Code
         /// <summary>
         /// Add information for the alpha2 code "GF". <br/>
         /// Alpha2Cod2 GF 에 대한 정보를 추가합니다.
+        /// French Guiana shares MCC 340 in addition to using the assigned MCC 742.
+        /// French Antilles (France) includes BL / GF / GP / MF / MQ
         /// </summary>
         /*************************************************/
         static void AddInfoForGF()
         {
-            List<MNCInfo> mncList = new List<MNCInfo>();
+            // mobile info for MCC 340
+            List<MNCInfo> mncListfor340 = new List<MNCInfo>();
+            mncListfor340.Add(new MNCInfo("01", "Orange", "Orange Caraïbe Mobiles", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.LTE2600));
 
-            _countries.Add(new CountryInfo(Resources.GF, "GF", "GUF", "254", ContinentCode.SA, new MobileInfo(742, mncList)));
+            mncListfor340.Add(new MNCInfo("02", "SFR Caraïbe", "Outremer Telecom", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2600));
+
+            mncListfor340.Add(new MNCInfo("03", "FLOW", "UTS Caraïbe", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS,
+                                                                                               BandType.LTE1800));
+
+            mncListfor340.Add(new MNCInfo("04", "Free", "Free Caraïbe", OperStatus.Upcoming,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2600));
+
+            mncListfor340.Add(new MNCInfo("08", "Dauphin", "Dauphin Telecom", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS,
+                                                                                               BandType.LTE));
+
+            mncListfor340.Add(new MNCInfo("09", "Free", "Free Caraïbe", OperStatus.Upcoming,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2600));
+
+            mncListfor340.Add(new MNCInfo("10", "", "Guadeloupe Téléphone Mobile", OperStatus.Not_Operational,
+                                                                                               BandType.Unknown));
+
+            mncListfor340.Add(new MNCInfo("11", "", "Guyane Téléphone Mobile", OperStatus.Not_Operational,
+                                                                                               BandType.Unknown));
+
+            mncListfor340.Add(new MNCInfo("12", "", "Martinique Téléphone Mobile", OperStatus.Not_Operational,
+                                                                                               BandType.Unknown));
+
+            mncListfor340.Add(new MNCInfo("20", "Digicel", "DIGICEL Antilles Française Guyane", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE800));
+            var mobile340 = new MobileInfo(340, mncListfor340);
+
+            _countries.Add(new CountryInfo(Resources.GF, "GF", "GUF", "254", ContinentCode.SA, new MobileInfo(742), mobile340));
         }
 
         /*************************************************/

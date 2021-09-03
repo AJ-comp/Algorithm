@@ -17,6 +17,41 @@ namespace AJ.Code
         static void AddInfoForAF()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "AWCC", "Afghan Wireless Communication Company", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("20", "Roshan", "Telecom Development Company Afghanistan Ltd.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("40", "MTN", "MTN Group Afghanistan", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("50", "Etisalat", "Etisalat Afghanistan", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("55", "WASEL", "WASEL Afghanistan", OperStatus.Operational,
+                                                                                               BandType.CDMA800));
+
+            mncList.Add(new MNCInfo("80", "Salaam", "Afghan Telecom", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("88", "Salaam", "Afghan Telecom", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
 
             _countries.Add(new CountryInfo(Resources.AF, "AF", "AFG", "004", ContinentCode.AS, new MobileInfo(412, mncList)));
         }
@@ -68,6 +103,36 @@ namespace AJ.Code
         static void AddInfoForAZ()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Azercell", "", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("02", "Bakcell", "", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("03", "FONEX", "CATEL", OperStatus.Operational,
+                                                                                               BandType.CDMA450));
+
+            mncList.Add(new MNCInfo("04", "Nar Mobile", "Azerfon", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("05", "", "Special State Protection Service of the Republic of Azerbaijan", OperStatus.Unknown,
+                                                                                               BandType.TETRA));
+
+            mncList.Add(new MNCInfo("06", "Naxtel", "Nakhtel LLC", OperStatus.Operational,
+                                                                                               BandType.CDMA800,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE900,
+                                                                                               BandType.LTE1800));
 
             _countries.Add(new CountryInfo(Resources.AZ, "AZ", "AZE", "031", ContinentCode.AS, new MobileInfo(400, mncList)));
         }
@@ -81,6 +146,32 @@ namespace AJ.Code
         static void AddInfoForBH()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Batelco", "Bahrain Telecommunications Company", OperStatus.Operational,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("02", "zain BH", "Zain Bahrain", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("03", "", "Civil Aviation Authority", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("04", "STC", "STC Bahrain", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("05", "Batelco", "Bahrain Telecommunications Company", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800));
 
             _countries.Add(new CountryInfo(Resources.BH, "BH", "BHR", "048", ContinentCode.AS, new MobileInfo(426, mncList)));
         }
@@ -94,6 +185,47 @@ namespace AJ.Code
         static void AddInfoForBD()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Grameenphone", "Grameenphone Ltd.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("02", "Robi", "Axiata Bangladesh Ltd.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE900,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("03", "Banglalink", "Banglalink Digital Communications Ltd.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("04", "TeleTalk", "Teletalk Bangladesh Limited", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("05", "Citycell", "Pacific Bangladesh Telecom Limited", OperStatus.Not_Operational,
+                                                                                               BandType.CDMA800));
+
+            mncList.Add(new MNCInfo("07", "Airtel", "Bharti Airtel Bangladesh Ltd.", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("09", "ollo", "Bangladesh Internet Exchange Limited (BIEL)", OperStatus.Not_Operational,
+                                                                                               BandType.LTE800,
+                                                                                               BandType.LTE2600,
+                                                                                               BandType.WiMAX3500));
+
+            mncList.Add(new MNCInfo("10", "Banglalion", "Banglalion Communications Ltd.", OperStatus.Operational,
+                                                                                               BandType.TDLTE2600,
+                                                                                               BandType.WiMAX3500));
 
             _countries.Add(new CountryInfo(Resources.BD, "BD", "BGD", "050", ContinentCode.AS, new MobileInfo(470, mncList)));
         }
@@ -107,6 +239,17 @@ namespace AJ.Code
         static void AddInfoForBT()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("11", "B-Mobile", "Bhutan Telecom Limited", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("77", "TashiCell", "Tashi InfoComm Limited", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE700));
 
             _countries.Add(new CountryInfo(Resources.BT, "BT", "BTN", "064", ContinentCode.AS, new MobileInfo(402, mncList)));
         }
@@ -159,6 +302,62 @@ namespace AJ.Code
         static void AddInfoForKH()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Cellcard", "CamGSM / The Royal Group", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("02", "Smart", "Smart Axiata Co. Ltd", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("03", "qb", "Cambodia Advance Communications Co. Ltd", OperStatus.Operational,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("04", "qb", "Cambodia Advance Communications Co. Ltd", OperStatus.Operational,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("05", "Smart", "Smart Axiata Co. Ltd", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("06", "Smart", "Smart Axiata Co. Ltd", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("08", "Metfone", "Viettel", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("09", "Metfone", "Viettel", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
+
+            mncList.Add(new MNCInfo("11", "SEATEL", "SEATEL Cambodia", OperStatus.Operational,
+                                                                                               BandType.LTE850,
+                                                                                               BandType.LTE2600));
+
+            mncList.Add(new MNCInfo("18", "Cellcard", "The Royal Group", OperStatus.Operational,
+                                                                                               BandType.GSM900,
+                                                                                               BandType.GSM1800,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE1800));
 
             _countries.Add(new CountryInfo(Resources.KH, "KH", "KHM", "116", ContinentCode.AS, new MobileInfo(456, mncList)));
         }
@@ -180,11 +379,219 @@ namespace AJ.Code
         /// <summary>
         /// Add information for the alpha2 code "CX". <br/>
         /// Alpha2Cod2 CX 에 대한 정보를 추가합니다.
+        /// CX is included in AU.
         /// </summary>
         /*************************************************/
         static void AddInfoForCX()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Telstra", "Telstra Corporation Limited", OperStatus.Operational,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE700,
+                                                                                               BandType.LTE900,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.LTE2600,
+                                                                                               BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("02", "Optus", "Singtel Optus Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE700,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.TDLTE2300,
+                                                                                               BandType.LTE2600,
+                                                                                               BandType.TD5G2300,
+                                                                                               BandType.FiveG3500,
+                                                                                               BandType.FiveG28000));
+
+            mncList.Add(new MNCInfo("03", "Vodafone", "Vodafone Hutchison Australia Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE850,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.FiveG700,
+                                                                                               BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("04", "", "Department of Defence", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("05", "Ozitel", "", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("06", "3", "Vodafone Hutchison Australia Pty Ltd", OperStatus.Not_Operational,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("07", "Vodafone", "Vodafone Network Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("08", "One.Tel", "One.Tel Limited", OperStatus.Not_Operational,
+                                                                                               BandType.GSM900));
+
+            mncList.Add(new MNCInfo("09", "Airnet", "", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("10", "Norfolk Is.", "Norfolk Telecom", OperStatus.Operational,
+                                                                                               BandType.GSM900));
+
+            mncList.Add(new MNCInfo("11", "Telstra", "Telstra Corporation Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("12", "3", "Vodafone Hutchison Australia Pty Ltd", OperStatus.Not_Operational,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("13", "RailCorp", "Railcorp, Transport for NSW", OperStatus.Operational,
+                                                                                               BandType.GSMR1800));
+
+            mncList.Add(new MNCInfo("14", "AAPT", "TPG Telecom", OperStatus.Operational,
+                                                                                               BandType.MVNO));
+
+            mncList.Add(new MNCInfo("15", "3GIS", "", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("16", "VicTrack", "Victorian Rail Track", OperStatus.Operational,
+                                                                                               BandType.GSMR1800));
+
+            mncList.Add(new MNCInfo("17", "", "Optus", OperStatus.Operational,
+                                                                                               BandType.TDLTE2300));
+
+            mncList.Add(new MNCInfo("18", "Pactel", "Pactel International Pty Ltd", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("19", "Lycamobile", "Lycamobile Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.MVNO));
+
+            mncList.Add(new MNCInfo("20", "", "Ausgrid Corporation", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("21", "", "Queensland Rail Limited", OperStatus.Unknown,
+                                                                                               BandType.GSMR1800));
+
+            mncList.Add(new MNCInfo("22", "", "iiNet Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("23", "", "Challenge Networks Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("24", "", "Advanced Communications Technologies Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("25", "", "Pilbara Iron Company Services Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("26", "", "Dialogue Communications Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("27", "", "Nexium Telecommunications", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("28", "", "RCOM International Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("30", "", "Compatel Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("31", "", "BHP", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("32", "", "Thales Australia", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("33", "", "CLX Networks Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("34", "", "Santos Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("35", "", "MessageBird Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("36", "Optus", "Optus Mobile Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("37", "", "Yancoal Australia Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("38", "Truphone", "Truphone Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.MVNO));
+
+            mncList.Add(new MNCInfo("39", "Telstra", "Telstra Corporation Ltd.", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("40", "", "CITIC Pacific Mining", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("41", "", "Aqura Technologies Pty", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("42", "GEMCO", "Groote Eylandt Mining Company Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("43", "", "Arrow Energy Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("44", "", "Roy Hill Iron Ore Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("45", "", "Clermont Coal Operations Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("46", "", "AngloGold Ashanti Australia Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("47", "", "Woodside Energy Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("48", "", "Titan ICT Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("49", "", "Field Solutions Group Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("50", "", "Pivotel Group Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.Satellite));
+
+            mncList.Add(new MNCInfo("51", "", "Fortescue Metals Group", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("52", "", "OptiTel Australia", OperStatus.Operational,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.FiveG1800,
+                                                                                               BandType.FiveG2100));
+
+            mncList.Add(new MNCInfo("53", "", "Shell Australia Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("61", "CommTel NS", "Commtel Network Solutions Pty Ltd", OperStatus.Implement_Design,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("62", "NBN", "National Broadband Network Co.", OperStatus.Operational,
+                                                                                               BandType.TDLTE2300,
+                                                                                               BandType.TDLTE3500));
+
+            mncList.Add(new MNCInfo("68", "NBN", "National Broadband Network Co.", OperStatus.Operational,
+                                                                                               BandType.TDLTE2300,
+                                                                                               BandType.TDLTE3500));
+
+            mncList.Add(new MNCInfo("71", "Telstra", "Telstra Corporation Limited", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("72", "Telstra", "Telstra Corporation Limited", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("88", "", "Pivotel Group Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.Satellite));
+
+            mncList.Add(new MNCInfo("90", "Optus", "Singtel Optus Proprietary Ltd", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("99", "One.Tel", "One.Tel", OperStatus.Not_Operational,
+                                                                                               BandType.GSM1800));
 
             _countries.Add(new CountryInfo(Resources.CX, "CX", "CXR", "162", ContinentCode.AS, new MobileInfo(505, mncList)));
         }
@@ -193,13 +600,221 @@ namespace AJ.Code
         /// <summary>
         /// Add information for the alpha2 code "CC". <br/>
         /// Alpha2Cod2 CC 에 대한 정보를 추가합니다.
+        /// CX is included in AU.
         /// </summary>
         /*************************************************/
         static void AddInfoForCC()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "Telstra", "Telstra Corporation Limited", OperStatus.Operational,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE700,
+                                                                                               BandType.LTE900,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.LTE2600,
+                                                                                               BandType.FiveG3500));
 
-            _countries.Add(new CountryInfo(Resources.CC, "CC", "CCK", "166", ContinentCode.AS));
+            mncList.Add(new MNCInfo("02", "Optus", "Singtel Optus Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE700,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.TDLTE2300,
+                                                                                               BandType.LTE2600,
+                                                                                               BandType.TD5G2300,
+                                                                                               BandType.FiveG3500,
+                                                                                               BandType.FiveG28000));
+
+            mncList.Add(new MNCInfo("03", "Vodafone", "Vodafone Hutchison Australia Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.UMTS900,
+                                                                                               BandType.UMTS2100,
+                                                                                               BandType.LTE850,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.FiveG700,
+                                                                                               BandType.FiveG3500));
+
+            mncList.Add(new MNCInfo("04", "", "Department of Defence", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("05", "Ozitel", "", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("06", "3", "Vodafone Hutchison Australia Pty Ltd", OperStatus.Not_Operational,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("07", "Vodafone", "Vodafone Network Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("08", "One.Tel", "One.Tel Limited", OperStatus.Not_Operational,
+                                                                                               BandType.GSM900));
+
+            mncList.Add(new MNCInfo("09", "Airnet", "", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("10", "Norfolk Is.", "Norfolk Telecom", OperStatus.Operational,
+                                                                                               BandType.GSM900));
+
+            mncList.Add(new MNCInfo("11", "Telstra", "Telstra Corporation Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("12", "3", "Vodafone Hutchison Australia Pty Ltd", OperStatus.Not_Operational,
+                                                                                               BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("13", "RailCorp", "Railcorp, Transport for NSW", OperStatus.Operational,
+                                                                                               BandType.GSMR1800));
+
+            mncList.Add(new MNCInfo("14", "AAPT", "TPG Telecom", OperStatus.Operational,
+                                                                                               BandType.MVNO));
+
+            mncList.Add(new MNCInfo("15", "3GIS", "", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("16", "VicTrack", "Victorian Rail Track", OperStatus.Operational,
+                                                                                               BandType.GSMR1800));
+
+            mncList.Add(new MNCInfo("17", "", "Optus", OperStatus.Operational,
+                                                                                               BandType.TDLTE2300));
+
+            mncList.Add(new MNCInfo("18", "Pactel", "Pactel International Pty Ltd", OperStatus.Not_Operational,
+                                                                                               BandType.Empty));
+
+            mncList.Add(new MNCInfo("19", "Lycamobile", "Lycamobile Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.MVNO));
+
+            mncList.Add(new MNCInfo("20", "", "Ausgrid Corporation", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("21", "", "Queensland Rail Limited", OperStatus.Unknown,
+                                                                                               BandType.GSMR1800));
+
+            mncList.Add(new MNCInfo("22", "", "iiNet Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("23", "", "Challenge Networks Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("24", "", "Advanced Communications Technologies Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("25", "", "Pilbara Iron Company Services Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("26", "", "Dialogue Communications Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("27", "", "Nexium Telecommunications", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("28", "", "RCOM International Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("30", "", "Compatel Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("31", "", "BHP", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("32", "", "Thales Australia", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("33", "", "CLX Networks Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("34", "", "Santos Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("35", "", "MessageBird Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("36", "Optus", "Optus Mobile Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("37", "", "Yancoal Australia Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("38", "Truphone", "Truphone Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.MVNO));
+
+            mncList.Add(new MNCInfo("39", "Telstra", "Telstra Corporation Ltd.", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("40", "", "CITIC Pacific Mining", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("41", "", "Aqura Technologies Pty", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("42", "GEMCO", "Groote Eylandt Mining Company Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("43", "", "Arrow Energy Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("44", "", "Roy Hill Iron Ore Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("45", "", "Clermont Coal Operations Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("46", "", "AngloGold Ashanti Australia Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("47", "", "Woodside Energy Limited", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("48", "", "Titan ICT Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("49", "", "Field Solutions Group Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("50", "", "Pivotel Group Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.Satellite));
+
+            mncList.Add(new MNCInfo("51", "", "Fortescue Metals Group", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("52", "", "OptiTel Australia", OperStatus.Operational,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100,
+                                                                                               BandType.FiveG1800,
+                                                                                               BandType.FiveG2100));
+
+            mncList.Add(new MNCInfo("53", "", "Shell Australia Pty Ltd", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("61", "CommTel NS", "Commtel Network Solutions Pty Ltd", OperStatus.Implement_Design,
+                                                                                               BandType.LTE1800,
+                                                                                               BandType.LTE2100));
+
+            mncList.Add(new MNCInfo("62", "NBN", "National Broadband Network Co.", OperStatus.Operational,
+                                                                                               BandType.TDLTE2300,
+                                                                                               BandType.TDLTE3500));
+
+            mncList.Add(new MNCInfo("68", "NBN", "National Broadband Network Co.", OperStatus.Operational,
+                                                                                               BandType.TDLTE2300,
+                                                                                               BandType.TDLTE3500));
+
+            mncList.Add(new MNCInfo("71", "Telstra", "Telstra Corporation Limited", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("72", "Telstra", "Telstra Corporation Limited", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("88", "", "Pivotel Group Pty Ltd", OperStatus.Operational,
+                                                                                               BandType.Satellite));
+
+            mncList.Add(new MNCInfo("90", "Optus", "Singtel Optus Proprietary Ltd", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncList.Add(new MNCInfo("99", "One.Tel", "One.Tel", OperStatus.Not_Operational,
+                                                                                               BandType.GSM1800));
+
+            _countries.Add(new CountryInfo(Resources.CC, "CC", "CCK", "166", ContinentCode.AS, new MobileInfo(505, mncList)));
         }
 
         /*************************************************/
@@ -1077,7 +1692,7 @@ namespace AJ.Code
             mncList.Add(new MNCInfo("03", "Telemor", "Viettel Timor-Leste", OperStatus.Operational,
                                                                                                BandType.LTE1800));
 
-            _countries.Add(new CountryInfo(Resources.TL, "TL", "TLS", "626", ContinentCode.AS));
+            _countries.Add(new CountryInfo(Resources.TL, "TL", "TLS", "626", ContinentCode.AS, new MobileInfo(514, mncList)));
         }
 
         /*************************************************/

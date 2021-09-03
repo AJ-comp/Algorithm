@@ -16,19 +16,23 @@ namespace AJ.Code
         /*************************************************/
         static void AddInfoForAS()
         {
-            List<MNCInfo> mncList = new List<MNCInfo>();
-            mncList.Add(new MNCInfo("11", "Bluesky", "Bluesky", OperStatus.Operational,
+            // mobile info for MCC 311
+            List<MNCInfo> mncListfor311 = new List<MNCInfo>();
+            mncListfor311.Add(new MNCInfo("780", "ASTCA", "American Samoa Telecommunications", OperStatus.Operational,
+                                                                                           BandType.LTE700));
+            var mobile311 = new MobileInfo(311, mncListfor311);
+
+            // mobile info for MCC 544
+            List<MNCInfo> mncListfor544 = new List<MNCInfo>();
+            mncListfor544.Add(new MNCInfo("11", "Bluesky", "Bluesky", OperStatus.Operational,
                                                                                                BandType.GSM850,
                                                                                                BandType.GSM1900,
                                                                                                BandType.UMTS850,
                                                                                                BandType.LTE700,
                                                                                                BandType.LTE1900));
+            var mobile544 = new MobileInfo(544, mncListfor544);
 
-            _countries.Add(new CountryInfo(Resources.AS, "AS", "ASM", "016", ContinentCode.OC, new MobileInfo(544, mncList)));
-
-            /// There is a MNC information for MCC number 311
-            /// mncList.Add(new MNCInfo("11", "ASTCA", "American Samoa Telecommunications", OperStatus.Operational,
-            ///                                                                                BandType.LTE700));
+            _countries.Add(new CountryInfo(Resources.AS, "AS", "ASM", "016", ContinentCode.OC, mobile311, mobile544));
         }
 
         /*************************************************/
@@ -248,7 +252,6 @@ namespace AJ.Code
             mncList.Add(new MNCInfo("99", "One.Tel", "One.Tel", OperStatus.Not_Operational,
                                                                                                BandType.GSM1800));
 
-
             _countries.Add(new CountryInfo(Resources.AU, "AU", "AUS", "036", ContinentCode.OC, new MobileInfo(505, mncList)));
         }
 
@@ -341,9 +344,50 @@ namespace AJ.Code
         /*************************************************/
         static void AddInfoForGU()
         {
-            List<MNCInfo> mncList = new List<MNCInfo>();
+            // mobile info for MCC 310
+            List<MNCInfo> mncListfor310 = new List<MNCInfo>();
+            mncListfor310.Add(new MNCInfo("032", "IT&E Wireless", "IT&E Overseas, Inc", OperStatus.Operational,
+                                                                                               BandType.CDMA1900,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS1900,
+                                                                                               BandType.LTE700));
 
-            _countries.Add(new CountryInfo(Resources.GU, "GU", "GUM", "316", ContinentCode.OC, new MobileInfo(310, mncList), new MobileInfo(311, mncList)));
+            mncListfor310.Add(new MNCInfo("033", "", "Guam Telephone Authority", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncListfor310.Add(new MNCInfo("140", "GTA Wireless", "Teleguam Holdings, LLC", OperStatus.Operational,
+                                                                                               BandType.GSM850,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE1700));
+
+            mncListfor310.Add(new MNCInfo("370", "Docomo", "NTT DoCoMo Pacific", OperStatus.Operational,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS850,
+                                                                                               BandType.LTE700));
+
+            mncListfor310.Add(new MNCInfo("400", "IT&E Wireless", "IT&E Overseas, Inc", OperStatus.Operational,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS1900,
+                                                                                               BandType.LTE700));
+
+            mncListfor310.Add(new MNCInfo("470", "Docomo", "NTT DoCoMo Pacific", OperStatus.Unknown,
+                                                                                               BandType.Unknown));
+
+            mncListfor310.Add(new MNCInfo("480", "IT&E Wireless", "IT&E Overseas, Inc", OperStatus.Operational,
+                                                                                               BandType.iDEN));
+            var mobile310 = new MobileInfo(310, mncListfor310);
+
+            // mobile info for MCC 311
+            List<MNCInfo> mncListfor311 = new List<MNCInfo>();
+            mncListfor311.Add(new MNCInfo("120", "IT&E Wireless", "IT&E Overseas, Inc", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+
+            mncListfor311.Add(new MNCInfo("250", "IT&E Wireless", "IT&E Overseas, Inc", OperStatus.Operational,
+                                                                                               BandType.Unknown));
+            var mobile311 = new MobileInfo(311, mncListfor311);
+
+            _countries.Add(new CountryInfo(Resources.GU, "GU", "GUM", "316", ContinentCode.OC, mobile310, mobile311));
         }
 
         /*************************************************/
@@ -536,6 +580,16 @@ namespace AJ.Code
         static void AddInfoForMP()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("110", "IT&E Wireless", "PTI Pacifica Inc.", OperStatus.Operational,
+                                                                                               BandType.CDMA,
+                                                                                               BandType.GSM850,
+                                                                                               BandType.UMTS1900,
+                                                                                               BandType.LTE700));
+
+            mncList.Add(new MNCInfo("370", "Docomo", "NTT DoCoMo Pacific", OperStatus.Operational,
+                                                                                               BandType.GSM1900,
+                                                                                               BandType.UMTS,
+                                                                                               BandType.LTE));
 
             _countries.Add(new CountryInfo(Resources.MP, "MP", "MNP", "580", ContinentCode.OC, new MobileInfo(310, mncList)));
         }
@@ -602,6 +656,7 @@ namespace AJ.Code
             List<MNCInfo> mncList = new List<MNCInfo>();
 
             _countries.Add(new CountryInfo(Resources.PN, "PN", "PCN", "612", ContinentCode.OC));
+            /// This does not have MNC. In Wiki, there is not nation alpha-2 code PN.
         }
 
         /*************************************************/
@@ -720,6 +775,7 @@ namespace AJ.Code
             List<MNCInfo> mncList = new List<MNCInfo>();
 
             _countries.Add(new CountryInfo(Resources.UM, "UM", "UMI", "581", ContinentCode.OC));
+            /// This does not have MNC. In Wiki, there is not nation alpha-2 code UM.
         }
 
         /*************************************************/
@@ -776,6 +832,7 @@ namespace AJ.Code
             List<MNCInfo> mncList = new List<MNCInfo>();
 
             _countries.Add(new CountryInfo(Resources.AX, "AX", "ALA", "248", ContinentCode.OC));
+         /// This does not have MNC. In Wiki, there is not nation alpha-2 code AX.
         }
     }
 }

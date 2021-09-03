@@ -280,7 +280,7 @@ namespace AJ.Code
             AddInfoForLK();
             AddInfoForSD();
             AddInfoForSR();
-            AddInfoForSJ();
+       ///  AddInfoForSJ();
             AddInfoForSE();
             AddInfoForCH();
             AddInfoForSY();
