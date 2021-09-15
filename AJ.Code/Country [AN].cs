@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using AJ.Code.Properties;
+using static AJ.Code.MNCInfo;
 
 namespace AJ.Code
 {
     public partial class Country
+        /// Except for BV, other nations dosen't exist in wiki
     {
         /*************************************************/
         /// <summary>
@@ -17,7 +19,7 @@ namespace AJ.Code
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
 
-            _countries.Add(new CountryInfo(Resources.AQ, "AQ", "ATA", "010", ContinentCode.AN, new MobileInfo(672, mncList)));
+            _countries.Add(new CountryInfo(Resources.AQ, "AQ", "ATA", "010", ContinentCode.AN, new MobileInfo(672)));
         }
 
         /*************************************************/
@@ -29,6 +31,33 @@ namespace AJ.Code
         static void AddInfoForBV()
         {
             List<MNCInfo> mncList = new List<MNCInfo>();
+            mncList.Add(new MNCInfo("01", "A1", "A1 Belarus", OperStatus.Operational,
+                                                                                           BandType.GSM900,
+                                                                                           BandType.GSM1800,
+                                                                                           BandType.UMTS900,
+                                                                                           BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("02", "MTS", "Mobile TeleSystems", OperStatus.Operational,
+                                                                                           BandType.GSM900,
+                                                                                           BandType.GSM1800,
+                                                                                           BandType.UMTS900,
+                                                                                           BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("03", "DIALLOG", "BelCel", OperStatus.Not_Operational,
+                                                                                           BandType.CDMA450));
+
+            mncList.Add(new MNCInfo("04", "life:)", "Belarusian Telecommunications Network", OperStatus.Operational,
+                                                                                           BandType.GSM900,
+                                                                                           BandType.GSM1800,
+                                                                                           BandType.UMTS2100));
+
+            mncList.Add(new MNCInfo("05", "byfly", "Beltelecom", OperStatus.Not_Operational,
+                                                                                           BandType.WiMAX));
+
+            mncList.Add(new MNCInfo("06", "beCloud", "Belorussian Cloud Technologies", OperStatus.Operational,
+                                                                                           BandType.LTE800,
+                                                                                           BandType.LTE1800,
+                                                                                           BandType.LTE2600));
 
             _countries.Add(new CountryInfo(Resources.BV, "BV", "BVT", "074", ContinentCode.AN, new MobileInfo(257, mncList)));
         }
