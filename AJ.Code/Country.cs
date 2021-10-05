@@ -1,8 +1,5 @@
-﻿using AJ.Code.Properties;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using static AJ.Code.MNCInfo;
 
 namespace AJ.Code
 {
@@ -26,7 +23,20 @@ namespace AJ.Code
         /// <returns></returns>
         /*******************************************************************/
         public static IEnumerable<CountryInfo> GetCountryInfoForMCC(int mcc)
-            => GetCountryInfoListCore((country) => country.MobileCodes.Contains(new MobileInfo(mcc)));
+            => AllCountries.Where(country => country.MobileCodes.Any(x => x.MCC == mcc));
+
+
+        /*******************************************************************/
+        /// <summary>
+        /// Get the country information list that has MCC and MNC. <br/>
+        /// MCC와 MNC 정보를 가지는 국가정보목록을 가져옵니다.
+        /// </summary>
+        /// <param name="mcc"></param>
+        /// <param name="mnc"></param>
+        /// <returns></returns>
+        /*******************************************************************/
+        public static IEnumerable<CountryInfo> GetCountryInfoForMobileInfo(int mcc, string mnc)
+            => AllCountries.Where(country => country.MobileCodes.Any(x => x.MCC == mcc && x.HasMNC(mnc)));
 
 
         /*******************************************************************/
@@ -38,7 +48,7 @@ namespace AJ.Code
         /// <returns></returns>
         /*******************************************************************/
         public static CountryInfo GetCountryInfoForAlpha2Code(string alpha2Code)
-            => GetCountryInfoCore((country) => country.Alpha2Code == alpha2Code);
+            => AllCountries.Where(country => country.Alpha2Code == alpha2Code).FirstOrDefault();
 
 
         /*******************************************************************/
@@ -50,7 +60,7 @@ namespace AJ.Code
         /// <returns></returns>
         /*******************************************************************/
         public static CountryInfo GetCountryInfoForAlpha3Code(string alpha3Code)
-            => GetCountryInfoCore((country) => country.Alpha3Code == alpha3Code);
+            => AllCountries.Where(country => country.Alpha3Code == alpha3Code).FirstOrDefault();
 
 
         /*******************************************************************/
@@ -62,7 +72,8 @@ namespace AJ.Code
         /// <returns></returns>
         /*******************************************************************/
         public static IEnumerable<CountryInfo> GetCountryInfoForContinentCode(ContinentCode continentCode)
-            => GetCountryInfoListCore((country) => country.ContinentCode == continentCode);
+            => AllCountries.Where(country => country.ContinentCode == continentCode);
+
 
 
         static Country()
@@ -280,7 +291,7 @@ namespace AJ.Code
             AddInfoForLK();
             AddInfoForSD();
             AddInfoForSR();
-       ///  AddInfoForSJ();
+            ///  AddInfoForSJ();
             AddInfoForSE();
             AddInfoForCH();
             AddInfoForSY();
@@ -320,36 +331,6 @@ namespace AJ.Code
         }
 
         private static List<CountryInfo> _countries = new List<CountryInfo>();
-
-        private static CountryInfo GetCountryInfoCore(Func<CountryInfo, bool> condition)
-        {
-            CountryInfo result = null;
-
-            foreach (var country in AllCountries)
-            {
-                if (!condition(country)) continue;
-
-                result = country;
-                break;
-            }
-
-            return result;
-        }
-
-
-        private static IEnumerable<CountryInfo> GetCountryInfoListCore(Func<CountryInfo, bool> condition)
-        {
-            List<CountryInfo> result = new List<CountryInfo>();
-
-            foreach (var country in AllCountries)
-            {
-                if (!condition(country)) continue;
-
-                result.Add(country);
-            }
-
-            return result;
-        }
     }
 }
 

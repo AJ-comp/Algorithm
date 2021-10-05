@@ -25,6 +25,12 @@ namespace TestConsoleApp
 
             TestModule("CRC-32 test", CRC.ComputeCRC32, testValue1, testValue2, testValue3);
             Console.WriteLine();
+
+
+            var countries = Country.GetCountryInfoForMobileInfo(404, "54");
+
+            foreach (var country in countries)
+                Console.WriteLine($"{country.CountryName} {country.HomeCountry.CountryName}");
         }
 
 

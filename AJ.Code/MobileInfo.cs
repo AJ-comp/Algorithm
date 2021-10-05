@@ -7,10 +7,12 @@ using System.Text;
 
 namespace AJ.Code
 {
+    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class MobileInfo
     {
         public int MCC { get; private set; }
-        public IEnumerable<MNCInfo> MNC => _mnc;
+        public IEnumerable<MNCInfo> MNCList => _mnc;
+        public bool HasMNC(string mnc) => MNCList.Any(x => x.MNC == mnc);
 
 
         public MobileInfo(int mcc, params MNCInfo[] mncInfos)
@@ -24,8 +26,8 @@ namespace AJ.Code
 
         public MobileInfo(int mcc, IEnumerable<MNCInfo> mncList)
             : this(mcc, mncList?.ToArray())
-            {
-            }
+        {
+        }
 
 
         internal void AddMNCInfo(MNCInfo mnc) => _mnc.Add(mnc);
@@ -54,6 +56,16 @@ namespace AJ.Code
         {
             return !(left == right);
         }
+
+        private string GetDebuggerDisplay()
+        {
+            string result = $"{MCC} ";
+            result += "{";
+            foreach (var mnc in MNCList) result += $"{mnc.MNC} ";
+            result += "}";
+
+            return result;
+        }
     }
 
 
@@ -79,7 +91,7 @@ namespace AJ.Code
 
         public enum BandType
         {
-            [Description("2500")] two500,
+            [Description("2500")] Two500,
             [Description("28000")] two8000,
             [Description("1900")] one900,
             [Description("800")] eight00,

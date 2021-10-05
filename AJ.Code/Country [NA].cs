@@ -2709,7 +2709,7 @@ namespace AJ.Code
                                                                                                BandType.LTE700));
 
             mncListfor312.Add(new MNCInfo("440", "", "Consolidated Telcom", OperStatus.Not_Operational,
-                                                                                               BandType.two500));
+                                                                                               BandType.Two500));
 
             mncListfor312.Add(new MNCInfo("450", "", "Cable & Communications Corporation", OperStatus.Unknown,
                                                                                                BandType.Unknown));
@@ -3176,7 +3176,7 @@ namespace AJ.Code
                                                                                                BandType.Unknown));
 
             mncListfor313.Add(new MNCInfo("950", "", "Cheyenne and Arapaho Development Group", OperStatus.Unknown,
-                                                                                               BandType.two500));
+                                                                                               BandType.Two500));
 
             mncListfor313.Add(new MNCInfo("960", "", "Townes 5G, LLC", OperStatus.Unknown,
                                                                                                BandType.Unknown));

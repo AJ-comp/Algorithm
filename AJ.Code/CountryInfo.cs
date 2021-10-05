@@ -1,6 +1,7 @@
 ﻿using AJ.Code.Properties;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace AJ.Code
 {
@@ -43,7 +44,22 @@ namespace AJ.Code
         }
 
 
-        internal CountryInfo(string countryName, 
+        public CountryInfo HomeCountry
+        {
+            get
+            {
+                if (Alpha2Code == "MP") return Country.AllCountries.Where(country => country.Alpha2Code == "US").FirstOrDefault();
+                if (Alpha2Code == "GU") return Country.AllCountries.Where(country => country.Alpha2Code == "US").FirstOrDefault();
+                if (Alpha2Code == "PR") return Country.AllCountries.Where(country => country.Alpha2Code == "US").FirstOrDefault();
+
+                if (Alpha2Code == "BM") return Country.AllCountries.Where(country => country.Alpha2Code == "GB").FirstOrDefault();
+
+                return this;
+            }
+        }
+
+
+        internal CountryInfo(string countryName,
                                    string alpha2Code,
                                    string alpha3Code,
                                    string numericCode,
@@ -57,7 +73,7 @@ namespace AJ.Code
             ContinentCode = continentCode;
 
             if (mobileCodes == null) return;
-            foreach(var mobileCode in mobileCodes)
+            foreach (var mobileCode in mobileCodes)
             {
                 _mobileCodes.Add(mobileCode);
             }
@@ -68,6 +84,14 @@ namespace AJ.Code
 
 
         private string GetDebuggerDisplay()
-            => string.Format($"[{NumericCode},{Alpha2Code},{Alpha3Code},{CountryName},{ContinentName}]");
+        {
+            string result = $"[{NumericCode},{Alpha2Code},{Alpha3Code},{CountryName},{ContinentName}]";
+
+            result += "{";
+            foreach (var mobileCode in MobileCodes) result += mobileCode.MCC + " ";
+            result += "}";
+
+            return result;
+        }
     }
 }
