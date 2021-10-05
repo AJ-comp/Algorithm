@@ -18,6 +18,13 @@ var country = Country.GetCountryInfoForAlpha3Code("KOR");
 
 // Get the country information list for the continent code value NA(North America)
 var countries = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
+
+// Get the country information list that has MCC & MNC
+var countries = Country.GetCountryInfoForMobileInfo(310, "032"); // Guam
+
+// Get Home Country
+foreach(var country in countries)
+  var homeCountry = country.HomeCountry;  // if country is Guam then homeCountry is USA
 ```
 
 
