@@ -20,7 +20,7 @@ var country = Country.GetCountryInfoForAlpha3Code("KOR");
 var countries = Country.GetCountryInfoForContinentCode(ContinentCode.NA);
 
 // Get the country information list that has MCC & MNC
-var countries = Country.GetCountryInfoForMobileInfo(310, "032"); // Guam
+var countries = Country.GetCountryInfoForMobileInfo(310, 32); // Guam
 
 // Get Home Country
 foreach(var country in countries)

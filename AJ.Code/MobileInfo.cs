@@ -12,7 +12,7 @@ namespace AJ.Code
     {
         public int MCC { get; private set; }
         public IEnumerable<MNCInfo> MNCList => _mnc;
-        public bool HasMNC(string mnc) => MNCList.Any(x => x.MNC == mnc);
+        public bool HasMNC(int mnc) => MNCList.Any(x => Convert.ToInt32(x.MNC) == mnc);
 
 
         public MobileInfo(int mcc, params MNCInfo[] mncInfos)
@@ -32,7 +32,11 @@ namespace AJ.Code
 
         internal void AddMNCInfo(MNCInfo mnc) => _mnc.Add(mnc);
 
-
+        internal MobileInfo Filter(int mnc)
+        {
+            var mncList = MNCList.Where(x => Convert.ToInt32(x.MNC) == mnc);
+            return (mncList.Count() > 0) ? new MobileInfo(MCC, mncList) : null;
+        }
 
         private List<MNCInfo> _mnc = new List<MNCInfo>();
 

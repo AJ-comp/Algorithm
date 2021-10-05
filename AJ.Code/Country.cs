@@ -23,7 +23,14 @@ namespace AJ.Code
         /// <returns></returns>
         /*******************************************************************/
         public static IEnumerable<CountryInfo> GetCountryInfoForMCC(int mcc)
-            => AllCountries.Where(country => country.MobileCodes.Any(x => x.MCC == mcc));
+        {
+            List<CountryInfo> result = new List<CountryInfo>();
+            var countries = AllCountries.Where(country => country.MobileCodes.Any(x => x.MCC == mcc));
+
+            foreach (var country in countries) result.Add(country.MobileFilteredCountry(mcc));
+
+            return result;
+        }
 
 
         /*******************************************************************/
@@ -35,8 +42,26 @@ namespace AJ.Code
         /// <param name="mnc"></param>
         /// <returns></returns>
         /*******************************************************************/
-        public static IEnumerable<CountryInfo> GetCountryInfoForMobileInfo(int mcc, string mnc)
-            => AllCountries.Where(country => country.MobileCodes.Any(x => x.MCC == mcc && x.HasMNC(mnc)));
+        public static IEnumerable<CountryInfo> GetCountryInfoForMobileInfo(int mcc, int mnc)
+        {
+            List<CountryInfo> result = new List<CountryInfo>();
+            var countries = AllCountries.Where(country => country.MobileCodes.Any(x => x.MCC == mcc && x.HasMNC(mnc)));
+
+            foreach (var country in countries)
+            {
+                var newCountry = country.CloneExceptMobileInfo();
+
+                foreach (var mobileInfo in country.MobileCodes.Where(x => x.MCC == mcc))
+                {
+                    var filteredInfo = mobileInfo.Filter(mnc);
+                    if (filteredInfo != null) newCountry._mobileCodes.Add(filteredInfo);
+                }
+
+                result.Add(newCountry);
+            }
+
+            return result;
+        }
 
 
         /*******************************************************************/

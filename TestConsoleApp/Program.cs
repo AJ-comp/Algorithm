@@ -27,7 +27,7 @@ namespace TestConsoleApp
             Console.WriteLine();
 
 
-            var countries = Country.GetCountryInfoForMobileInfo(404, "54");
+            var countries = Country.GetCountryInfoForMobileInfo(450, 2);
 
             foreach (var country in countries)
                 Console.WriteLine($"{country.CountryName} {country.HomeCountry.CountryName}");

@@ -43,7 +43,6 @@ namespace AJ.Code
             }
         }
 
-
         public CountryInfo HomeCountry
         {
             get
@@ -57,6 +56,10 @@ namespace AJ.Code
                 return this;
             }
         }
+
+
+        public CountryInfo CloneExceptMobileInfo()
+            => new CountryInfo(CountryName, Alpha2Code, Alpha3Code, NumericCode, ContinentCode);
 
 
         internal CountryInfo(string countryName,
@@ -81,6 +84,15 @@ namespace AJ.Code
 
 
         internal List<MobileInfo> _mobileCodes = new List<MobileInfo>();
+
+
+        internal CountryInfo MobileFilteredCountry(int mcc)
+        {
+            CountryInfo result = CloneExceptMobileInfo();
+
+            result._mobileCodes.AddRange(MobileCodes.Where(m => m.MCC == mcc));
+            return result;
+        }
 
 
         private string GetDebuggerDisplay()

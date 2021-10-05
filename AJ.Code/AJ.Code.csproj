@@ -14,9 +14,9 @@ This project referred to https://github.com/schourode/iso3166 project.</Descript
     <RepositoryUrl>https://github.com/AJ-comp/Algorithm</RepositoryUrl>
     <PackageTags>ISO3166, MCC, MNC, country, continent</PackageTags>
     <PackageId>ISO3166-Mobile</PackageId>
-    <Version>3.1.0</Version>
-    <AssemblyVersion>3.1.0.0</AssemblyVersion>
-    <FileVersion>3.1.0.0</FileVersion>
+    <Version>3.2.0</Version>
+    <AssemblyVersion>3.2.0.0</AssemblyVersion>
+    <FileVersion>3.2.0.0</FileVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
