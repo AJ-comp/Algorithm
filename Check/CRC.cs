@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Algorithm.Check
@@ -12,6 +13,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
+        [Obsolete("The ComputeCRC16 method is deprecated, please use the extension method .CRC16 instead.")]
         public static ushort ComputeCRC16(IEnumerable<byte> data)
         {
             ushort result = 0;
@@ -33,6 +35,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
+        [Obsolete("The ComputeCCITTxModem method is deprecated, please use the extension method .CCITTxModem instead.")]
         public static ushort ComputeCCITTxModem(IEnumerable<byte> data)
         {
             ushort result = 0;
@@ -54,6 +57,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
+        [Obsolete("The ComputeDNP method is deprecated, please use the extension method .DNP instead.")]
         public static ushort ComputeDNP(IEnumerable<byte> data)
         {
             ushort result = 0;
@@ -79,6 +83,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
+        [Obsolete("The ComputeCRC32 method is deprecated, please use the extension method .CRC32 instead.")]
         public static uint ComputeCRC32(IEnumerable<byte> data)
         {
             long result = 0;

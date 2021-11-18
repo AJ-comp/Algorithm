@@ -37,16 +37,21 @@ Please see https://www.lammertbies.nl/comm/info/crc-calculation?crc=8005&method=
 using Algorithm.Check;
 
 // Get CRC-16
-var data = CRC.ComputeCRC16(Encoding.ASCII.GetBytes("123456789"));
+var crc = CRC.ComputeCRC16(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
+var crc = Encoding.ASCII.GetBytes("123456789").CRC16(); // new method. please use this.
 
 // Get CRC-CCITT (xModem)
-var data = CRC.ComputeCCITTxModem(Encoding.ASCII.GetBytes("123456789"));
+var crc = CRC.ComputeCCITTxModem(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
+var crc = Encoding.ASCII.GetBytes("123456789").CCITTxModem(); // new method. please use this.
 
 // Get CRC-DNP
-var data = CRC.ComputeDNP(Encoding.ASCII.GetBytes("123456789"));
+var crc = CRC.ComputeDNP(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
+var crc = Encoding.ASCII.GetBytes("123456789").DNP(); // new method. please use this.
 
 // Get CRC-32
-var data = CRC.ComputeCRC32(Encoding.ASCII.GetBytes("123456789"));
+var crc = CRC.ComputeCRC32(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
+var crc = Encoding.ASCII.GetBytes("123456789").CRC32(); // new method. please use this.
+
 ```
 
 
