@@ -388,11 +388,13 @@ namespace Encrypt
             return Encoding.UTF8.GetString(SEED.Decrypt(sData, seedKey));
         }
 
+        [Obsolete("This method is deprecated, please use the extension method .EncryptWithSeed instead.")]
         public static byte[] Encrypt(byte[] Data, byte[] seedKey)
         {
             return SEED.Encrypt(Data, seedKey, true);
         }
 
+        [Obsolete("This method is deprecated, please use the extension method .EncryptWithSeed instead.")]
         public static byte[] Encrypt(byte[] Data, byte[] seedKey, bool cbcPad)
         {
             int nOutSize = (int)((Data.Length) / 16) * 16;
@@ -448,11 +450,13 @@ namespace Encrypt
             return OutData;
         }
 
+        [Obsolete("This method is deprecated, please use the extension method .DecryptWithSeed instead.")]
         public static byte[] Decrypt(byte[] Data, byte[] seedKey)
         {
             return SEED.Decrypt(Data, seedKey, true);
         }
 
+        [Obsolete("This method is deprecated, please use the extension method .DecryptWithSeed instead.")]
         public static byte[] Decrypt(byte[] Data, byte[] seedKey, bool cbcPad)
         {
             int nOutSize = Data.Length;

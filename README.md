@@ -69,14 +69,16 @@ The IV value is {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}.
 ```c#
 // You can set this value to whatever you want. (It must be a 16 byte array)
 byte[] SeedKey = new byte[16] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5 };
-byte[] dataToEncrypt = Encoding.UTF8.GetBytes("test");
+var dataToEncrypt = Encoding.UTF8.GetBytes("test");
 
-var dataEncrypted = SEED.Encrypt(dataToEncrypt, SeedKey);
+var dataEncrypted = SEED.Encrypt(dataToEncrypt, SeedKey); // this method is deprecated.
+var dataEncrypted = dataToEncrypt.EncryptWithSeed(SeedKey); // new method. please use this.
 ```
 
 2. Decryption example
 ```c#
 // The SeedKey must same as the SeedKey used when encryption.
 byte[] SeedKey = new byte[16] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5 };
-var dataDecrypted = SEED.Decrypt(dataEncrypted, SeedKey);
+var dataDecrypted = SEED.Decrypt(dataEncrypted, SeedKey); // this method is deprecated.
+var dataDecrypted = dataEncrypted.DecryptWithSeed(SeedKey); // new method. please use this.
 ```

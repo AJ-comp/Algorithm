@@ -1,7 +1,9 @@
 ﻿using AJ.Code;
 using Algorithm.Check;
+using Encrypt;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace TestConsoleApp
@@ -26,6 +28,8 @@ namespace TestConsoleApp
             TestModule("CRC-32 test", CRC.ComputeCRC32, testValue1, testValue2, testValue3);
             Console.WriteLine();
 
+            TestCheckSum8(testValue1, testValue2, testValue3);
+
 
             var countries = Country.GetCountryInfoForMobileInfo(310, 260);
 
@@ -44,6 +48,34 @@ namespace TestConsoleApp
             foreach (var item in testValues)
             {
                 Console.WriteLine(string.Format("test result 0x{0}", string.Format("{0:x2}", func(item))));
+            }
+            Console.WriteLine("------------------------------------------------------------------");
+        }
+
+
+        private static void TestCheckSum8(params IEnumerable<byte>[] testValues)
+        {
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine($"CheckSum8 [CheckSum8 xor] test");
+            foreach(var item in testValues)
+            {
+                Console.WriteLine($"test result 0x{item.CheckSum8Xor().ToString("x2")}");
+            }
+            Console.WriteLine("------------------------------------------------------------------");
+
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine($"CheckSum8 [CheckSum8 modulo-256] test");
+            foreach (var item in testValues)
+            {
+                Console.WriteLine($"test result 0x{item.CheckSum8Modulo256().ToString("x2")}");
+            }
+            Console.WriteLine("------------------------------------------------------------------");
+
+            Console.WriteLine("------------------------------------------------------------------");
+            Console.WriteLine($"CheckSum8 [CheckSum8 2's complement] test");
+            foreach (var item in testValues)
+            {
+                Console.WriteLine($"test result 0x{item.CheckSum8TwosComplement().ToString("x2")}");
             }
             Console.WriteLine("------------------------------------------------------------------");
         }

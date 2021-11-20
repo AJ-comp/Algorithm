@@ -10,7 +10,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/AJ-comp/Seed.git</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AJ-comp/Seed.git</RepositoryUrl>
-    <Description>SEED encryption algorithm source</Description>
+    <Description>SEED encryption algorithm</Description>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
 </Project>
