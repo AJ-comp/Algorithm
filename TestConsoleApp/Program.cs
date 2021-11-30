@@ -1,4 +1,5 @@
 ﻿using AJ.Code;
+using AJ.Extension;
 using Algorithm.Check;
 using Encrypt;
 using System;
@@ -28,6 +29,9 @@ namespace TestConsoleApp
             TestModule("CRC-32 test", CRC.ComputeCRC32, testValue1, testValue2, testValue3);
             Console.WriteLine();
 
+            Console.WriteLine(testValue1.WithCRC16().ToHexString());
+            Console.WriteLine(testValue2.WithCRC16().ToHexString());
+            Console.WriteLine(testValue3.WithCRC16().ToHexString());
             TestCheckSum8(testValue1, testValue2, testValue3);
 
 

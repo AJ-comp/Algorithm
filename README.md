@@ -36,21 +36,41 @@ Please see https://www.lammertbies.nl/comm/info/crc-calculation?crc=8005&method=
 ```c#
 using Algorithm.Check;
 
-// Get CRC-16
-var crc = CRC.ComputeCRC16(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
-var crc = Encoding.ASCII.GetBytes("123456789").CRC16(); // new method. please use this.
+var data = Encoding.ASCII.GetBytes("123456789");
 
-// Get CRC-CCITT (xModem)
-var crc = CRC.ComputeCCITTxModem(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
-var crc = Encoding.ASCII.GetBytes("123456789").CCITTxModem(); // new method. please use this.
+// Example for CRC-16
+var crc = CRC.ComputeCRC16(data); // this method is deprecated.
+var crc = data.CRC16(); // new method. please use this.
+var dataWithCRC = data.WithCRC16();
 
-// Get CRC-DNP
-var crc = CRC.ComputeDNP(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
-var crc = Encoding.ASCII.GetBytes("123456789").DNP(); // new method. please use this.
+// Example for CRC-CCITT (xModem)
+var crc = CRC.ComputeCCITTxModem(data); // this method is deprecated.
+var crc = data.CCITTxModem(); // new method. please use this.
+var dataWithCRC = data.WithCCITTxModem();
 
-// Get CRC-32
-var crc = CRC.ComputeCRC32(Encoding.ASCII.GetBytes("123456789")); // this method is deprecated.
-var crc = Encoding.ASCII.GetBytes("123456789").CRC32(); // new method. please use this.
+// Example for CRC-DNP
+var crc = CRC.ComputeDNP(data); // this method is deprecated.
+var crc = data.DNP(); // new method. please use this.
+var dataWithCRC = data.WithDNP();
+
+// Example for CRC-32
+var crc = CRC.ComputeCRC32(data); // this method is deprecated.
+var crc = data.CRC32(); // new method. please use this.
+var dataWithCRC = data.WithCRC32();
+
+
+// Example for Checksum8
+var checksum = data.CheckSum8Xor();	// Get checksum8 xor
+var dataWithChecksum = data.WithCheckSum8Xor();
+
+var checksum = data.CheckSum8Modulo256(); // Get checksum8 modulo256
+var dataWithChecksum = data.WithCheckSum8Modulo256();
+
+var checksum = data.CheckSum8TwosComplement(); // Get checksum8 2's complement
+var dataWithChecksum = data.WithCheckSum8TwosComplement();
+
+var checksum = data.NMEACheckSum(); // Get checksum in use in NMEA fomat
+var dataWithChecksum = data.WithNMEACheckSum();
 
 ```
 
