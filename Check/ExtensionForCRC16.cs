@@ -6,26 +6,50 @@ using System.Text;
 
 namespace Algorithm.Check
 {
-    public static class ExtensionForCRC
+    public static class ExtensionForCRC16
     {
+        public enum CRC16Type
+        {
+            Basic,
+            CCITTxModem,
+            DNP,
+        }
+
         /*******************************************/
         /// <summary>
-        /// This function returns the CRC16 value
+        /// This function returns the CRC16 value.
         /// </summary>
         /// <param name="data"></param>
+        /// <param name="type">This parameter means crc16 algorithm type.</param>
         /// <returns></returns>
         /*******************************************/
-        public static ushort CRC16(this IEnumerable<byte> data) => CRC.ComputeCRC16(data);
+        public static ushort CRC16(this IEnumerable<byte> data, CRC16Type type = CRC16Type.Basic)
+        {
+            ushort result = 0;
+
+            if (type == CRC16Type.Basic) result = CRC.ComputeCRC16(data);
+            else if (type == CRC16Type.CCITTxModem) result = CRC.ComputeCCITTxModem(data);
+            else if (type == CRC16Type.DNP) result = CRC.ComputeDNP(data);
+
+            return result;
+        }
 
         /*******************************************/
         /// <summary>
         /// This function returns the byte array included crc16 value.
         /// </summary>
         /// <param name="data"></param>
+        /// <param name="type">This parameter means crc16 algorithm type.</param>
         /// <returns></returns>
         /*******************************************/
-        public static IEnumerable<byte> WithCRC16(this IEnumerable<byte> data)
-            => data.AppendRange(BitConverter.GetBytes(data.CRC16()));
+        public static IEnumerable<byte> WithCRC16(this IEnumerable<byte> data, CRC16Type type = CRC16Type.Basic)
+        {
+            if (type == CRC16Type.Basic) return data.AppendRange(BitConverter.GetBytes(CRC.ComputeCRC16(data)));
+            else if (type == CRC16Type.CCITTxModem) return data.AppendRange(BitConverter.GetBytes(CRC.ComputeCCITTxModem(data)));
+            else if(type == CRC16Type.DNP) return data.AppendRange(BitConverter.GetBytes(CRC.ComputeDNP(data)));
+
+            return new List<byte>();
+        }
 
         /*******************************************/
         /// <summary>
@@ -34,6 +58,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************/
+        [Obsolete("This method is deprecated, please use the extension method .CRC16 included the parameter instead.")]
         public static ushort CCITTxModem(this IEnumerable<byte> data) => CRC.ComputeCCITTxModem(data);
 
         /*******************************************/
@@ -43,6 +68,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************/
+        [Obsolete("This method is deprecated, please use the extension method .WithCRC16 included the parameter instead.")]
         public static IEnumerable<byte> WithCCITTxModem(this IEnumerable<byte> data)
             => data.AppendRange(BitConverter.GetBytes(data.CCITTxModem()));
 
@@ -53,6 +79,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************/
+        [Obsolete("This method is deprecated, please use the extension method .CRC16 included the parameter instead.")]
         public static ushort DNP(this IEnumerable<byte> data) => CRC.ComputeDNP(data);
 
         /*******************************************/
@@ -62,26 +89,8 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************/
+        [Obsolete("This method is deprecated, please use the extension method .WithCRC16 included the parameter instead.")]
         public static IEnumerable<byte> WithDNP(this IEnumerable<byte> data)
             => data.AppendRange(BitConverter.GetBytes(data.DNP()));
-
-        /*******************************************/
-        /// <summary>
-        /// This function returns the CRC32 value
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        /*******************************************/
-        public static uint CRC32(this IEnumerable<byte> data) => CRC.ComputeCRC32(data);
-
-        /*******************************************/
-        /// <summary>
-        /// This function returns the byte array included crc32 value.
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        /*******************************************/
-        public static IEnumerable<byte> WithCRC32(this IEnumerable<byte> data)
-            => data.AppendRange(BitConverter.GetBytes(data.CRC32()));
     }
 }

@@ -31,6 +31,7 @@ foreach(var country in countries)
 
 # CRC
 Please see https://www.lammertbies.nl/comm/info/crc-calculation?crc=8005&method=hex
+Please see https://crccalc.com/
 
 
 ```c#
@@ -38,39 +39,44 @@ using Algorithm.Check;
 
 var data = Encoding.ASCII.GetBytes("123456789");
 
-// Example for CRC-16
-var crc = CRC.ComputeCRC16(data); // this method is deprecated.
-var crc = data.CRC16(); // new method. please use this.
+// Example for CRC 8
+var crc = data.CRC8();
+var dataWithCRC = data.WithCRC8();
+
+// Example for CRC 8 MAXIM
+var crc = data.CRC8(CRC8Type.Maxim);
+var dataWithCRC = data.WithCRC8(CRC8Type.Maxim);
+
+
+// Example for CRC 16
+var crc = data.CRC16();
 var dataWithCRC = data.WithCRC16();
 
-// Example for CRC-CCITT (xModem)
-var crc = CRC.ComputeCCITTxModem(data); // this method is deprecated.
-var crc = data.CCITTxModem(); // new method. please use this.
-var dataWithCRC = data.WithCCITTxModem();
+// Example for CRC 16 CCITT (xModem)
+var crc = data.CRC16(CRC16Type.CCITTxModem);
+var dataWithCRC = data.WithCRC16(CRC16Type.CCITTxModem);
 
-// Example for CRC-DNP
-var crc = CRC.ComputeDNP(data); // this method is deprecated.
-var crc = data.DNP(); // new method. please use this.
-var dataWithCRC = data.WithDNP();
+// Example for CRC 16 DNP
+var crc = data.CRC16(CRC16Type.DNP);
+var dataWithCRC = data.WithCRC16(CRC16Type.DNP);
 
-// Example for CRC-32
-var crc = CRC.ComputeCRC32(data); // this method is deprecated.
-var crc = data.CRC32(); // new method. please use this.
+// Example for CRC 32
+var crc = data.CRC32();
 var dataWithCRC = data.WithCRC32();
 
 
 // Example for Checksum8
-var checksum = data.CheckSum8Xor();	// Get checksum8 xor
-var dataWithChecksum = data.WithCheckSum8Xor();
+var checksum = data.CheckSum8(CheckSum8Type.Xor);
+var dataWithChecksum = data.WithCheckSum8(CheckSum8Type.Xor);
 
-var checksum = data.CheckSum8Modulo256(); // Get checksum8 modulo256
-var dataWithChecksum = data.WithCheckSum8Modulo256();
+var checksum = data.CheckSum8(CheckSum8Type.Modulo256);
+var dataWithChecksum = data.WithCheckSum8(CheckSum8Type.Modulo256);
 
-var checksum = data.CheckSum8TwosComplement(); // Get checksum8 2's complement
-var dataWithChecksum = data.WithCheckSum8TwosComplement();
+var checksum = data.CheckSum8(CheckSum8Type.TwosComplement);
+var dataWithChecksum = data.WithCheckSum8(CheckSum8Type.TwosComplement);
 
-var checksum = data.NMEACheckSum(); // Get checksum in use in NMEA fomat
-var dataWithChecksum = data.WithNMEACheckSum();
+var checksum = data.CheckSum8(CheckSum8Type.NMEA);
+var dataWithChecksum = data.WithCheckSum8(CheckSum8Type.NMEA);
 
 ```
 

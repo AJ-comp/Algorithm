@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Algorithm.Check
 {
-    public class CRC
+    internal class CRC
     {
         /*******************************************************************/
         /// <summary>
@@ -13,8 +13,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
-        [Obsolete("This method is deprecated, please use the extension method .CRC16 instead.")]
-        public static ushort ComputeCRC16(IEnumerable<byte> data)
+        internal static ushort ComputeCRC16(IEnumerable<byte> data)
         {
             ushort result = 0;
             if (data.Count() <= 0) return result;
@@ -35,8 +34,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
-        [Obsolete("This method is deprecated, please use the extension method .CCITTxModem instead.")]
-        public static ushort ComputeCCITTxModem(IEnumerable<byte> data)
+        internal static ushort ComputeCCITTxModem(IEnumerable<byte> data)
         {
             ushort result = 0;
             if (data.Count() <= 0) return result;
@@ -57,8 +55,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
-        [Obsolete("This method is deprecated, please use the extension method .DNP instead.")]
-        public static ushort ComputeDNP(IEnumerable<byte> data)
+        internal static ushort ComputeDNP(IEnumerable<byte> data)
         {
             ushort result = 0;
             if (data.Count() <= 0) return result;
@@ -83,8 +80,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*******************************************************************/
-        [Obsolete("This method is deprecated, please use the extension method .CRC32 instead.")]
-        public static uint ComputeCRC32(IEnumerable<byte> data)
+        internal static uint ComputeCRC32(IEnumerable<byte> data)
         {
             long result = 0;
             if (data.Count() <= 0) return (uint)result;

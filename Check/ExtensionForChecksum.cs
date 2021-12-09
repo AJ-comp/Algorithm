@@ -8,6 +8,56 @@ namespace Algorithm.Check
 {
     public static class ExtensionForChecksum
     {
+        public enum CheckSum8Type
+        {
+            Xor,
+            NMEA,
+            Modulo256,
+            TwosComplement,
+        }
+
+
+        /*****************************************************/
+        /// <summary>
+        /// This function returns 1byte checksum.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="type">This parameter means checksum algorithm type.</param>
+        /// <see cref="https://www.scadacore.com/tools/programming-calculators/online-checksum-calculator/"/>
+        /// <seealso cref="https://nmeachecksum.eqth.net/"/>
+        /// <returns></returns>
+        /*****************************************************/
+        public static byte CheckSum8(this IEnumerable<byte> data, CheckSum8Type type = CheckSum8Type.Xor)
+        {
+            byte result = 0;
+
+            if (type == CheckSum8Type.Xor) result = data.CheckSum8Xor();
+            else if (type == CheckSum8Type.NMEA) result = data.CheckSum8Xor();
+            else if (type == CheckSum8Type.Modulo256) result = data.CheckSum8Modulo256();
+            else if (type == CheckSum8Type.TwosComplement) result = data.CheckSum8TwosComplement();
+
+            return result;
+        }
+
+        /*****************************************************/
+        /// <summary>
+        /// This function returns the byte array included 1byte checksum value.
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="type">This parameter means checksum algorithm type.</param>
+        /// <returns></returns>
+        /*****************************************************/
+        public static IEnumerable<byte> WithCheckSum8(this IEnumerable<byte> data, CheckSum8Type type = CheckSum8Type.Xor)
+        {
+            if (type == CheckSum8Type.Xor) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8Xor()));
+            else if (type == CheckSum8Type.NMEA) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8Xor()));
+            else if (type == CheckSum8Type.Modulo256) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8Modulo256()));
+            else if (type == CheckSum8Type.TwosComplement) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8TwosComplement()));
+
+            return new List<byte>();
+        }
+
+
         /*****************************************************/
         /// <summary>
         /// This function returns 1byte checksum that NMEA format use. <br/>
@@ -17,6 +67,7 @@ namespace Algorithm.Check
         /// <see cref="https://nmeachecksum.eqth.net/"/>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .CheckSum8 instead.")]
         public static byte NMEACheckSum(this IEnumerable<byte> data) => data.CheckSum8Xor();
 
         /*****************************************************/
@@ -26,6 +77,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .WithCheckSum8 instead.")]
         public static IEnumerable<byte> WithNMEACheckSum(this IEnumerable<byte> data) => data.WithCheckSum8Xor();
 
 
@@ -37,6 +89,7 @@ namespace Algorithm.Check
         /// <see cref="https://www.scadacore.com/tools/programming-calculators/online-checksum-calculator/"/>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .CheckSum8 instead.")]
         public static byte CheckSum8Xor(this IEnumerable<byte> data)
         {
             byte result = 0;
@@ -53,6 +106,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .WithCheckSum8 instead.")]
         public static IEnumerable<byte> WithCheckSum8Xor(this IEnumerable<byte> data)
             => data.AppendRange(BitConverter.GetBytes(data.CheckSum8Xor()));
 
@@ -65,6 +119,7 @@ namespace Algorithm.Check
         /// <see cref="https://www.scadacore.com/tools/programming-calculators/online-checksum-calculator/"/>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .CheckSum8 instead.")]
         public static byte CheckSum8Modulo256(this IEnumerable<byte> data)
         {
             byte result = 0;
@@ -83,6 +138,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .WithCheckSum8 instead.")]
         public static IEnumerable<byte> WithCheckSum8Modulo256(this IEnumerable<byte> data)
             => data.AppendRange(BitConverter.GetBytes(data.CheckSum8Modulo256()));
 
@@ -95,6 +151,7 @@ namespace Algorithm.Check
         /// <see cref="https://www.scadacore.com/tools/programming-calculators/online-checksum-calculator/"/>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .CheckSum8 instead.")]
         public static byte CheckSum8TwosComplement(this IEnumerable<byte> data)
         {
             byte result = 0;
@@ -113,6 +170,7 @@ namespace Algorithm.Check
         /// <param name="data"></param>
         /// <returns></returns>
         /*****************************************************/
+        [Obsolete("This method is deprecated, please use the extension method .WithCheckSum8 instead.")]
         public static IEnumerable<byte> WithCheckSum8TwosComplement(this IEnumerable<byte> data)
             => data.AppendRange(BitConverter.GetBytes(data.CheckSum8TwosComplement()));
     }

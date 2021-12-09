@@ -7,6 +7,17 @@ namespace AJ.Extension
 {
     public static class Extension
     {
+        public static IEnumerable<byte> Append(this IEnumerable<byte> data, byte toAddData)
+        {
+            List<byte> result = new List<byte>(data);
+            if (data.Count() <= 0) return result;
+
+            result.Add(toAddData);
+
+            return result;
+        }
+
+
         public static IEnumerable<byte> AppendRange(this IEnumerable<byte> data, IEnumerable<byte> toAddData)
         {
             List<byte> result = new List<byte>(data);
@@ -16,6 +27,7 @@ namespace AJ.Extension
 
             return result;
         }
+
 
         public static string ToHexString(this IEnumerable<byte> data, string connector = " ")
         {

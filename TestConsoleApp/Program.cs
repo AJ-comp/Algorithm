@@ -6,6 +6,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using static Algorithm.Check.ExtensionForCRC16;
+using static Algorithm.Check.ExtensionForCRC32;
+using static Algorithm.Check.ExtensionForCRC8;
 
 namespace TestConsoleApp
 {
@@ -14,25 +17,19 @@ namespace TestConsoleApp
         static void Main(string[] args)
         {
             IEnumerable<byte> testValue1 = Encoding.ASCII.GetBytes("123456789");
-            IEnumerable<byte> testValue2 = Encoding.ASCII.GetBytes("1234567890");
-            IEnumerable<byte> testValue3 = Encoding.ASCII.GetBytes("1234567890abcde");
-
-            TestModule("CRC-16 test", CRC.ComputeCRC16, testValue1, testValue2, testValue3);
-            Console.WriteLine();
-
-            TestModule("CRC-CCITT test", CRC.ComputeCCITTxModem, testValue1, testValue2, testValue3);
-            Console.WriteLine();
-
-            TestModule("CRC-DNP test", CRC.ComputeDNP, testValue1, testValue2, testValue3);
-            Console.WriteLine();
-
-            TestModule("CRC-32 test", CRC.ComputeCRC32, testValue1, testValue2, testValue3);
-            Console.WriteLine();
+            IEnumerable<byte> testValue2 = Encoding.ASCII.GetBytes("123456789lsdfilksdfksfsopfsdIcanfslfeafysfe");
+            IEnumerable<byte> testValue3 = Encoding.ASCII.GetBytes("123456789lsdfilksdfks123FfelsdfiADSFsafkSAFSasdfefadsMLEIRP");
 
             Console.WriteLine(testValue1.WithCRC16().ToHexString());
             Console.WriteLine(testValue2.WithCRC16().ToHexString());
             Console.WriteLine(testValue3.WithCRC16().ToHexString());
-            TestCheckSum8(testValue1, testValue2, testValue3);
+
+            TestCRC8(CRC8Type.Basic, testValue1, testValue2, testValue3);
+            TestCRC8(CRC8Type.Maxim, testValue1, testValue2, testValue3);
+            TestCRC16(CRC16Type.Basic, testValue1, testValue2, testValue3);
+            TestCRC16(CRC16Type.CCITTxModem, testValue1, testValue2, testValue3);
+            TestCRC16(CRC16Type.DNP, testValue1, testValue2, testValue3);
+            TestCRC32(CRC32Type.Basic, testValue1, testValue2, testValue3);
 
 
             var countries = Country.GetCountryInfoForMobileInfo(310, 260);
@@ -42,26 +39,47 @@ namespace TestConsoleApp
         }
 
 
-
-        private static void TestModule<T>(string title,
-                                                    Func<IEnumerable<byte>, T> func, 
-                                                    params IEnumerable<byte>[] testValues)
+        private static void TestCRC8(CRC8Type type, params IEnumerable<byte>[] testValues)
         {
-            Console.WriteLine("------------------------------------------------------------------");
-            Console.WriteLine(title);
-            foreach (var item in testValues)
+            foreach (var testValue in testValues)
             {
-                Console.WriteLine(string.Format("test result 0x{0}", string.Format("{0:x2}", func(item))));
+                Console.WriteLine("------------------------------------------------------------------");
+                Console.WriteLine($"CRC8 [{type}] test for source [{testValue.ToHexString()}]");
+                Console.WriteLine($"crc is 0x{testValue.CRC8(type).ToString("x2")}");
+                Console.WriteLine($"source + crc is 0x{testValue.WithCRC8(type).ToHexString()}");
+                Console.WriteLine("------------------------------------------------------------------");
             }
-            Console.WriteLine("------------------------------------------------------------------");
         }
 
+        private static void TestCRC16(CRC16Type type, params IEnumerable<byte>[] testValues)
+        {
+            foreach (var testValue in testValues)
+            {
+                Console.WriteLine("------------------------------------------------------------------");
+                Console.WriteLine($"CRC16 [{type}] test for source [{testValue.ToHexString()}]");
+                Console.WriteLine($"crc is 0x{testValue.CRC16(type).ToString("x4")}");
+                Console.WriteLine($"source + crc is 0x{testValue.WithCRC16(type).ToHexString()}");
+                Console.WriteLine("------------------------------------------------------------------");
+            }
+        }
+
+        private static void TestCRC32(CRC32Type type, params IEnumerable<byte>[] testValues)
+        {
+            foreach (var testValue in testValues)
+            {
+                Console.WriteLine("------------------------------------------------------------------");
+                Console.WriteLine($"CRC32 [{type}] test for source [{testValue.ToHexString()}]");
+                Console.WriteLine($"crc is 0x{testValue.CRC32(type).ToString("x8")}");
+                Console.WriteLine($"source + crc is 0x{testValue.WithCRC32(type).ToHexString()}");
+                Console.WriteLine("------------------------------------------------------------------");
+            }
+        }
 
         private static void TestCheckSum8(params IEnumerable<byte>[] testValues)
         {
             Console.WriteLine("------------------------------------------------------------------");
             Console.WriteLine($"CheckSum8 [CheckSum8 xor] test");
-            foreach(var item in testValues)
+            foreach (var item in testValues)
             {
                 Console.WriteLine($"test result 0x{item.CheckSum8Xor().ToString("x2")}");
             }
