@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using static Algorithm.Check.ExtensionForChecksum;
 using static Algorithm.Check.ExtensionForCRC16;
 using static Algorithm.Check.ExtensionForCRC32;
 using static Algorithm.Check.ExtensionForCRC8;
@@ -20,9 +21,9 @@ namespace TestConsoleApp
             IEnumerable<byte> testValue2 = Encoding.ASCII.GetBytes("123456789lsdfilksdfksfsopfsdIcanfslfeafysfe");
             IEnumerable<byte> testValue3 = Encoding.ASCII.GetBytes("123456789lsdfilksdfks123FfelsdfiADSFsafkSAFSasdfefadsMLEIRP");
 
-            Console.WriteLine(testValue1.WithCRC16().ToHexString());
-            Console.WriteLine(testValue2.WithCRC16().ToHexString());
-            Console.WriteLine(testValue3.WithCRC16().ToHexString());
+            Console.WriteLine(testValue1.WithCheckSum8().ToHexString());
+            Console.WriteLine(testValue2.WithCheckSum8(CheckSum8Type.Modulo256).ToHexString());
+            Console.WriteLine(testValue3.WithCheckSum8(CheckSum8Type.TwosComplement).ToHexString());
 
             TestCRC8(CRC8Type.Basic, testValue1, testValue2, testValue3);
             TestCRC8(CRC8Type.Maxim, testValue1, testValue2, testValue3);

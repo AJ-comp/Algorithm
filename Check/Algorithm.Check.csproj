@@ -7,16 +7,29 @@
     <Company>Swinnus</Company>
     <Product>CRC</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Description>checksum8: xor, modulo-256, 2's complement
+    <Description>support checksum8: 
+1. xor (using in NMEA format)
+2. modulo-256
+3. 2's complement
 
-CRC: CRC-16, CRC-CCITT (xModem), DNP, CRC32</Description>
-    <PackageTags>CRC CRC16 CCITT xModem DNP CRC32 checksum8-xor modulo-256 2's-complement</PackageTags>
+support CRC8:
+1. CRC8
+2. CRC8 Maxim
+
+support CRC16:
+1. CRC16
+2. CRC16 CCITT (xModem)
+3. CRC16 DNP
+
+support CRC32
+1. CRC32</Description>
+    <PackageTags>CRC8 CRC8-MAXIM CRC16 CRC16-CCITT(xModem) CRC16-DNP CRC32 checksum8-xor modulo-256 2's-complement</PackageTags>
     <PackageProjectUrl>https://github.com/AJ-comp/Algorithm</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AJ-comp/Algorithm</RepositoryUrl>
-    <Version>1.4.0</Version>
+    <Version>2.0.1</Version>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <AssemblyVersion>1.4.0.0</AssemblyVersion>
-    <FileVersion>1.4.0.0</FileVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <FileVersion>2.0.0.1</FileVersion>
   </PropertyGroup>
 
 </Project>

@@ -49,10 +49,10 @@ namespace Algorithm.Check
         /*****************************************************/
         public static IEnumerable<byte> WithCheckSum8(this IEnumerable<byte> data, CheckSum8Type type = CheckSum8Type.Xor)
         {
-            if (type == CheckSum8Type.Xor) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8Xor()));
-            else if (type == CheckSum8Type.NMEA) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8Xor()));
-            else if (type == CheckSum8Type.Modulo256) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8Modulo256()));
-            else if (type == CheckSum8Type.TwosComplement) return data.AppendRange(BitConverter.GetBytes(data.CheckSum8TwosComplement()));
+            if (type == CheckSum8Type.Xor) return data.Append(data.CheckSum8Xor());
+            else if (type == CheckSum8Type.NMEA) return data.Append(data.CheckSum8Xor());
+            else if (type == CheckSum8Type.Modulo256) return data.Append(data.CheckSum8Modulo256());
+            else if (type == CheckSum8Type.TwosComplement) return data.Append(data.CheckSum8TwosComplement());
 
             return new List<byte>();
         }
